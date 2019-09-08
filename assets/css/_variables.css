@@ -1,0 +1,19 @@
+:root {
+  --main-color: #3bbfce;
+  --content--max-width: 40.625rem;
+
+  --spade: ♠;
+  --heart: ♥;
+  --clover: ♣;
+  --dia: ♦;
+
+  --main-width: 1000px;
+
+  --card-width: 228px;
+  --card-height: 356px;
+  --card-border-width: 2px;
+  --card-border-radius: 3px;
+  --card-border-color: #ddd;
+  --card-red-color: #ff2660;
+  --card-clover-color: var(--main-color);
+}
