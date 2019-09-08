@@ -22,13 +22,18 @@ export const getItem = (uuid = null, itemsName) => {
     .catch(showError)
 }
 // 複数取得
-export const getItems = (itemsName, orderBy = 'updated', sort = 'desc', where) => {
+export const getItems = (
+  itemsName,
+  orderBy = 'updated',
+  sort = 'desc',
+  where
+) => {
   let collection = db.collection(itemsName)
 
-  if(where) {
+  if (where) {
     collection = collection.where(where.key, where.option, where.value)
   }
-  
+
   return collection
     .orderBy(orderBy, sort)
     .get()
@@ -72,7 +77,9 @@ export const setItem = (item, itemsName) =>
       const contentName = `${item.uuid} ${item.title}`
       const message = isCreated
         ? `created item! ${contentName}`
-        : `updated item! ${contentName}【${moment.unix(res.updated).format(format)} > ${moment.unix(item.updated).format(format)}】`
+        : `updated item! ${contentName}【${moment
+          .unix(res.updated)
+          .format(format)} > ${moment.unix(item.updated).format(format)}】`
 
       if (!_.isEqual(res, item)) {
         return saveEntry(item, itemsName, message).then(data =>

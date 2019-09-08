@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <h1 class="title">
-      <nuxt-link to="/">{{TITLE}}</nuxt-link>
+      <nuxt-link to="/">{{ TITLE }}</nuxt-link>
     </h1>
 
     <nav>

@@ -3,7 +3,7 @@ import axios from 'axios'
 export const state = () => ({
   qiitaItems: [],
   dropboxItems: [],
-  instagramItems: [],
+  instagramItems: []
 })
 
 export const mutations = {

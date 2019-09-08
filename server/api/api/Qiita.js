@@ -66,7 +66,11 @@ export default class QiitaApi {
 
         return Promise.all([
           Firestore.saveEntriesEvents(items, this.name),
-          Firestore.removeItems(items, this.name, undefined, {key: 'userId', option: '==', value: this.USER_NAME})
+          Firestore.removeItems(items, this.name, undefined, {
+            key: 'userId',
+            option: '==',
+            value: this.USER_NAME
+          })
         ]).then(values => generateResult(values))
       })
       .catch(err => {

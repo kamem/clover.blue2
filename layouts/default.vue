@@ -8,7 +8,7 @@
 </template>
 <script>
 import Promise from 'bluebird'
-import { mapState, mapActions } from 'vuex'
+import { mapActions } from 'vuex'
 import Header from '../components/Header'
 
 export default {
@@ -21,7 +21,7 @@ export default {
       Promise.all([
         this.getQiita(),
         this.getDropbox(),
-        this.getInstagram(),
+        this.getInstagram()
       ]).then(() => this.$nuxt.$loading.finish())
     })
   },

@@ -17,11 +17,16 @@ module.exports = {
   plugins: [
     'prettier'
   ],
+  globals: {
+    PR: true
+  },
   // add your custom rules here
   rules: {
-    "no-console": "off",
-    "nuxt/no-cjs-in-config": "off",
-    "vue/no-unused-components": "off",
-    "indent": [2, 2, {"SwitchCase": 1}],
+    'no-console': 'off',
+    'nuxt/no-cjs-in-config': 'off',
+    'vue/no-use-v-if-with-v-for': 'off',
+    'vue/no-v-html': 'off',
+    'vue/no-unused-components': 'off',
+    'indent': [2, 2, {'SwitchCase': 1}],
   }
 }

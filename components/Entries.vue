@@ -1,6 +1,6 @@
 <template>
   <section class="entry-item">
-    <h2 class="entry-title">{{title}}</h2>
+    <h2 class="entry-title">{{ title }}</h2>
     <slot />
   </section>
 </template>
@@ -11,7 +11,7 @@ export default {
     title: {
       type: String,
       default: ''
-    },
+    }
   }
 }
 </script>

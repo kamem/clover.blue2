@@ -2,15 +2,15 @@
   <article class="content">
     <h1 class="content-title">
       <slot name="title" />
-      <span v-if="item">{{item.title}}</span>
+      <span v-if="item">{{ item.title }}</span>
     </h1>
     <dl v-if="item" class="content-data">
       <dt>Data</dt>
-      <dd>{{UPDATED}}</dd>
+      <dd>{{ UPDATED }}</dd>
       <dt>Tag</dt>
       <dd><Tags :tags="item.tags" class="none" /></dd>
     </dl>
-    <div class="content-body" ref="content-body">
+    <div ref="content-body" class="content-body">
       <slot name="body" />
       <div v-if="item && !$slots.body" v-html="item.body" />
     </div>
@@ -23,7 +23,7 @@ import Tags from '~/components/Tags.vue'
 
 export default {
   components: {
-    Tags,
+    Tags
   },
   props: {
     item: {
@@ -32,23 +32,27 @@ export default {
     }
   },
   computed: {
-    UPDATED() {return moment.unix(this.item.updated || this.item.created).format('YYYY/MM/DD')}
+    UPDATED() {
+      return moment
+        .unix(this.item.updated || this.item.created)
+        .format('YYYY/MM/DD')
+    }
   },
-  methods: {
-    prettyPrint() {
-      const body = this.$refs['content-body']
-      body.querySelectorAll('pre').forEach((pre) => {
-        pre.setAttribute('class', 'prettyprint')
-      })
-      PR.prettyPrint()
-    },
+  watch: {
+    item() {
+      setTimeout(this.prettyPrint, 0)
+    }
   },
   mounted() {
     this.prettyPrint()
   },
-  watch: {
-    item() {
-    setTimeout(this.prettyPrint, 0)
+  methods: {
+    prettyPrint() {
+      const body = this.$refs['content-body']
+      body.querySelectorAll('pre').forEach(pre => {
+        pre.setAttribute('class', 'prettyprint')
+      })
+      PR.prettyPrint()
     }
   }
 }
@@ -67,7 +71,7 @@ export default {
   font-size: 32px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.02);
-  border-bottom: 1px solid rgba(0,0,0,0.04);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .content-data {

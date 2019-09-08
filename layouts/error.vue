@@ -1,7 +1,11 @@
 <template>
   <Content>
-    <template slot="title" v-if="error.statusCode === 404">"{{error.statusCode}}"ページが見つかりません</template>
-    <template slot="title" v-else>"{{error.statusCode}}"エラーが発生しました</template>
+    <template v-if="error.statusCode === 404" slot="title"
+      >"{{ error.statusCode }}"ページが見つかりません</template
+    >
+    <template v-else slot="title"
+      >"{{ error.statusCode }}"エラーが発生しました</template
+    >
   </Content>
 </template>
 
@@ -9,9 +13,11 @@
 import Content from '~/components/Content.vue'
 
 export default {
-  head() {return { title: this.error.statusCode }},
+  head() {
+    return { title: this.error.statusCode }
+  },
   components: {
-    Content,
+    Content
   },
   props: {
     error: {
@@ -22,5 +28,4 @@ export default {
 }
 </script>
 
-<style>
-</style>
+<style></style>

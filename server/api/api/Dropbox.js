@@ -160,7 +160,11 @@ export default class DropboxApi {
           ({
             id,
             headers: { 'dropbox-api-result': resilt },
-            metaData: { created_date: created, last_updated_date: updated, owner: userId },
+            metaData: {
+              created_date: created,
+              last_updated_date: updated,
+              owner: userId
+            },
             body,
             tags
           }) => ({
@@ -178,7 +182,11 @@ export default class DropboxApi {
 
         return Promise.all([
           Firestore.saveEntriesEvents(items, this.name),
-          Firestore.removeItems(items, this.name, undefined, {key: 'userId', option: '==', value: _.get(items, '[0].userId')})
+          Firestore.removeItems(items, this.name, undefined, {
+            key: 'userId',
+            option: '==',
+            value: _.get(items, '[0].userId')
+          })
         ]).then(values => generateResult(values))
       })
       .catch(err => {

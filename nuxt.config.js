@@ -29,9 +29,7 @@ module.exports = {
         content: process.env.npm_package_description || ''
       }
     ],
-    script: [
-      { src: '/prettify.js' }
-    ],
+    script: [{ src: '/prettify.js' }],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
@@ -55,23 +53,25 @@ module.exports = {
       },
       {
         rel: 'stylesheet',
-        href: 'https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/prettify.css'
+        href:
+          'https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/prettify.css'
       },
       {
         rel: 'stylesheet',
-        href: 'https://jmblog.github.io/color-themes-for-google-code-prettify/themes/github-v2.css'
+        href:
+          'https://jmblog.github.io/color-themes-for-google-code-prettify/themes/github-v2.css'
       },
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=M+PLUS+1p'
       }
-    ],
+    ]
   },
   /*
    ** Customize the progress-bar color
    */
   loading: {
-    color: '#3bbfce',
+    color: '#3bbfce'
   },
   /*
    ** Global CSS
@@ -84,10 +84,13 @@ module.exports = {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: process.env.NODE_ENV !== 'development' ? [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
-  ] : [],
+  buildModules:
+    process.env.NODE_ENV !== 'development'
+      ? [
+        // Doc: https://github.com/nuxt-community/eslint-module
+        '@nuxtjs/eslint-module'
+        ]
+      : [],
   /*
    ** Nuxt.js modules
    */
@@ -97,7 +100,7 @@ module.exports = {
     '@nuxtjs/pwa',
     '@nuxtjs/feed',
     '@nuxtjs/sitemap',
-    '@nuxtjs/robots',
+    '@nuxtjs/robots'
   ],
   /*
    ** Axios module configuration
@@ -114,6 +117,10 @@ module.exports = {
     extend(config, ctx) {},
     postcss: {
       plugins: {
+        'postcss-for': {},
+        'postcss-extend': {},
+        'postcss-each-variables': {},
+        'postcss-each': {},
         'postcss-preset-env': {
           stage: 0,
           importFrom: 'assets/css/_variables.css'
@@ -128,9 +135,7 @@ module.exports = {
     }
   },
   generate: {
-    routes: [
-      '/about'
-    ]
+    routes: ['/about']
   },
   feed: [
     {
@@ -161,35 +166,35 @@ module.exports = {
     short_name: process.env.npm_package_name,
     version: 1,
     icons: [
-        {
-            src: "/icons/48.png",
-            type: "image/png",
-            sizes: "48x48"
-        },
-        {
-            src: "/icons/96.png",
-            type: "image/png",
-            sizes: "96x96"
-        },
-        {
-            src: "/icons/192.png",
-            type: "image/png",
-            sizes: "192x192"
-        },
-        {
-            src: "/icons/512.png",
-            type: "image/png",
-            sizes: "512x512"
-        }
+      {
+        src: '/icons/48.png',
+        type: 'image/png',
+        sizes: '48x48'
+      },
+      {
+        src: '/icons/96.png',
+        type: 'image/png',
+        sizes: '96x96'
+      },
+      {
+        src: '/icons/192.png',
+        type: 'image/png',
+        sizes: '192x192'
+      },
+      {
+        src: '/icons/512.png',
+        type: 'image/png',
+        sizes: '512x512'
+      }
     ],
-    start_url: "/",
-    display: "standalone",
-    orientation: "portrait-primary",
-    background_color: "#3bbfce",
-    theme_color: "#3bbfce",
-    description: "とあるフロントエンドの技術日記",
-    dir: "ltr",
-    lang: "ja-jp",
+    start_url: '/',
+    display: 'standalone',
+    orientation: 'portrait-primary',
+    background_color: '#3bbfce',
+    theme_color: '#3bbfce',
+    description: 'とあるフロントエンドの技術日記',
+    dir: 'ltr',
+    lang: 'ja-jp',
     related_applications: [],
     prefer_related_applications: false
   },

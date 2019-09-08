@@ -1,7 +1,11 @@
 <template>
   <ul class="tags">
-    <li v-for="tagName in tags" :key="tagName" :class="{'tagName': true, active: activeId === tagName}">
-      <nuxt-link :to="`/tags/${tagName}`">{{tagName}}</nuxt-link>
+    <li
+      v-for="tagName in tags"
+      :key="tagName"
+      :class="{ tagName: true, active: activeId === tagName }"
+    >
+      <nuxt-link :to="`/tags/${tagName}`">{{ tagName }}</nuxt-link>
     </li>
   </ul>
 </template>
@@ -38,7 +42,7 @@ export default {
     margin-right: 8px;
     display: inline-block;
     padding: 4px 10px;
-    background-color: rgba(255,255,255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
     border-radius: 4px;

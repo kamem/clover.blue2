@@ -1,15 +1,24 @@
 <template>
   <div class="container">
-    <Tags :tags="TAGS" :activeId="$route.params.tagName" />
-    <Entries v-for="entry in ENTRIES" :key="entry.title" :title="entry.title" v-if="entry.items.length" >
-      <component :is="getListComponent(entry)" :items="entry.items" :path="entry.path" />
+    <Tags :tags="TAGS" :active-id="$route.params.tagName" />
+    <Entries
+      v-for="entry in ENTRIES"
+      v-if="entry.items.length"
+      :key="entry.title"
+      :title="entry.title"
+    >
+      <component
+        :is="getListComponent(entry)"
+        :items="entry.items"
+        :path="entry.path"
+      />
     </Entries>
   </div>
 </template>
 
 <script>
 import _ from 'lodash'
-import { mapState, mapActions } from 'vuex'
+import { mapState } from 'vuex'
 import Tags from '~/components/Tags.vue'
 import List from '~/components/List.vue'
 import Entries from '~/components/Entries.vue'
@@ -30,43 +39,53 @@ export default {
       return _.chain([
         ...this.qiitaItems,
         ...this.dropboxItems,
-        ...this.instagramItems])
-      .map('tags').flatten().uniq().value()
+        ...this.instagramItems
+      ])
+        .map('tags')
+        .flatten()
+        .uniq()
+        .value()
     },
-    ENTRIES() {return [
-      {
-        title: 'Qiita',
-        items: this.filteredQiita,
-        path: 'items'
-      },
-      {
-        title: 'Paper',
-        items: this.filteredDropboxItems,
-        path: 'doc'
-      },
-      {
-        title: 'Instagram',
-        items: this.filteredInstagram,
-        path: 'p',
-        component: Photos
-      }
-    ]},
-    
+    ENTRIES() {
+      return [
+        {
+          title: 'Qiita',
+          items: this.filteredQiita,
+          path: 'items'
+        },
+        {
+          title: 'Paper',
+          items: this.filteredDropboxItems,
+          path: 'doc'
+        },
+        {
+          title: 'Instagram',
+          items: this.filteredInstagram,
+          path: 'p',
+          component: Photos
+        }
+      ]
+    },
+
     filteredQiita() {
-      return _.filter(this.qiitaItems, ({ tags }) => _.includes(tags, this.$route.params.tagName))
+      return _.filter(this.qiitaItems, ({ tags }) =>
+        _.includes(tags, this.$route.params.tagName)
+      )
     },
     filteredDropboxItems() {
       return _.chain(this.dropboxItems)
-      .filter(({ tags }) => _.includes(tags, this.$route.params.tagName))
-      .sortBy((item) => {
-        if(this.$route.params.tagName === 'Javascript講座') {
-          return parseInt(item.title.match(/[+-]?\d+/))
-        }
-      })
-      .value()
+        .filter(({ tags }) => _.includes(tags, this.$route.params.tagName))
+        .sortBy(item => {
+          if (this.$route.params.tagName === 'Javascript講座') {
+            return parseInt(item.title.match(/[+-]?\d+/))
+          }
+        })
+        .value()
     },
     filteredInstagram() {
-      return _.filter(this.instagramItems, ({ tags }) => _.includes(tags, this.$route.params.tagName))
+      return _.filter(this.instagramItems, ({ tags }) =>
+        _.includes(tags, this.$route.params.tagName)
+      )
     },
 
     ...mapState({
@@ -78,7 +97,7 @@ export default {
   methods: {
     getListComponent(entry) {
       return entry.component || List
-    },
+    }
   }
 }
 </script>

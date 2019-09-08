@@ -1,10 +1,6 @@
 <template>
   <ul class="photos">
-    <li 
-      v-for="{ thumbnail, uuid } in items"
-      :key="uuid"
-      class="photo"
-    >
+    <li v-for="{ thumbnail, uuid } in items" :key="uuid" class="photo">
       <nuxt-link :to="`/${path}/${uuid}`">
         <img :src="thumbnail" />
       </nuxt-link>
