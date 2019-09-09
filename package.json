@@ -10,7 +10,9 @@
     "start": "cross-env NODE_ENV=production babel-node server/index.js",
     "generate": "nuxt generate",
     "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
-    "test": "jest"
+    "test": "jest",
+    "e2e": "cypress run",
+    "e2e:open": "cypress open"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint"
@@ -29,6 +31,7 @@
     "@nuxtjs/sitemap": "^1.3.0",
     "autoprefixer": "^9.6.1",
     "cross-env": "^5.2.0",
+    "cypress": "^3.4.1",
     "express": "^4.16.4",
     "firebase-admin": "^8.4.0",
     "marked": "^0.7.0",

@@ -3,15 +3,6 @@
     <li v-for="{ title, uuid, tags } in items" :key="uuid" class="list-item">
       <nuxt-link :to="`/${path}/${uuid}`">
         {{ title }}
-        <ul class="list-tags">
-          <li
-            v-for="(tagName, i) in tags"
-            :key="`${uuid}_tag${i}`"
-            class="list-tag"
-          >
-            {{ tagName }}
-          </li>
-        </ul>
       </nuxt-link>
     </li>
   </ul>

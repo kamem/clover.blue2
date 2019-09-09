@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <Tags :tags="TAGS" />
-    <Entries v-for="entry in ENTRIES" :key="entry.title" :title="entry.title">
+    <Entries v-for="entry in ENTRIES" :id="entry.title" :key="entry.title" :title="entry.title">
       <component
         :is="getListComponent(entry)"
         :items="entry.items.slice(0, 8)"
