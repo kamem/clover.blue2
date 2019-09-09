@@ -23,7 +23,7 @@ export default {
 }
 </script>
 
-<style scope>
+<style scoped>
 .photos {
   margin: 0 auto;
   max-width: var(--content--max-width);

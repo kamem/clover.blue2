@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id></id>
     <title>clover.blue</title>
-    <updated>2019-09-03T15:43:51.538Z</updated>
+    <updated>2019-09-08T15:32:36.876Z</updated>
     <generator>https://github.com/nuxt-community/feed-module</generator>
     <link rel="alternate" href="https://clover.blue/feed.xml"/>
-    <subtitle>clover.とあるフロントエンドの技術日記</subtitle>
+    <subtitle>とあるフロントエンドの技術日記</subtitle>
     <category term="blog">
     </category>
     <contributor>
@@ -4311,30 +4311,30 @@ ol li:nth-child(5) {
         <link href="https://clover.blue/doc/emdgxYfxmTWOGK2YC3Bxu">
         </link>
         <updated>2019-07-28T16:51:33.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="-">連想配列の宣言</h2>
+        <content type="html"><![CDATA[<h2 id="連想配列の宣言">連想配列の宣言</h2>
 <pre><code>const empty= {};
 const fruits = {
   red: &#39;りんご&#39;,
   orange: &#39;みかん&#39;,
   yellow: &#39;バナナ&#39;
 };</code></pre><p>※ 左側のred, orange, yellowの部分を添字といいます。</p>
-<h3 id="-">連想配列の取り出し方</h3>
+<h3 id="連想配列の取り出し方">連想配列の取り出し方</h3>
 <ol>
 <li>変数名.添字</li>
 <li>変数名[&#39;添字&#39;]  </li>
 </ol>
 <p>※ 2だと添字部分を変数にできるので 、うまい具合に使い分けましょう。</p>
-<h4 id="-">例</h4>
+<h4 id="例">例</h4>
 <pre><code>console.log(fruits.red); // りんご
 console.log(fruits[&#39;orange&#39;]); // みかん
 
 const color = &#39;yellow&#39;
-console.log(fruits[color]); // バナナ</code></pre><h2 id="-">連想配列と多次元配列を使って整理</h2>
+console.log(fruits[color]); // バナナ</code></pre><h2 id="連想配列と多次元配列を使って整理">連想配列と多次元配列を使って整理</h2>
 <pre><code>const fruits = {
   red: [&#39;りんご&#39;, &#39;さくらんぼ&#39;, &#39;いちご&#39;], // 赤い果物
   orange: [&#39;かき&#39;, &#39;みかん&#39;, &#39;びわ&#39;], // オレンジ色果物
   yellow: [&#39;バナナ&#39;, &#39;パイナップル&#39;, &#39;レモン&#39;] // 黄色い果物
-};</code></pre><h3 id="-">取り出し方</h3>
+};</code></pre><h3 id="取り出し方">取り出し方</h3>
 <pre><code>console.log(fruits.red[0]); // りんご
 console.log(fruits\[&#39;orange&#39;\][1]); // みかん
 
@@ -4349,24 +4349,24 @@ console.log(fruits\[color\][0]); // バナナ</code></pre><p><a href="https://co
         <link href="https://clover.blue/doc/3U8F9TS6WdMfpy4rCXf7g">
         </link>
         <updated>2019-07-28T16:28:12.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="-">配列の宣言</h2>
+        <content type="html"><![CDATA[<h2 id="配列の宣言">配列の宣言</h2>
 <pre><code>const empty = [] //配列を空で定義
-const fruits = [&#39;りんご&#39;, &#39;バナナ&#39;, &#39;パイナップル&#39;, &#39;ぶどう&#39;, &#39;すいか&#39;, &#39;めろん&#39;];</code></pre><h2 id="-">多次元配列</h2>
+const fruits = [&#39;りんご&#39;, &#39;バナナ&#39;, &#39;パイナップル&#39;, &#39;ぶどう&#39;, &#39;すいか&#39;, &#39;めろん&#39;];</code></pre><h2 id="多次元配列">多次元配列</h2>
 <pre><code>const fruits = [
   [&#39;りんご&#39;,&#39;さくらんぼ&#39;,&#39;いちご&#39;], // 赤い果物
   [&#39;かき&#39;,&#39;みかん&#39;,&#39;びわ&#39;], // オレンジ色果物
   [&#39;バナナ&#39;,&#39;パイナップル&#39;,&#39;レモン&#39;] // 黄色い果物
-];</code></pre><h3 id="-">配列の取り出し方</h3>
+];</code></pre><h3 id="配列の取り出し方">配列の取り出し方</h3>
 <p>変数名[配列番号]<br>※最初の配列を0番目として数えていくことに注意。</p>
-<h4 id="-">例</h4>
+<h4 id="例">例</h4>
 <pre><code>console.log(fruits[0]); // りんご
 console.log(fruits[1]); // バナナ
 console.log(fruits[2]); // パイナップル
 console.log(fruits[3]); // ぶどう
 console.log(fruits[4]); // すいか
-console.log(fruits[5]); // めろん</code></pre><h3 id="-">多次元配列の取り出し方</h3>
+console.log(fruits[5]); // めろん</code></pre><h3 id="多次元配列の取り出し方">多次元配列の取り出し方</h3>
 <p>変数名[配列番号][配列番号]<br>※最初の配列を0番目として数えていくことに注意。</p>
-<h4 id="-">例</h4>
+<h4 id="例-1">例</h4>
 <p>console.log(fruits[0][0]); // りんご</p>
 <p>console.log(fruits[1][1]); // みかん</p>
 <p>console.log(fruits[2][0]); // バナナ</p>
@@ -4380,31 +4380,31 @@ console.log(fruits[5]); // めろん</code></pre><h3 id="-">多次元配列の�
         <link href="https://clover.blue/doc/hH5crayIvw3jxLHziXc94">
         </link>
         <updated>2019-07-28T15:57:34.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="-">文字列の長さ</h2>
-<pre><code>&#39;文字列&#39;.length</code></pre><h3 id="-">例</h3>
+        <content type="html"><![CDATA[<h2 id="文字列の長さ">文字列の長さ</h2>
+<pre><code>&#39;文字列&#39;.length</code></pre><h3 id="例">例</h3>
 <pre><code>const name = &#39;kame&#39;;
 console.log(&#39;あなたの名前は&#39; + name.length + &#39;文字です。&#39;);
 
-// 出力結果 : あなたの名前は4文字です。</code></pre><h2 id="-">文字列の部分取り出し</h2>
-<h3 id="1-">1文字取り出す</h3>
+// 出力結果 : あなたの名前は4文字です。</code></pre><h2 id="文字列の部分取り出し">文字列の部分取り出し</h2>
+<h3 id="1文字取り出す">1文字取り出す</h3>
 <pre><code>&#39;文字列&#39;.charAt(n)</code></pre><p>文字列のn番目文字を返します。<br>※ 最初の文字を0番目として数えていくことに注意。</p>
-<h3 id="-">複数の文字を取り出す</h3>
+<h3 id="複数の文字を取り出す">複数の文字を取り出す</h3>
 <pre><code>&#39;文字列&#39;.slice(from, to)</code></pre><p>文字列のfrom番目からto番目までの文字列を返す。<br>※ toを省略した場合は残り全て</p>
-<h2 id="-">文字列を分割し配列にする</h2>
+<h2 id="文字列を分割し配列にする">文字列を分割し配列にする</h2>
 <pre><code>&#39;文字列&#39;.split(sep, limit)</code></pre><p>文字列を sep を区切り文字として分割し、その配列を返します。<br>limit は配列の個数を制限します。</p>
-<h3 id="-">例</h3>
+<h3 id="例-1">例</h3>
 <pre><code>const date = &#39;2013/4/26&#39;;
 console.log(date.split(&#39;/&#39;));
 
 //出力結果 : [&quot;2013&quot;, &quot;4&quot;, &quot;26&quot;]</code></pre><p>配列については下記を見てください。</p>
 <p><a href="http://clover.blue/doc/3U8F9TS6WdMfpy4rCXf7g">[JS講座] 7. 配列（Array）</a></p>
-<h2 id="-">文字列を検索・置換する</h2>
-<h3 id="-">文字列の検索した位置を返す</h3>
+<h2 id="文字列を検索・置換する">文字列を検索・置換する</h2>
+<h3 id="文字列の検索した位置を返す">文字列の検索した位置を返す</h3>
 <pre><code>&#39;文字列&#39;.indexOf(key, form)</code></pre><p>文字列のfrom番目から後方に検索し、最初に key が現れる位置を返します。<br>見つからない場合は-1を返します。<br>※ formを省略した場合は0番目から検索</p>
-<h4 id="-">例</h4>
-<pre><code>&#39;文字列&#39;.indexOf(&#39;文&#39;) // 0</code></pre><h3 id="-">文字列の置換</h3>
+<h4 id="例-2">例</h4>
+<pre><code>&#39;文字列&#39;.indexOf(&#39;文&#39;) // 0</code></pre><h3 id="文字列の置換">文字列の置換</h3>
 <pre><code>&#39;文字列&#39;.replace(key,newString)</code></pre><p>文字列内の key をnewStringに置換する。</p>
-<h4 id="-">例</h4>
+<h4 id="例-3">例</h4>
 <pre><code>&#39;文字列&#39;.replace(&#39;文字&#39;, &#39;A&#39;) // A列</code></pre><p><a href="https://codepen.io/kame/pen/ZgLzNY">[デモ]文字列（String）の操作</a></p>
 ]]></content>
         <published>2018-08-22T09:23:41.000Z</published>
@@ -4416,7 +4416,7 @@ console.log(date.split(&#39;/&#39;));
         </link>
         <updated>2019-07-28T15:42:17.000Z</updated>
         <content type="html"><![CDATA[<p>基本的な考え方として、存在するものが<code>true</code>、存在しないものが <code>false</code></p>
-<h2 id="true-">trueになる</h2>
+<h2 id="trueになる">trueになる</h2>
 <ul>
 <li>true</li>
 <li>1</li>
@@ -4424,7 +4424,7 @@ console.log(date.split(&#39;/&#39;));
 <li>&#39;0&#39;</li>
 <li>&#39;1&#39;</li>
 </ul>
-<h2 id="false-">falseになる</h2>
+<h2 id="falseになる">falseになる</h2>
 <ul>
 <li>false</li>
 <li>0</li>
@@ -4442,15 +4442,15 @@ console.log(date.split(&#39;/&#39;));
         <link href="https://clover.blue/doc/u9rlNkmIhzl9MPKjUmO4R">
         </link>
         <updated>2019-07-28T15:36:07.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="-">条件分岐</h2>
-<h3 id="if-">if文</h3>
+        <content type="html"><![CDATA[<h2 id="条件分岐">条件分岐</h2>
+<h3 id="if文">if文</h3>
 <pre><code>if(条件) {
   console.log(処理...)
-}</code></pre><h4 id="-">例</h4>
+}</code></pre><h4 id="例">例</h4>
 <pre><code>const num = 10
 if(num === 10) {
   console.log(&#39;numは10です&#39;)
-}</code></pre><h3 id="switch-">switch文</h3>
+}</code></pre><h3 id="switch文">switch文</h3>
 <pre><code>switch(変数) {
   case &#39;値1&#39;:
     処理
@@ -4461,7 +4461,7 @@ if(num === 10) {
   default:
     処理3
     break;
-}</code></pre><h4 id="-">例</h4>
+}</code></pre><h4 id="例-1">例</h4>
 <pre><code>const color = &#39;red&#39;
 switch(color) {
   case &#39;red&#39;:
@@ -4474,11 +4474,11 @@ switch(color) {
     console.log(&#39;それ以外の色です&#39;)
     break;
 }</code></pre><p><a href="https://codepen.io/kame/pen/JgbzVZ">[デモ]if文とswitch文</a></p>
-<h2 id="-">繰り返し</h2>
-<h3 id="for-">for文</h3>
+<h2 id="繰り返し">繰り返し</h2>
+<h3 id="for文">for文</h3>
 <pre><code>for(初期化式; 条件式; 変化式) {
   処理
-}</code></pre><h4 id="-">例</h4>
+}</code></pre><h4 id="例-2">例</h4>
 <pre><code>for(let i = 0; i &lt; 10; i++) {
   console.log(i)
 }
@@ -4498,22 +4498,22 @@ for(let i = 0, j = 10; i &lt; 10, j &gt; 0; i++,j--) {
         <link href="https://clover.blue/doc/fvY0kqV9cEQqbCirAwhEw">
         </link>
         <updated>2019-07-28T05:13:40.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="-">型の種類</h2>
-<h3 id="-string-">文字列（String）</h3>
+        <content type="html"><![CDATA[<h2 id="型の種類">型の種類</h2>
+<h3 id="文字列（string）">文字列（String）</h3>
 <pre><code>const str = &#39;こんばんは&#39;;
 const str2 = &quot;test&quot;;
-const numStr = &#39;0&#39;;</code></pre><h4 id="-">補足</h4>
+const numStr = &#39;0&#39;;</code></pre><h4 id="補足">補足</h4>
 <p>シングルクオートで囲まれてる文字列内でシングルクオートを使いたい場合: <code>&#39;\&#39;&#39;</code><br>同様にダブルクオートで囲まれてる文字列内でダブルクオートを使いたい場合 : <code>&quot;\&quot;&quot;</code> </p>
 <p>シングルクオート<code>&#39;</code>、ダブルクオート<code>&quot;</code>どちらも使えますがシングルクオート推奨です。
 HTMLでダブルクオートを使うため、区分けをつけるためです。</p>
 <p><a href="https://codepen.io/kame/pen/XvNoZx">[デモ]型について</a></p>
-<h3 id="-number-">数値（Number）</h3>
+<h3 id="数値（number）">数値（Number）</h3>
 <pre><code>const num = 0;
-const num2 = 1;</code></pre><h3 id="-boolean-">論理値（Boolean）</h3>
+const num2 = 1;</code></pre><h3 id="論理値（boolean）">論理値（Boolean）</h3>
 <pre><code>const bool = true;
-const bool2 = false;</code></pre><h3 id="-array-">配列（Array）</h3>
-<pre><code>const ary = [1, 2, 3];</code></pre><h3 id="-object-">連想配列（Object）</h3>
-<pre><code>const obj = {one: 1, two: 2};</code></pre><h2 id="-">型の変換</h2>
+const bool2 = false;</code></pre><h3 id="配列（array）">配列（Array）</h3>
+<pre><code>const ary = [1, 2, 3];</code></pre><h3 id="連想配列（object）">連想配列（Object）</h3>
+<pre><code>const obj = {one: 1, two: 2};</code></pre><h2 id="型の変換">型の変換</h2>
 <table>
 <thead>
 <tr>
@@ -4534,7 +4534,7 @@ const bool2 = false;</code></pre><h3 id="-array-">配列（Array）</h3>
 <td><code>Boolean(true);</code></td>
 </tr>
 </tbody></table>
-<h4 id="-">例</h4>
+<h4 id="例">例</h4>
 <pre><code>(10).toString() + 10; //1010
 parseInt(&#39;10&#39;) + 10; //20</code></pre><p><a href="https://codepen.io/kame/pen/xvRmje">[デモ]型の変換</a></p>
 ]]></content>
@@ -4546,13 +4546,13 @@ parseInt(&#39;10&#39;) + 10; //20</code></pre><p><a href="https://codepen.io/kam
         <link href="https://clover.blue/doc/tzU6vsD7S2Dg21owgsnv7">
         </link>
         <updated>2019-07-28T04:35:55.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="-">変数の定義</h2>
+        <content type="html"><![CDATA[<h2 id="変数の定義">変数の定義</h2>
 <pre><code>var 変数名 = 初期値;
 const 変数名 = 初期値; // 再代入できない
 let 変数名 = 初期値; // 再代入可能</code></pre><p>基本的にはconstを使いましょう。
 どうしても再代入の必要がある場合はletを使いましょう。</p>
 <p><a href="https://codepen.io/kame/pen/wVoRzW">[デモ]変数の定義</a></p>
-<h2 id="-">演算子</h2>
+<h2 id="演算子">演算子</h2>
 <table>
 <thead>
 <tr>
@@ -4581,7 +4581,7 @@ let 変数名 = 初期値; // 再代入可能</code></pre><p>基本的にはcons
 <td>余り</td>
 </tr>
 </tbody></table>
-<h2 id="-">代入演算子</h2>
+<h2 id="代入演算子">代入演算子</h2>
 <table>
 <thead>
 <tr>
@@ -4606,7 +4606,7 @@ let 変数名 = 初期値; // 再代入可能</code></pre><p>基本的にはcons
 <td><code>a = a * b</code></td>
 </tr>
 </tbody></table>
-<h3 id="i-1-">i に1を足す・引く</h3>
+<h3 id="i-に1を足す・引く">i に1を足す・引く</h3>
 <table>
 <thead>
 <tr>
@@ -4631,7 +4631,7 @@ let 変数名 = 初期値; // 再代入可能</code></pre><p>基本的にはcons
 <td><code>a = a - 1</code></td>
 </tr>
 </tbody></table>
-<h2 id="-">演算子の優先順位</h2>
+<h2 id="演算子の優先順位">演算子の優先順位</h2>
 <p>数学の考え方と一緒。</p>
 <ol>
 <li><code>()</code></li>
@@ -4648,8 +4648,8 @@ let 変数名 = 初期値; // 再代入可能</code></pre><p>基本的にはcons
         <link href="https://clover.blue/doc/k8k1STBpbnDvA38NynAG8">
         </link>
         <updated>2019-07-28T03:24:00.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="-">値の出力</h2>
-<pre><code>console.log(10);</code></pre><h2 id="js-">jsのコメントの書き方</h2>
+        <content type="html"><![CDATA[<h2 id="値の出力">値の出力</h2>
+<pre><code>console.log(10);</code></pre><h2 id="jsのコメントの書き方">jsのコメントの書き方</h2>
 <pre><code>// 一行コメント
 /*
 複数行コメント
@@ -4664,12 +4664,12 @@ let 変数名 = 初期値; // 再代入可能</code></pre><p>基本的にはcons
         <link href="https://clover.blue/doc/YXRgUhh5ZI3E0YG6wlnzP">
         </link>
         <updated>2019-07-28T03:11:23.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="-">タグの取得</h2>
+        <content type="html"><![CDATA[<h2 id="タグの取得">タグの取得</h2>
 <pre><code>document.querySelectorAll(&#39;p&#39;)</code></pre><p>例 CSSのような指定でタグを取得することができます</p>
 <pre><code>const header = document.querySelectorAll(&#39;#header&#39;)
 const item = document.querySelectorAll(&#39;section.item&#39;)</code></pre><p>ページに存在するそのタグが全て入った配列として返ってきます。</p>
-<h2 id="-">タグにイベントを設定する</h2>
-<pre><code>el.addEventListener(&#39;click&#39;, function);</code></pre><h3 id="-">例</h3>
+<h2 id="タグにイベントを設定する">タグにイベントを設定する</h2>
+<pre><code>el.addEventListener(&#39;click&#39;, function);</code></pre><h3 id="例">例</h3>
 <pre><code>const el = document.querySelectorAll(&#39;h1&#39;)
 el[0].addEventListener(&#39;click&#39;, clickEvent);
 
@@ -4677,7 +4677,7 @@ function clickEvent() {
   // クリック時の処理
 }</code></pre><p><code>click</code>部分に入るコードはいくつかあります<br>使用用途が多いものを下記に書きました</p>
 <p><a href="https://codepen.io/kame/pen/aeBQbp">[デモ] タグの取得とイベントの設定</a></p>
-<h3 id="-">マウス</h3>
+<h3 id="マウス">マウス</h3>
 <table>
 <thead>
 <tr>
@@ -4698,7 +4698,7 @@ function clickEvent() {
 <td>ウィンドウをリサイズしたとき</td>
 </tr>
 </tbody></table>
-<h3 id="-">キー</h3>
+<h3 id="キー">キー</h3>
 <table>
 <thead>
 <tr>
@@ -4719,7 +4719,7 @@ function clickEvent() {
 <td>キーを離したとき</td>
 </tr>
 </tbody></table>
-<h3 id="-">フォーム</h3>
+<h3 id="フォーム">フォーム</h3>
 <table>
 <thead>
 <tr>
@@ -4736,7 +4736,7 @@ function clickEvent() {
 <td>フォーカスされたとき</td>
 </tr>
 </tbody></table>
-<h3 id="-">フォーカス</h3>
+<h3 id="フォーカス">フォーカス</h3>
 <table>
 <thead>
 <tr>
@@ -4749,7 +4749,7 @@ function clickEvent() {
 <td>inputの値を変更したとき</td>
 </tr>
 </tbody></table>
-<h3 id="-">ウィンドウ</h3>
+<h3 id="ウィンドウ">ウィンドウ</h3>
 <table>
 <thead>
 <tr>
@@ -4775,43 +4775,43 @@ function clickEvent() {
         <link href="https://clover.blue/doc/GK6BWu10h3E3mT75KOJp5">
         </link>
         <updated>2019-07-28T03:11:13.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="0-1-">0以上1未満の乱数を返す</h2>
-<pre><code>Math.random();</code></pre><h3 id="-">例</h3>
+        <content type="html"><![CDATA[<h2 id="0以上1未満の乱数を返す">0以上1未満の乱数を返す</h2>
+<pre><code>Math.random();</code></pre><h3 id="例">例</h3>
 <pre><code>console.log(Math.random());
 
 /*
 表示結果
 0.40883730142377317のような乱数
-*/</code></pre><h2 id="-">引数の中から一番大きな値を返す</h2>
-<pre><code>Math.max();</code></pre><h3 id="-">例</h3>
+*/</code></pre><h2 id="引数の中から一番大きな値を返す">引数の中から一番大きな値を返す</h2>
+<pre><code>Math.max();</code></pre><h3 id="例-1">例</h3>
 <pre><code>console.log(Math.max(1, 2, 3, 6, 4, 5));
 
 /*
 表示結果
 6
-*/</code></pre><h2 id="-">引数の中から一番小さな値を返す</h2>
-<pre><code>Math.min();</code></pre><h3 id="-">例</h3>
+*/</code></pre><h2 id="引数の中から一番小さな値を返す">引数の中から一番小さな値を返す</h2>
+<pre><code>Math.min();</code></pre><h3 id="例-2">例</h3>
 <pre><code>console.log(Math.min(1, 2, 3, 6, 4, 5));
 
 /*
 表示結果
 1
-*/</code></pre><h2 id="-">小数点以下を切り捨てた整数を返す</h2>
-<pre><code>Math.floor(1.1);</code></pre><h3 id="-">例</h3>
+*/</code></pre><h2 id="小数点以下を切り捨てた整数を返す">小数点以下を切り捨てた整数を返す</h2>
+<pre><code>Math.floor(1.1);</code></pre><h3 id="例-3">例</h3>
 <pre><code>console.log(Math.floor(Math.random() * 3));
 
 /*
 表示結果
 整数 0 〜 2
-*/</code></pre><h2 id="-">小数点以下を繰り上げした整数を返す</h2>
-<pre><code>Math.ceil(0.1);</code></pre><h3 id="-">例</h3>
+*/</code></pre><h2 id="小数点以下を繰り上げした整数を返す">小数点以下を繰り上げした整数を返す</h2>
+<pre><code>Math.ceil(0.1);</code></pre><h3 id="例-4">例</h3>
 <pre><code>console.log(Math.ceil(Math.random() * 3));
 
 /*
 表示結果
 整数 1 〜 3
-*/</code></pre><h2 id="-">小数点以下を四捨五入した整数を返す</h2>
-<pre><code>Math.round(0.1);</code></pre><h3 id="-">例</h3>
+*/</code></pre><h2 id="小数点以下を四捨五入した整数を返す">小数点以下を四捨五入した整数を返す</h2>
+<pre><code>Math.round(0.1);</code></pre><h3 id="例-5">例</h3>
 <pre><code>console.log(Math.round(Math.random() * 3));
 
 /*
@@ -4829,13 +4829,13 @@ function clickEvent() {
         <content type="html"><![CDATA[<p>関数とは、プログラムを別な場所からいつでも呼び出して利用できるように、処理をひとまとめにしたものです。</p>
 <pre><code>function test(引数1,引数2, ...){
   console.log(&#39;処理&#39;);
-}</code></pre><h2 id="-">引数</h2>
+}</code></pre><h2 id="引数">引数</h2>
 <p>関数の外から関数が実行される際に値を渡すことで、<br>関数内で使える変数となります。</p>
 <ul>
 <li>引数は複数指定可能</li>
 <li>引数は入れなくてもよい</li>
 </ul>
-<h3 id="-">例</h3>
+<h3 id="例">例</h3>
 <pre><code>function formula(a, b){
   console.log(a + b);
 }
@@ -4847,7 +4847,7 @@ formula(1000, 150);
 表示結果
 110
 1150
-*/</code></pre><h3 id="-return-">戻り値 （return）</h3>
+*/</code></pre><h3 id="戻り値-（return）">戻り値 （return）</h3>
 <p>returnを使うことで呼び出し元に値を返すことができます。</p>
 <pre><code>function formula(a, b){
   return a + b;
@@ -4860,8 +4860,8 @@ console.log(formula(1000, 150));
 表示結果
 110
 1150
-*/</code></pre><h3 id="-">応用例</h3>
-<h4 id="-return-">指定の数が入った配列をreturnをつかって返す関数</h4>
+*/</code></pre><h3 id="応用例">応用例</h3>
+<h4 id="指定の数が入った配列をreturnをつかって返す関数">指定の数が入った配列をreturnをつかって返す関数</h4>
 <pre><code>function numArray(num){
   //この変数は「numArray関数」内でしか使えない変数です（ローカル変数）
   const array = [];
@@ -4890,10 +4890,10 @@ console.log(array);
         <link href="https://clover.blue/doc/kkJU3gO9jd4soJPX6Mura">
         </link>
         <updated>2019-07-28T03:09:40.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="for-in-">for..in文</h2>
+        <content type="html"><![CDATA[<h2 id="forin文">for..in文</h2>
 <pre><code>for(const color in {red: &#39;赤&#39;, blue: &#39;青&#39; }) {
   console.log(color);
-};</code></pre><h3 id="-">例</h3>
+};</code></pre><h3 id="例">例</h3>
 <pre><code>const fruitsObj = {
   red : [&#39;りんご&#39;,&#39;さくらんぼ&#39;,&#39;いちご&#39;],
   orange : [&#39;かき&#39;,&#39;みかん&#39;,&#39;びわ&#39;],
@@ -4923,15 +4923,15 @@ yellow
         <link href="https://clover.blue/doc/OK1ZSXJe56UlNPHoXLj9M">
         </link>
         <updated>2019-07-28T03:07:48.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="-">配列の長さ</h2>
-<pre><code>([1, 2, 3]).length // 3</code></pre><h3 id="-">例</h3>
+        <content type="html"><![CDATA[<h2 id="配列の長さ">配列の長さ</h2>
+<pre><code>([1, 2, 3]).length // 3</code></pre><h3 id="例">例</h3>
 <pre><code>const fruits  = [&#39;りんご&#39;,&#39;バナナ&#39;,&#39;パイナップル&#39;,&#39;ぶどう&#39;,&#39;すいか&#39;,&#39;めろん&#39;];
 console.log(&#39;果物が&#39; + fruits.length + &#39;個&#39;);
 
-// 出力結果 : 果物が6個</code></pre><h2 id="-">配列の連結</h2>
+// 出力結果 : 果物が6個</code></pre><h2 id="配列の連結">配列の連結</h2>
 <pre><code>([1, 2]).concat([3, 4], [5, 6]);
 
-// [1, 2, 3, 4, 5, 6]</code></pre><h3 id="-">例</h3>
+// [1, 2, 3, 4, 5, 6]</code></pre><h3 id="例-1">例</h3>
 <pre><code>const fruits = [&#39;りんご&#39;];
 const fruits2 = [&#39;バナナ&#39;];
 const fruits3 = [&#39;パイナップル&#39;];
@@ -4941,53 +4941,53 @@ fruits = fruits.concat(fruits2,fruits3,fruits4);
 
 console.log(fruits);
 
-// 出力結果 : [&quot;りんご&quot;, &quot;バナナ&quot;, &quot;パイナップル&quot;, &quot;ぶどう&quot;]</code></pre><h2 id="-">文字列として連結</h2>
-<pre><code>([1, 2, 3]).join(&#39;/&#39;);</code></pre><h3 id="-">例</h3>
+// 出力結果 : [&quot;りんご&quot;, &quot;バナナ&quot;, &quot;パイナップル&quot;, &quot;ぶどう&quot;]</code></pre><h2 id="文字列として連結">文字列として連結</h2>
+<pre><code>([1, 2, 3]).join(&#39;/&#39;);</code></pre><h3 id="例-2">例</h3>
 <pre><code>const date = [2013, 4, 26];
 console.log(date.join(&#39;/&#39;));
 
-// 出力結果 : 2013/4/26</code></pre><h2 id="-">配列の追加・削除・取り出し</h2>
-<h3 id="-">追加</h3>
-<h4 id="-">先頭に追加</h4>
+// 出力結果 : 2013/4/26</code></pre><h2 id="配列の追加・削除・取り出し">配列の追加・削除・取り出し</h2>
+<h3 id="追加">追加</h3>
+<h4 id="先頭に追加">先頭に追加</h4>
 <pre><code>const test = [1, 2]
-test.unshift(3, 4); // [3, 4, 1, 2]</code></pre><h4 id="-">最後に追加</h4>
+test.unshift(3, 4); // [3, 4, 1, 2]</code></pre><h4 id="最後に追加">最後に追加</h4>
 <pre><code>const test = [1, 2]
-test.push(3, 4); // [1, 2, 3, 4]</code></pre><h3 id="-">削除</h3>
-<h4 id="-">先頭を削除</h4>
+test.push(3, 4); // [1, 2, 3, 4]</code></pre><h3 id="削除">削除</h3>
+<h4 id="先頭を削除">先頭を削除</h4>
 <pre><code>const test = [1, 2]
-test.shift(); // [2]</code></pre><h4 id="-">最後を削除</h4>
+test.shift(); // [2]</code></pre><h4 id="最後を削除">最後を削除</h4>
 <pre><code>const test = [1, 2]
-test.pop(); // [1]</code></pre><h3 id="-">削除と追加</h3>
+test.pop(); // [1]</code></pre><h3 id="削除と追加">削除と追加</h3>
 <pre><code>[&#39;a&#39;, &#39;b&#39;].splice(from,len,&#39;追加したい値1&#39;,&#39;追加したい値2&#39;);</code></pre><p>配列のfrom番目からlen個の要素を削除し、代わりにその後に続く値を埋め込みます。</p>
-<h4 id="-">例</h4>
+<h4 id="例-3">例</h4>
 <pre><code>const fruits  = [&#39;りんご&#39;, &#39;バナナ&#39;, &#39;パイナップル&#39;, &#39;ぶどう&#39;, &#39;すいか&#39;, &#39;めろん&#39;];
 fruits.splice(1, 2, &#39;追加したい値1&#39;, &#39;追加したい値2&#39;);
 
 console.log(fruits);
 
-//出力結果 : [&quot;りんご&quot;, &quot;追加したい値1&quot;, &quot;追加したい値2&quot;, &quot;ぶどう&quot;, &quot;すいか&quot;, &quot;めろん&quot;]</code></pre><h3 id="-">取り出し</h3>
+//出力結果 : [&quot;りんご&quot;, &quot;追加したい値1&quot;, &quot;追加したい値2&quot;, &quot;ぶどう&quot;, &quot;すいか&quot;, &quot;めろん&quot;]</code></pre><h3 id="取り出し">取り出し</h3>
 <pre><code>[&#39;a&#39;, &#39;b&#39;].slice(from,to);</code></pre><p>配列のfrom番目からto番目までの要素を抜き出した配列を返します。  </p>
 <ul>
 <li>toを省略した場合は残り全て  </li>
 <li>負の値を指定すると後ろから数える。</li>
 </ul>
-<h4 id="-">例</h4>
+<h4 id="例-4">例</h4>
 <pre><code>const fruits  = [&#39;りんご&#39;, &#39;バナナ&#39;, &#39;パイナップル&#39;, &#39;ぶどう&#39;, &#39;すいか&#39;, &#39;めろん&#39;];
 fruits = fruits.slice(1, 4);
 
 console.log(fruits);
 
-// 出力結果 : [&quot;バナナ&quot;, &quot;パイナップル&quot;, &quot;ぶどう&quot;] </code></pre><h2 id="-">列の並べ替え</h2>
-<h3 id="-">配列をルールにそった配列を返す</h3>
+// 出力結果 : [&quot;バナナ&quot;, &quot;パイナップル&quot;, &quot;ぶどう&quot;] </code></pre><h2 id="列の並べ替え">列の並べ替え</h2>
+<h3 id="配列をルールにそった配列を返す">配列をルールにそった配列を返す</h3>
 <pre><code>([1, 2]).sort([func]（比較関数）);</code></pre><p>配列の要素を文字列表記の辞書順に並べ替える。<br>※ 比較関数を使い任意でルールを指定することができます。</p>
-<h4 id="-">例</h4>
+<h4 id="例-5">例</h4>
 <pre><code>const numArray = [3, 7, 4, 1];
 numArray.sort();
 
 console.log(numArray);
 
-// 出力結果 : [1, 3, 4, 7]</code></pre><h3 id="-">配列を逆順にする</h3>
-<pre><code>([1, 2]).reverse()</code></pre><h4 id="-">例</h4>
+// 出力結果 : [1, 3, 4, 7]</code></pre><h3 id="配列を逆順にする">配列を逆順にする</h3>
+<pre><code>([1, 2]).reverse()</code></pre><h4 id="例-6">例</h4>
 <pre><code>const fruits  = [&#39;りんご&#39;, &#39;バナナ&#39;, &#39;パイナップル&#39;, &#39;ぶどう&#39;, &#39;すいか&#39;, &#39;めろん&#39;];
 fruits.reverse();
 
@@ -5002,7 +5002,7 @@ console.log(fruits);
         <link href="https://clover.blue/doc/zbV7a9fK3CHLW3lZrhons">
         </link>
         <updated>2019-07-28T02:43:48.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="-">論理演算子</h2>
+        <content type="html"><![CDATA[<h2 id="論理演算子">論理演算子</h2>
 <table>
 <thead>
 <tr>
@@ -5042,7 +5042,7 @@ console.log(fruits);
 <td><code>5 &lt;= 5</code></td>
 </tr>
 </tbody></table>
-<h2 id="-">論理演算子</h2>
+<h2 id="論理演算子-1">論理演算子</h2>
 <table>
 <thead>
 <tr>
@@ -5067,7 +5067,7 @@ console.log(fruits);
 <td><code>!(10 === 5)</code></td>
 </tr>
 </tbody></table>
-<h3 id="-">例</h3>
+<h3 id="例">例</h3>
 <pre><code>const num = 10;
 // numが3より大きいかつ、20より小さい値のためtrue
 console.log(num &gt; 3 &amp;&amp; num &lt; 20)
@@ -5154,7 +5154,7 @@ console.log(!(num === 10)) //false</code></pre>]]></content>
         <link href="https://clover.blue/doc/XgnZIcXha3lrBdcbpMTGu">
         </link>
         <updated>2019-06-20T02:41:03.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="flexbox-">flexboxを使う</h2>
+        <content type="html"><![CDATA[<h2 id="flexboxを使う">flexboxを使う</h2>
 <h3 id="html">HTML</h3>
 <pre><code>&lt;ul class=&quot;nav&quot;&gt;
     &lt;li class=&quot;nav_item&quot;&gt;Menu1&lt;/li&gt;
@@ -5199,11 +5199,11 @@ console.log(!(num === 10)) //false</code></pre>]]></content>
 <li>文書構造</li>
 </ul>
 <p>などの意味付けをするマークアップを心がけましょう。</p>
-<h2 id="h-">hタグとは</h2>
+<h2 id="hタグとは">hタグとは</h2>
 <p>h1からh6まで見出しを表すタグ</p>
-<h2 id="p-">pとは</h2>
+<h2 id="pとは">pとは</h2>
 <p>文章、段落を表すタグ</p>
-<pre><code>&lt;p&gt;文章文章文章文章文章&lt;/p&gt;</code></pre><h2 id="ul-ol-li-">ul,ol,liとは</h2>
+<pre><code>&lt;p&gt;文章文章文章文章文章&lt;/p&gt;</code></pre><h2 id="ulolliとは">ul,ol,liとは</h2>
 <p>リストを表すタグ</p>
 <h3 id="ul">ul</h3>
 <p>順番が関係ないリスト</p>
@@ -5226,7 +5226,7 @@ console.log(!(num === 10)) //false</code></pre>]]></content>
 <pre><code>&lt;ol&gt;
   &lt;li&gt;リスト1&lt;/li&gt;
   &lt;li&gt;リスト3&lt;/li&gt;
-&lt;/ol&gt;</code></pre><h2 id="dl-">dlとは</h2>
+&lt;/ol&gt;</code></pre><h2 id="dlとは">dlとは</h2>
 <p>定義付きリスト</p>
 <pre><code>&lt;dl&gt;
   &lt;dt&gt;タイトル1&lt;/dt&gt;
@@ -5235,19 +5235,19 @@ console.log(!(num === 10)) //false</code></pre>]]></content>
   &lt;dd&gt;タイトル2に対しての定義・説明&lt;/dd&gt;
   &lt;dd&gt;タイトル2に対しての定義・説明 複数かける&lt;/dd&gt;
   &lt;dd&gt;タイトル2に対しての定義・説明 複数かける&lt;/dd&gt;
-&lt;/dl&gt;</code></pre><h2 id="figure-figucaption-">figure,figucaptionとは</h2>
+&lt;/dl&gt;</code></pre><h2 id="figurefigucaptionとは">figure,figucaptionとは</h2>
 <p>写真や図などをいれるタグ</p>
 <pre><code>&lt;figure&gt;
   &lt;img src=&quot;http://www.htmq.com/images/kaeru.gif&quot; width=&quot;100&quot; height=&quot;100&quot;&gt;
   &lt;figucaption&gt;画像の説明&lt;/figucaption&gt;
-&lt;/figure&gt;</code></pre><h2 id="em-strong-">em, strongとは</h2>
+&lt;/figure&gt;</code></pre><h2 id="em-strongとは">em, strongとは</h2>
 <p>emが強調を表す
 strongが強い重要性を表す</p>
 <pre><code>&lt;p&gt;emは&lt;em&gt;強調&lt;/em&gt;を表す&lt;/p&gt;
-&lt;p&gt;emは&lt;strong&gt;重要性&lt;/strong&gt;を表す&lt;/p&gt;</code></pre><h2 id="small-">smallとは</h2>
+&lt;p&gt;emは&lt;strong&gt;重要性&lt;/strong&gt;を表す&lt;/p&gt;</code></pre><h2 id="smallとは">smallとは</h2>
 <p>責・警告・法的規制・著作権・ライセンス要件などの注釈や細目を表す際に使う</p>
-<pre><code>&lt;p&gt;&lt;small&gt;&amp;copy; copyright&lt;/small&gt;&lt;/p&gt;</code></pre><p>## </p>
-<h2 id="div-span-">div,spanとは</h2>
+<pre><code>&lt;p&gt;&lt;small&gt;&amp;copy; copyright&lt;/small&gt;&lt;/p&gt;</code></pre><h2 id=""></h2>
+<h2 id="divspanとは">div,spanとは</h2>
 <p>特に意味をもたないタグ</p>
 <h3 id="div">div</h3>
 <p>タグをグループ化したいときなどに使う</p>
@@ -5260,22 +5260,22 @@ strongが強い重要性を表す</p>
 &lt;/div&gt;</code></pre><h3 id="span">span</h3>
 <p>divとは違い改行されない。
 em、strongなどとは違い特に意味がないがデザイン的に囲う必要がある場合などに使う</p>
-<pre><code>&lt;p&gt;&lt;span&gt;特に意味&lt;/span&gt;がないけど囲いたい&lt;/p&gt;</code></pre><h2 id="header-main-footer-">header,main,footerについて</h2>
-<h3 id="header-">headerとは</h3>
+<pre><code>&lt;p&gt;&lt;span&gt;特に意味&lt;/span&gt;がないけど囲いたい&lt;/p&gt;</code></pre><h2 id="headermainfooterについて">header,main,footerについて</h2>
+<h3 id="headerとは">headerとは</h3>
 <p>ページのタイトルや、グローバルナビゲーションなど、ページのheaderとなる部分を囲う</p>
 <pre><code>&lt;header&gt;
   &lt;h1&gt;タイトル&lt;/h1&gt;
-&lt;/header&gt;</code></pre><h3 id="main-">mainとは</h3>
+&lt;/header&gt;</code></pre><h3 id="mainとは">mainとは</h3>
 <p>ページのmainとなる部分を囲う</p>
 <pre><code>&lt;main&gt;
   &lt;h2&gt;メインタイトル&lt;/h2&gt;
   &lt;p&gt;メインのコンテンツの内容&lt;/p&gt;
-&lt;/main&gt;</code></pre><h3 id="footer-">footerとは</h3>
+&lt;/main&gt;</code></pre><h3 id="footerとは">footerとは</h3>
 <p>コピーライトなどページのfooterとなる部分を囲う</p>
 <pre><code>&lt;footer&gt;
   &lt;p&gt;&lt;small&gt;&amp;copy; copyright kame&lt;/small&gt;&lt;/p&gt;
-&lt;/footer&gt;</code></pre><h2 id="section-article-">section,articleについて</h2>
-<h3 id="section-">sectionとは</h3>
+&lt;/footer&gt;</code></pre><h2 id="sectionarticleについて">section,articleについて</h2>
+<h3 id="sectionとは">sectionとは</h3>
 <p>見出しタグが表している範囲を囲う</p>
 <pre><code>&lt;section&gt;
   &lt;h2&gt;section,articleについて&lt;/h2&gt;
@@ -5284,7 +5284,7 @@ em、strongなどとは違い特に意味がないがデザイン的に囲う必
     &lt;h3&gt;sectionとは&lt;/h3&gt;
     &lt;p&gt;見出しタグが表している範囲を囲う&lt;/p&gt;
   &lt;/section&gt;
-&lt;/section&gt;</code></pre><h3 id="article-">articleについて</h3>
+&lt;/section&gt;</code></pre><h3 id="articleについて">articleについて</h3>
 <p>記事部分を囲う</p>
 <pre><code>&lt;main&gt;
   &lt;article&gt;
@@ -5331,7 +5331,7 @@ em、strongなどとは違い特に意味がないがデザイン的に囲う必
         <link href="https://clover.blue/doc/I6Px9EHfvkC3FKmuZZgh6">
         </link>
         <updated>2018-10-05T07:00:38.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="q1-0-return-">Q1. 引数に数字を入れ実行すると、0から引数で渡した数字までの「奇数・偶数で分けた連想配列」を戻り値（return）で返す関数を作る</h2>
+        <content type="html"><![CDATA[<h2 id="q1-引数に数字を入れ実行すると、0から引数で渡した数字までの「奇数・偶数で分けた連想配列」を戻り値（return）で返す関数を作る">Q1. 引数に数字を入れ実行すると、0から引数で渡した数字までの「奇数・偶数で分けた連想配列」を戻り値（return）で返す関数を作る</h2>
 <pre><code>console.log(numObj(100));
 
 /*
@@ -5341,7 +5341,7 @@ em、strongなどとは違い特に意味がないがデザイン的に囲う必
   even: [0, 2, 6, 8, ...100]
 };
 */</code></pre><p>上記が成り立つようなnumObj関数を作りましょう。</p>
-<h2 id="q2-1-2-1-2-return-">Q2 第1引数に配列、第2引数に文字列を渡すと、 第1引数の配列の最後に第2引数で渡した文字列を追加すした配列を戻り値（return）で返す関数を作る</h2>
+<h2 id="q2-第1引数に配列、第2引数に文字列を渡すと、-第1引数の配列の最後に第2引数で渡した文字列を追加すした配列を戻り値（return）で返す関数を作る">Q2 第1引数に配列、第2引数に文字列を渡すと、 第1引数の配列の最後に第2引数で渡した文字列を追加すした配列を戻り値（return）で返す関数を作る</h2>
 <pre><code>var fruits = [&#39;りんご&#39;, &#39;めろん&#39;, &#39;ぶどう&#39;];
 
 console.log(addFruit(fruits, &#39;すいか&#39;));
@@ -5350,27 +5350,27 @@ console.log(addFruit(fruits, &#39;すいか&#39;));
 [結果]
 [&#39;りんご&#39;, &#39;めろん&#39;, &#39;ぶどう&#39;, &#39;すいか&#39;]
 */</code></pre><p>上記が成り立つようなaddFruit関数を作りましょう。</p>
-<h2 id="q3-1-return-">Q3 引数に数字を入れると、1からその引数までの乱数を戻り値（return）で返す関数を作る</h2>
+<h2 id="q3-引数に数字を入れると、1からその引数までの乱数を戻り値（return）で返す関数を作る">Q3 引数に数字を入れると、1からその引数までの乱数を戻り値（return）で返す関数を作る</h2>
 <pre><code>console.log(randomNum(10));
 
 /*
 [結果]
 10までの乱数
 */</code></pre><p>上記が成り立つようなrandomNum関数を作りましょう。</p>
-<h2 id="q4-min-max-2-min-max-return-">Q4. 引数に(min, max)のような 2つ数字を入れ、minからmaxまでの整数の乱数を戻り値（return）で返す関数を作る</h2>
+<h2 id="q4-引数にmin-maxのような-2つ数字を入れ、minからmaxまでの整数の乱数を戻り値（return）で返す関数を作る">Q4. 引数に(min, max)のような 2つ数字を入れ、minからmaxまでの整数の乱数を戻り値（return）で返す関数を作る</h2>
 <pre><code>console.log(randomRangeNum(3, 10));
 
 /*
 [結果]
 3 〜 10までの乱数
 */</code></pre><p>上記が成り立つようなrandomRangeNum関数を作りましょう。</p>
-<h2 id="q5-5-">Q5. 引数に文字列を入れ、5文字以上の場合は、４文字までとし、以降を…とする関数をつくる</h2>
+<h2 id="q5-引数に文字列を入れ、5文字以上の場合は、４文字までとし、以降をとする関数をつくる">Q5. 引数に文字列を入れ、5文字以上の場合は、４文字までとし、以降を…とする関数をつくる</h2>
 <pre><code>/*
 [結果]
 4文字の場合そのまま、&quot;aaaa&quot; &gt; &quot;aaaa&quot;
 5文字の場合、&quot;12345&quot; &gt; &quot;1234...&quot;
 6文字の場合、&quot;123456&quot; &gt; &quot;1234...&quot;
-*/</code></pre><h2 id="q6-return-">Q6. 引数に数字を渡すと、金額表記の文字列に変換して戻り値（return）で返す関数を作る</h2>
+*/</code></pre><h2 id="q6-引数に数字を渡すと、金額表記の文字列に変換して戻り値（return）で返す関数を作る">Q6. 引数に数字を渡すと、金額表記の文字列に変換して戻り値（return）で返す関数を作る</h2>
 <pre><code>console.log(getMoneyFormat(1000000))
 
 // [結果] 1,000,000</code></pre><p>上記が成り立つようなgetMoneyFormat関数を作りましょう。</p>
@@ -5395,33 +5395,33 @@ console.log(addFruit(fruits, &#39;すいか&#39;));
         <link href="https://clover.blue/doc/IDWlqBOJ1PRYWKA3ybVCc">
         </link>
         <updated>2018-09-12T07:54:40.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="-">基礎を理解したあとに勉強したいこと</h2>
-<h3 id="ecmascript6-">ECMAScript6を学ぶ</h3>
+        <content type="html"><![CDATA[<h2 id="基礎を理解したあとに勉強したいこと">基礎を理解したあとに勉強したいこと</h2>
+<h3 id="ecmascript6を学ぶ">ECMAScript6を学ぶ</h3>
 <ul>
 <li>[ES6(ES2015)チートシート](<a href="https://qiita.com/morrr/items/883cb902ccda37e840bc">https://qiita.com/morrr/items/883cb902ccda37e840bc</a>)</li>
 </ul>
-<h3 id="-">タスクランナーを学ぶ</h3>
+<h3 id="タスクランナーを学ぶ">タスクランナーを学ぶ</h3>
 <ul>
 <li>[webpack 4 入門](<a href="https://qiita.com/soarflat/items/28bf799f7e0335b68186">https://qiita.com/soarflat/items/28bf799f7e0335b68186</a>)</li>
 </ul>
-<h3 id="jquery-">jQueryの概要を掴む</h3>
+<h3 id="jqueryの概要を掴む">jQueryの概要を掴む</h3>
 <ul>
 <li>[jQueryとは？jQueryの基本的な使い方まとめ【初心者向け】](<a href="https://handywebdesign.net/2017/09/jquery-for-beginner/">https://handywebdesign.net/2017/09/jquery-for-beginner/</a>)</li>
 </ul>
-<h3 id="lodash-">lodashを使ってみる</h3>
+<h3 id="lodashを使ってみる">lodashを使ってみる</h3>
 <ul>
 <li><a href="http://matsukaz.hatenablog.com/entry/2014/04/09/082410"><a href="http://matsukaz.hatenablog.com/entry/2014/04/09/082410">lodashでよく使う関数まとめ</a></a></li>
 </ul>
-<h3 id="-">フレームワークを使う</h3>
+<h3 id="フレームワークを使う">フレームワークを使う</h3>
 <ul>
 <li>[出来る限り短く説明するReact.js入門](<a href="https://qiita.com/rgbkids/items/8ec309d1bf5e203d2b19">https://qiita.com/rgbkids/items/8ec309d1bf5e203d2b19</a>)</li>
 </ul>
-<h3 id="-">オブジェクト指向を学ぶ</h3>
+<h3 id="オブジェクト指向を学ぶ">オブジェクト指向を学ぶ</h3>
 <ul>
 <li>[Javascriptのオブジェクト指向についての基本まとめ](<a href="https://qiita.com/katsunory/items/3b07b924280f18b11040">https://qiita.com/katsunory/items/3b07b924280f18b11040</a>)</li>
 <li>[【全てのJSのオブジェクト指向嫌いマンに告ぐ】ES6のclass構文が素敵すぎて鼻水が止まらない](<a href="https://qiita.com/yas-nyan/items/3783ad8839072022ad97">https://qiita.com/yas-nyan/items/3783ad8839072022ad97</a>)</li>
 </ul>
-<h3 id="-">関数について</h3>
+<h3 id="関数について">関数について</h3>
 <ul>
 <li>[【JavaScript】即時関数, 無名関数, クロージャについて](<a href="https://qiita.com/To_BB/items/bf4d6384f7dce47bb216">https://qiita.com/To_BB/items/bf4d6384f7dce47bb216</a>)</li>
 </ul>
@@ -5434,10 +5434,10 @@ console.log(addFruit(fruits, &#39;すいか&#39;));
         <link href="https://clover.blue/doc/t6CJar2C8SOKx6yDWXpkL">
         </link>
         <updated>2018-09-07T02:03:30.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="q1-0-50-50-0-">Q1. 配列に0〜50、50〜0の配列を入れてそれぞれ表示。</h2>
+        <content type="html"><![CDATA[<h2 id="q1-配列に0〜50、50〜0の配列を入れてそれぞれ表示。">Q1. 配列に0〜50、50〜0の配列を入れてそれぞれ表示。</h2>
 <p>for文を使ってください</p>
 <pre><code>// \[結果\] [1, 2, 3, ...]
-// \[結果\] [50, 49, 48, ...]</code></pre><h2 id="q2-">Q2. 下記の果物が入った配列を、一つづつ表示。</h2>
+// \[結果\] [50, 49, 48, ...]</code></pre><h2 id="q2-下記の果物が入った配列を、一つづつ表示。">Q2. 下記の果物が入った配列を、一つづつ表示。</h2>
 <pre><code>var fruits  = [&#39;りんご&#39;, &#39;バナナ&#39;, &#39;パイナップル&#39;, &#39;ぶどう&#39;, &#39;すいか&#39;, &#39;めろん&#39;];
 
 /*
@@ -5448,7 +5448,7 @@ console.log(addFruit(fruits, &#39;すいか&#39;));
 ぶどう
 すいか
 めろん
-*/</code></pre><h2 id="q3-">Q3. 下記の連想配列を、下記の結果になるように表示。</h2>
+*/</code></pre><h2 id="q3-下記の連想配列を、下記の結果になるように表示。">Q3. 下記の連想配列を、下記の結果になるように表示。</h2>
 <pre><code>var fruits = {
   red : [&#39;りんご&#39;, &#39;さくらんぼ&#39;, &#39;いちご&#39;],
   orange : [&#39;かき&#39;, &#39;みかん&#39;, &#39;びわ&#39;],
@@ -5460,10 +5460,10 @@ console.log(addFruit(fruits, &#39;すいか&#39;));
 red(りんご・さくらんぼ・いちご)
 orange(かき・みかん・びわ)
 yellow(バナナ・パイナップル・レモン)
-*/</code></pre><h2 id="q4-2013-4-26-">Q4. 文字列’2013/4/26&#39;を[年,月,日]のような配列に分割し、配列の最後に[曜日,時間]を追加（[年,月,日,曜日,時間]）</h2>
+*/</code></pre><h2 id="q4-文字列2013426を年月日のような配列に分割し、配列の最後に曜日時間を追加（年月日曜日時間）">Q4. 文字列’2013/4/26&#39;を[年,月,日]のような配列に分割し、配列の最後に[曜日,時間]を追加（[年,月,日,曜日,時間]）</h2>
 <pre><code>var date = &#39;2013/4/26&#39;;
 
-// \[結果\] [2014, 4, 26, &#39;金&#39;, &#39;10:10&#39;]</code></pre><h2 id="q5-0-100-">Q5 0〜100の奇数・偶数をそれぞれ連想配列に分けて表示</h2>
+// \[結果\] [2014, 4, 26, &#39;金&#39;, &#39;10:10&#39;]</code></pre><h2 id="q5-0〜100の奇数・偶数をそれぞれ連想配列に分けて表示">Q5 0〜100の奇数・偶数をそれぞれ連想配列に分けて表示</h2>
 <p>for文を使ってnumオブジェクトに奇数、偶数をいれてください</p>
 <pre><code>var num = {};
 
@@ -5482,21 +5482,21 @@ yellow(バナナ・パイナップル・レモン)
         <link href="https://clover.blue/doc/H1lBoBxdjJW7uhAagLGer">
         </link>
         <updated>2018-08-23T06:23:18.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="q1-">Q1. 自分の名前の文字数を下記のような形式で表示</h2>
+        <content type="html"><![CDATA[<h2 id="q1-自分の名前の文字数を下記のような形式で表示">Q1. 自分の名前の文字数を下記のような形式で表示</h2>
 <pre><code>var name = &#39;自分の名前&#39;;
 
-// [結果] 自分の名前はx文字です。</code></pre><h2 id="q2-1-">Q2. 自分の名前の1文字ごとに全角スペースをあけた文字を表示</h2>
+// [結果] 自分の名前はx文字です。</code></pre><h2 id="q2-自分の名前の1文字ごとに全角スペースをあけた文字を表示">Q2. 自分の名前の1文字ごとに全角スペースをあけた文字を表示</h2>
 <p>for文を使ってそれぞれの文字の間に全角スペースをあけてください。</p>
 <pre><code>var name = &#39;自分の名前&#39;;
 
-// [結果] 自　分　の　名　前</code></pre><h2 id="q3-100px-px-">Q3. 文字列’100px’から’px’を覗いた値を表示</h2>
-<h2 id="q4-100px-50px-">Q4. 文字列’100px’ と 文字列 &#39;50px&#39;を変数に入れてそれぞれを足した合計の値を表示</h2>
+// [結果] 自　分　の　名　前</code></pre><h2 id="q3-文字列100pxからpxを覗いた値を表示">Q3. 文字列’100px’から’px’を覗いた値を表示</h2>
+<h2 id="q4-文字列100px-と-文字列-50pxを変数に入れてそれぞれを足した合計の値を表示">Q4. 文字列’100px’ と 文字列 &#39;50px&#39;を変数に入れてそれぞれを足した合計の値を表示</h2>
 <pre><code>var num1 = &#39;100px&#39;;
 var num2 = &#39;50px&#39;;
 
 //変数num1とnum2を数値に変換してたしてください
 
-// [結果] 150</code></pre><h2 id="q5-">Q5. 数値が入った変数を、金額表記の文字列に変換してください</h2>
+// [結果] 150</code></pre><h2 id="q5-数値が入った変数を、金額表記の文字列に変換してください">Q5. 数値が入った変数を、金額表記の文字列に変換してください</h2>
 <pre><code>var num1 = 1000000;
 
 // 後ろから3桁区切りにしてください
@@ -5510,15 +5510,15 @@ var num2 = &#39;50px&#39;;
         <link href="https://clover.blue/doc/WouTPbeF8wtazDx0WYq30">
         </link>
         <updated>2018-08-23T05:35:40.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="q1-1-100-">Q1. 1から100までの偶数だけ表示する</h2>
+        <content type="html"><![CDATA[<h2 id="q1-1から100までの偶数だけ表示する">Q1. 1から100までの偶数だけ表示する</h2>
 <p>for文を使ってください</p>
-<h2 id="q2-100-10-30-70-90-">Q2. 100までの数字のうち、10〜30, 70〜90の場合のみ表示する</h2>
+<h2 id="q2-100までの数字のうち、10〜30-70〜90の場合のみ表示する">Q2. 100までの数字のうち、10〜30, 70〜90の場合のみ表示する</h2>
 <p>for文とif文を使ってください</p>
-<h2 id="q3-1-100-3-">Q3. 1から100までの3の倍数だけ表示する</h2>
+<h2 id="q3-1から100までの3の倍数だけ表示する">Q3. 1から100までの3の倍数だけ表示する</h2>
 <p>for文を使ってください</p>
-<h2 id="q4-1900-2100-">Q4. 1900年から2100年までの閏年の年をすべて表示する</h2>
+<h2 id="q4-1900年から2100年までの閏年の年をすべて表示する">Q4. 1900年から2100年までの閏年の年をすべて表示する</h2>
 <p>for文を使ってください </p>
-<h3 id="-">閏年とは</h3>
+<h3 id="閏年とは">閏年とは</h3>
 <p>4で割れる100で割れない。または、400で割れる</p>
 ]]></content>
         <published>2018-08-23T04:47:26.000Z</published>
@@ -5532,15 +5532,15 @@ var num2 = &#39;50px&#39;;
         <content type="html"><![CDATA[<p><img src="https://scontent-nrt1-1.cdninstagram.com/vp/5aeb3f7c1cc57dc309e29e3dbbb8bff6/5C1341BC/t51.2885-15/e15/37642934_266269404156929_5551537201956782080_n.jpg" alt=""></p>
 <p>最近ブログを書いていなかったのでここからまた色々とはじめたいなと思います。
 ブログも作り直したので心機一転です。</p>
-<h2 id="-">ブログのこだわりポイント</h2>
-<h3 id="-1">ポイント1</h3>
+<h2 id="ブログのこだわりポイント">ブログのこだわりポイント</h2>
+<h3 id="ポイント1">ポイント1</h3>
 <p>CMSを使わずにシンプルに。
 QiitaとDropbox PaperのApiを使って記事を取得する。</p>
-<h3 id="-2">ポイント2</h3>
+<h3 id="ポイント2">ポイント2</h3>
 <p>記事をlocalstorageにいれておくので遷移がはやい。</p>
 <p>前回アクセスしたときから更新がなかった記事は、前回取得しておいたのを使うようにしました。</p>
-<h2 id="-">技術的な話</h2>
-<h3 id="-">主な構成</h3>
+<h2 id="技術的な話">技術的な話</h2>
+<h3 id="主な構成">主な構成</h3>
 <p><a href="https://github.com/kamem/clover.blue">https://github.com/kamem/clover.blue</a></p>
 <ul>
 <li>サーバー<ul>

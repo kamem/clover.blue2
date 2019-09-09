@@ -17,3 +17,26 @@
   --card-red-color: #ff2660;
   --card-clover-color: var(--main-color);
 }
+
+/* card */
+:root {
+  --mark-size: 35px;
+  --back-bg: var(--main-color);
+  --back-color: rgba(255, 255, 255, 0.3);
+  --back-image: linear-gradient(
+      45deg,
+      var(--back-color) 25%,
+      transparent 25%,
+      transparent 75%,
+      var(--back-color) 75%,
+      var(--back-color)
+    ),
+    linear-gradient(
+      -45deg,
+      var(--back-color) 25%,
+      transparent 25%,
+      transparent 75%,
+      var(--back-color) 75%,
+      var(--back-color)
+    );
+}

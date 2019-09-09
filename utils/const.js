@@ -1,3 +1,6 @@
+import _ from 'lodash'
+import { createCards } from '~/utils/card'
+
 export const jsonld = {
   '@context': 'http://schema.org',
   '@type': 'website',
@@ -25,3 +28,24 @@ export const jsonld = {
     name: process.env.AUTHOR_NAME
   }
 }
+
+export const MARKS = [
+  {
+    mark: '♠',
+    name: 'spade'
+  },
+  {
+    mark: '♥',
+    name: 'heart'
+  },
+  {
+    mark: '♦',
+    name: 'dia'
+  },
+  {
+    mark: '♣',
+    name: 'clover'
+  }
+]
+
+export const ALL_CARDS = createCards(_.map(MARKS, 'name'), [1, 13])

@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<style scope>
+<style scoped>
 .tags:not(.none) {
   margin: 0 auto;
   max-width: var(--content--max-width);

@@ -2,15 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id></id>
     <title>clover.blue</title>
-    <updated>2019-09-03T15:43:51.727Z</updated>
+    <updated>2019-09-08T15:32:36.969Z</updated>
     <generator>https://github.com/nuxt-community/feed-module</generator>
     <link rel="alternate" href="https://clover.blue/feed.xml"/>
-    <subtitle>clover.とあるフロントエンドの技術日記</subtitle>
+    <subtitle>とあるフロントエンドの技術日記</subtitle>
     <category term="blog">
     </category>
     <contributor>
         <uri>https://clover.blue/</uri>
     </contributor>
+    <entry>
+        <title type="html"/>
+        <id>B2JgI33A57Z</id>
+        <link href="https://clover.blue/p/B2JgI33A57Z">
+        </link>
+        <updated>2019-09-08T11:25:31.000Z</updated>
+        <content type="html"><![CDATA[#食べ物 釣ってきた魚でサバの味噌煮と
+アジのなめろう作ったー]]></content>
+        <published>2019-09-08T11:25:31.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"/>
+        <id>B2HCr-vAuOu</id>
+        <link href="https://clover.blue/p/B2HCr-vAuOu">
+        </link>
+        <updated>2019-09-07T12:29:42.000Z</updated>
+        <content type="html"><![CDATA[#食べ物 自分で釣ってきてカツオの生姜焼きにしたー!
+さばくのはじめてでちょっと失敗しちゃいましたがおいしい。]]></content>
+        <published>2019-09-07T12:29:42.000Z</published>
+    </entry>
     <entry>
         <title type="html"/>
         <id>B1aU2xVA2Wq</id>

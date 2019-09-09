@@ -32,7 +32,7 @@ export default {
 }
 </script>
 
-<style scope>
+<style scoped>
 .list {
   margin: 0 auto;
   max-width: var(--content--max-width);

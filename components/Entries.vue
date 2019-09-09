@@ -16,7 +16,7 @@ export default {
 }
 </script>
 
-<style scope>
+<style scoped>
 .entry-item {
   max-width: calc(var(--content--max-width) + 7.5%);
   margin: 0 auto 24px;

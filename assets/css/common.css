@@ -101,7 +101,6 @@ html {
   }
 
   & li {
-    list-style-type: none;
     margin-left: 10%;
     border: none;
     &:last-child {
@@ -117,6 +116,7 @@ html {
   }
 
   & ul li {
+    list-style-type: none;
     box-sizing: border-box;
     &:before {
       content: '';

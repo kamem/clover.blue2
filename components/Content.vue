@@ -58,7 +58,7 @@ export default {
 }
 </script>
 
-<style scope>
+<style scoped>
 .content {
   padding-bottom: 1px;
 }

@@ -18,7 +18,6 @@ import Tags from '~/components/Tags.vue'
 import List from '~/components/List.vue'
 import Entries from '~/components/Entries.vue'
 import Photos from '~/components/Photos.vue'
-import Card from '~/components/Cards/Card.vue'
 import { jsonld } from '~/utils/const'
 
 export default {
@@ -29,8 +28,7 @@ export default {
     Tags,
     List,
     Entries,
-    Photos,
-    Card
+    Photos
   },
   computed: {
     TAGS() {
