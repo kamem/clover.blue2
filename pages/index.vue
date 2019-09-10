@@ -19,8 +19,10 @@ import List from '~/components/List.vue'
 import Entries from '~/components/Entries.vue'
 import Photos from '~/components/Photos.vue'
 import { jsonld } from '~/utils/const'
+import { fetch } from '~/utils/ssrFetch'
 
 export default {
+  fetch,
   head() {
     return { title: process.env.TITLE, titleTemplate: '' }
   },

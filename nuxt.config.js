@@ -5,15 +5,20 @@ const feedCacheTime = 1000 * 60 * 15
 const siteUrl = `https://${process.env.npm_package_name}/`
 
 module.exports = {
-  mode: 'spa',
+  mode: 'universal',
   server: {
     port: 1341
   },
   serverMiddleware: [{ path: '/api', handler: '~/server/api/' }],
   env: {
+    APP_ENV: process.env.NODE_ENV,
     TITLE: process.env.npm_package_name,
     DESCRIPTION: process.env.npm_package_description,
-    AUTHOR_NAME: process.env.npm_package_author_name
+    AUTHOR_NAME: process.env.npm_package_author_name,
+    HOST: {
+      development: 'http://localhost:1341/',
+      production: 'https://clover.blue/'
+    }
   },
   /*
    ** Headers of the page

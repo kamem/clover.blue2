@@ -8,8 +8,10 @@ import { mapState } from 'vuex'
 import Content from '~/components/Content.vue'
 import { generateDescription } from '~/utils/format.js'
 import { jsonld } from '~/utils/const'
+import { fetch } from '~/utils/ssrFetch'
 
 export default {
+  fetch,
   head() {
     return { title: this.ITEM.title }
   },

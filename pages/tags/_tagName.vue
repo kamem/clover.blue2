@@ -23,8 +23,10 @@ import Tags from '~/components/Tags.vue'
 import List from '~/components/List.vue'
 import Entries from '~/components/Entries.vue'
 import Photos from '~/components/Photos.vue'
+import { fetch } from '~/utils/ssrFetch'
 
 export default {
+  fetch,
   head() {
     return { title: this.$route.params.tagName }
   },

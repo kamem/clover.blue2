@@ -14,23 +14,6 @@ import Header from '../components/Header'
 export default {
   components: {
     Header
-  },
-  mounted() {
-    this.$nextTick(() => {
-      this.$nuxt.$loading.start()
-      Promise.all([
-        this.getQiita(),
-        this.getDropbox(),
-        this.getInstagram()
-      ]).then(() => this.$nuxt.$loading.finish())
-    })
-  },
-  methods: {
-    ...mapActions({
-      getQiita: 'api/getQiita',
-      getDropbox: 'api/getDropbox',
-      getInstagram: 'api/getInstagram'
-    })
   }
 }
 </script>
