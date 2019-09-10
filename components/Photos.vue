@@ -32,8 +32,8 @@ export default {
 }
 
 .photo {
-  margin: 8px 8px 0 8px;
-  width: 140px;
+  margin: 4px 4px 0;
+  width: calc(33% - 8px);
   display: inline-block;
   & img {
     width: 100%;
@@ -49,6 +49,10 @@ export default {
     &:hover {
       opacity: 0.8;
     }
+  }
+
+  @media all and (max-width: 420px) {
+    width: calc(50% - 8px);
   }
 }
 </style>
