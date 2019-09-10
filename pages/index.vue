@@ -4,7 +4,7 @@
     <Entries v-for="entry in ENTRIES" :id="entry.title" :key="entry.title" :title="entry.title">
       <component
         :is="getListComponent(entry)"
-        :items="entry.items.slice(0, 8)"
+        :items="entry.items.slice(0, entry.num)"
         :path="entry.path"
       />
     </Entries>
@@ -23,8 +23,15 @@ import { fetch } from '~/utils/ssrFetch'
 
 export default {
   fetch,
-  head() {
-    return { title: process.env.TITLE, titleTemplate: '' }
+  head: {
+    title: process.env.TITLE,
+    titleTemplate: '',
+    meta: [
+      { hid:'og:title', property: 'og:title', content: process.env.TITLE },
+      { hid:'og:type', property: 'og:type', content: 'website' },
+      { hid:'og:url', property: 'og:url', content: process.env.HOST },
+      { hid:'og:description', property: 'og:description', content: process.env.DESCRIPTION },
+    ]
   },
   components: {
     Tags,
@@ -49,18 +56,21 @@ export default {
         {
           title: 'Qiita',
           items: this.qiitaItems,
-          path: 'items'
+          path: 'items',
+          num: 5
         },
         {
           title: 'Paper',
           items: this.dropboxItems,
-          path: 'doc'
+          path: 'doc',
+          num: 5
         },
         {
           title: 'Instagram',
           items: this.instagramItems,
           path: 'p',
-          component: Photos
+          component: Photos,
+          num: 6
         }
       ]
     },

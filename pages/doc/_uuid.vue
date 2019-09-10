@@ -13,7 +13,15 @@ import { fetch } from '~/utils/ssrFetch'
 export default {
   fetch,
   head() {
-    return { title: this.ITEM.title }
+    return {
+      title: this.ITEM.title,
+      meta: [
+        { hid:'og:title', property: 'og:title', content: this.TITLE },
+        { hid:'og:type', property: 'og:type', content: 'article' },
+        { hid:'og:url', property: 'og:url', content: `${process.env.HOST}/doc/${this.$route.params.uuid}` },
+        { hid:'og:description', property: 'og:description', content: this.DESCRIPTION },
+      ]
+    }
   },
   components: {
     Content
@@ -21,6 +29,12 @@ export default {
   computed: {
     ITEM() {
       return _.find(this.dropboxItems, { uuid: this.$route.params.uuid }) || {}
+    },
+    TITLE() {
+      return `${this.ITEM.title} - ${process.env.TITLE}`
+    },
+    DESCRIPTION() {
+      return generateDescription(this.ITEM.body || '')
     },
     ...mapState({
       dropboxItems: state => state.api.dropboxItems
@@ -33,8 +47,8 @@ export default {
         '@type': 'WebPage',
         '@id': `https://${process.env.TITLE}/doc/${this.$route.params.uuid}`
       },
-      headline: this.ITEM.title,
-      description: generateDescription(this.ITEM.body || ''),
+      headline: this.TITLE,
+      description: this.DESCRIPTION,
       datePublished: new Date(this.ITEM.created * 1000),
       dateModified: new Date(this.ITEM.updated * 1000),
       author: {
