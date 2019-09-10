@@ -127,15 +127,11 @@ module.exports = {
         'postcss-each-variables': {},
         'postcss-each': {},
         'postcss-preset-env': {
-          stage: 0,
-          importFrom: 'assets/css/_variables.css'
+          stage: 0
         }
       },
       preset: {
-        autoprefixer: {
-          // browsers: ["last 2 versions", "ie >= 11", "Android >= 4"],
-          // grid: true
-        }
+        autoprefixer: {}
       }
     }
   },
