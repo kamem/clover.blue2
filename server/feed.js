@@ -41,11 +41,16 @@ export const instagram = async feed => {
   const instagramItems = await getItems('instagram', 'created')
 
   instagramItems.forEach(item => {
+    const link = `${domain}p/${item.uuid}`
     feed.addItem({
-      title: item.title,
+      title: item.body,
       id: item.uuid,
-      link: `${domain}p/${item.uuid}`,
-      content: item.body,
+      link,
+      content: `<![CDATA[
+        <a href="${link}">
+          <img src="${item.uuid}" />
+        </a>
+      ]]>`,
       published: new Date(item.created * 1000),
       date: new Date(item.created * 1000)
     })
