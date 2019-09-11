@@ -19,21 +19,29 @@ import { jsonld } from '~/utils/const'
 import { fetch } from '~/utils/ssrFetch'
 
 export default {
+  components: {
+    Content
+  },
   fetch,
   head() {
     return {
       title: this.ITEM.body,
       meta: [
-        { hid:'og:title', property: 'og:title', content: this.TITLE },
-        { hid:'og:type', property: 'og:type', content: 'article' },
-        { hid:'og:url', property: 'og:url', content: `${process.env.HOST}/p/${this.$route.params.uuid}` },
-        { hid:'og:image', property: 'og:image', content: this.ITEM.img },
-        { hid:'og:description', property: 'og:description', content: this.TITLE },
+        { hid: 'og:title', property: 'og:title', content: this.TITLE },
+        { hid: 'og:type', property: 'og:type', content: 'article' },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: `${process.env.HOST}/p/${this.$route.params.uuid}`
+        },
+        { hid: 'og:image', property: 'og:image', content: this.ITEM.img },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.TITLE
+        }
       ]
     }
-  },
-  components: {
-    Content
   },
   computed: {
     ITEM() {

@@ -26,15 +26,15 @@ import Photos from '~/components/Photos.vue'
 import { fetch } from '~/utils/ssrFetch'
 
 export default {
-  fetch,
-  head() {
-    return { title: this.$route.params.tagName }
-  },
   components: {
     Tags,
     List,
     Entries,
     Photos
+  },
+  fetch,
+  head() {
+    return { title: this.$route.params.tagName }
   },
   computed: {
     TAGS() {

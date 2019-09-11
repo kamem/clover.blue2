@@ -1,7 +1,12 @@
 <template>
   <div class="container">
     <Tags :tags="TAGS" />
-    <Entries v-for="entry in ENTRIES" :id="entry.title" :key="entry.title" :title="entry.title">
+    <Entries
+      v-for="entry in ENTRIES"
+      :id="entry.title"
+      :key="entry.title"
+      :title="entry.title"
+    >
       <component
         :is="getListComponent(entry)"
         :items="entry.items.slice(0, entry.num)"
@@ -22,22 +27,26 @@ import { jsonld } from '~/utils/const'
 import { fetch } from '~/utils/ssrFetch'
 
 export default {
-  fetch,
-  head: {
-    title: process.env.TITLE,
-    titleTemplate: '',
-    meta: [
-      { hid:'og:title', property: 'og:title', content: process.env.TITLE },
-      { hid:'og:type', property: 'og:type', content: 'website' },
-      { hid:'og:url', property: 'og:url', content: process.env.HOST },
-      { hid:'og:description', property: 'og:description', content: process.env.DESCRIPTION },
-    ]
-  },
   components: {
     Tags,
     List,
     Entries,
     Photos
+  },
+  fetch,
+  head: {
+    title: process.env.TITLE,
+    titleTemplate: '',
+    meta: [
+      { hid: 'og:title', property: 'og:title', content: process.env.TITLE },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:url', property: 'og:url', content: process.env.HOST },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: process.env.DESCRIPTION
+      }
+    ]
   },
   computed: {
     TAGS() {
