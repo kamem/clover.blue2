@@ -28,13 +28,15 @@ export default {
   margin: 0 auto;
   max-width: var(--content--max-width);
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
   position: relative;
 }
 
 .photo {
   margin: 4px 4px 0;
   width: calc(33% - 8px);
-  display: inline-block;
   & img {
     width: 100%;
     display: block;
@@ -52,7 +54,11 @@ export default {
   }
 
   @media all and (max-width: 420px) {
-    width: calc(50% - 8px);
+    margin: 0;
+    width: 50%;
+    & img {
+      border-radius: 0;
+    }
   }
 }
 </style>
