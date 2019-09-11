@@ -1,6 +1,6 @@
 export const fetch = async ({ store }) => {
   if (store.getters['api/qiitaItems'].length) {
-      return
+    return
   }
   await Promise.all([
     store.dispatch('api/getQiita'),
