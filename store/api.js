@@ -8,7 +8,7 @@ export const state = () => ({
 })
 
 export const getters = {
-  qiitaItems: (state) => state.qiitaItems
+  qiitaItems: state => state.qiitaItems
 }
 
 export const mutations = {
