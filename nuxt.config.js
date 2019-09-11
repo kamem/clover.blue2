@@ -1,10 +1,14 @@
-import create, { instagram } from './server/feed'
-import routes from './server/sitemap'
+const server = process.env.NODE_ENV === 'development' ? 'server' : 'server_dist'
+const create = require(`./${server}/feed`).default
+const instagram = require(`./${server}/feed`).instagram
+const routes = require(`./${server}/sitemap`).default
 
 const feedCacheTime = 1000 * 60 * 15
 
+const PORT = process.env.PORT || 1341
+
 const HOST = {
-  development: 'http://localhost:1341',
+  development: `http://localhost:${PORT}`,
   production: 'https://clover.blue'
 }
 
@@ -13,9 +17,9 @@ const baseURL = HOST[process.env.NODE_ENV]
 module.exports = {
   mode: 'universal',
   server: {
-    port: process.env.PORT || 1341
+    port: PORT
   },
-  serverMiddleware: [{ path: '/api', handler: '~/server/api/' }],
+  serverMiddleware: [{ path: '/api', handler: `~/${server}/api/` }],
   env: {
     APP_ENV: process.env.NODE_ENV,
     TITLE: process.env.npm_package_name,
@@ -31,13 +35,13 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:card', content: 'summary' },
       {
         hid: 'description',
         name: 'description',
         content: process.env.npm_package_description || ''
       },
-      { property: 'og:image', content: `${baseURL}/icons/512.png` },
+      { property: 'og:image', content: `${baseURL}/icons/512.png` }
     ],
     script: [{ src: '/prettify.js' }],
     link: [
