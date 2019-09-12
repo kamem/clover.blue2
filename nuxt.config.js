@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 1341
 
 const HOST = {
   development: `http://localhost:${PORT}`,
-  production: 'https://clover.blue'
+  production: process.env.npm_package_host
 }
 
 const baseURL = HOST[process.env.NODE_ENV]
@@ -26,6 +26,9 @@ module.exports = {
     DESCRIPTION: process.env.npm_package_description,
     AUTHOR_NAME: process.env.npm_package_author_name,
     HOST: baseURL
+  },
+  router: {
+    middleware: ['wwwRedirect']
   },
   /*
    ** Headers of the page

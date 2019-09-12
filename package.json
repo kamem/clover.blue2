@@ -1,5 +1,6 @@
 {
   "name": "clover.blue",
+  "host": "https://clover.blue",
   "version": "1.0.0",
   "description": "とあるフロントエンドの技術日記",
   "author": "kamem",
