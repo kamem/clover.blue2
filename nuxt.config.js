@@ -49,13 +49,13 @@ module.exports = {
       {
         rel: 'alternate',
         type: 'application/atom+xml',
-        href: '/feed.xml',
+        href: '/feed/weblog.xml',
         title: 'Qiita And Paper'
       },
       {
         rel: 'alternate',
         type: 'application/atom+xml',
-        href: '/instagram.xml',
+        href: '/feed/photos.xml',
         title: 'Instagram'
       },
       {
@@ -149,17 +149,17 @@ module.exports = {
   },
   feed: [
     {
-      path: '/feed.xml', // The route to your feed.
+      path: '/feed/weblog.xml', // The route to your feed.
       create,
       cacheTime: feedCacheTime, // How long should the feed be cached
-      type: 'atom1' // Can be: rss2, atom1, json1
+      type: 'rss2' // Can be: rss2, atom1, json1
     },
 
     {
-      path: '/instagram.xml',
+      path: '/feed/photos.xml',
       create: instagram,
       cacheTime: feedCacheTime,
-      type: 'atom1'
+      type: 'rss2'
     }
   ],
   sitemap: {

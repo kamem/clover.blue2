@@ -3,7 +3,6 @@ import { getItems } from './api/api/Firestere'
 const domain = `https://${process.env.npm_package_name}/`
 const options = {
   title: process.env.npm_package_name,
-  link: `${domain}feed.xml`,
   description: process.env.npm_package_description
 }
 
@@ -19,7 +18,7 @@ const createFeedObject = (item, link) => {
 }
 
 export default async feed => {
-  feed.options = options
+  feed.options = Object.assign({}, options, { link: `${domain}feed/weblog.xml` })
   const qiitaItems = await getItems('qiita')
   qiitaItems.forEach(item => {
     feed.addItem(createFeedObject(item, `${domain}items/${item.uuid}`))
@@ -37,7 +36,7 @@ export default async feed => {
 }
 
 export const instagram = async feed => {
-  feed.options = options
+  feed.options = Object.assign({}, options, { link: `${domain}feed/photos.xml` })
   const instagramItems = await getItems('instagram', 'created')
 
   instagramItems.forEach(item => {
@@ -46,11 +45,7 @@ export const instagram = async feed => {
       title: item.body,
       id: item.uuid,
       link,
-      content: `<![CDATA[
-        <a href="${link}">
-          <img src="${item.uuid}" />
-        </a>
-      ]]>`,
+      content: `<figure><a href="${link}"><img src="${item.thumbnail}" /></a></figure>`,
       published: new Date(item.created * 1000),
       date: new Date(item.created * 1000)
     })

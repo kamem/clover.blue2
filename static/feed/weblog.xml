@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id></id>
-    <title>clover.blue</title>
-    <updated>2019-09-11T16:58:19.236Z</updated>
-    <generator>https://github.com/nuxt-community/feed-module</generator>
-    <link rel="alternate" href="https://clover.blue/feed.xml"/>
-    <subtitle>とあるフロントエンドの技術日記</subtitle>
-    <category term="blog">
-    </category>
-    <contributor>
-        <uri>https://clover.blue/</uri>
-    </contributor>
-    <entry>
-        <title type="html"><![CDATA[DropboxのWebhookのurlをGoogle Cloud Functionsで作ったapiを使ってやってみる]]></title>
-        <id>9a566dedd3b22129bffc</id>
-        <link href="https://clover.blue/items/9a566dedd3b22129bffc">
-        </link>
-        <updated>2018-11-19T16:15:30.000Z</updated>
-        <content type="html"><![CDATA[
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>clover.blue</title>
+        <link>https://clover.blue/feed/weblog.xml</link>
+        <description>とあるフロントエンドの技術日記</description>
+        <lastBuildDate>Thu, 12 Sep 2019 00:16:31 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <generator>https://github.com/nuxt-community/feed-module</generator>
+        <category>blog</category>
+        <item>
+            <title><![CDATA[DropboxのWebhookのurlをGoogle Cloud Functionsで作ったapiを使ってやってみる]]></title>
+            <link>https://clover.blue/items/9a566dedd3b22129bffc</link>
+            <guid>https://clover.blue/items/9a566dedd3b22129bffc</guid>
+            <pubDate>Mon, 19 Nov 2018 16:15:30 GMT</pubDate>
+            <content:encoded><![CDATA[
 <h2>
 <span id="google-cloud-functions" class="fragment"></span><a href="#google-cloud-functions"><i class="fa fa-link"></i></a>Google Cloud Functions</h2>
 
@@ -124,16 +120,14 @@
 
 <p>実際にDropbox PaperのWebhookを使いたかったのですが。<br>
 Paperには対応していないのですかね。。</p>
-]]></content>
-        <published>2018-11-19T16:15:30.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[スクロールによってCSSを変更し、パララックス効果を実現するjQueryプラグイン]]></title>
-        <id>1c49f329356e80bf3ba2</id>
-        <link href="https://clover.blue/items/1c49f329356e80bf3ba2">
-        </link>
-        <updated>2018-02-03T11:48:28.000Z</updated>
-        <content type="html"><![CDATA[<p>スクロールによってさまざまなCSSを変更することができます。<br>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[スクロールによってCSSを変更し、パララックス効果を実現するjQueryプラグイン]]></title>
+            <link>https://clover.blue/items/1c49f329356e80bf3ba2</link>
+            <guid>https://clover.blue/items/1c49f329356e80bf3ba2</guid>
+            <pubDate>Sat, 03 Feb 2018 11:48:28 GMT</pubDate>
+            <content:encoded><![CDATA[<p>スクロールによってさまざまなCSSを変更することができます。<br>
 またプラグインのオプションをdata属性に設定できるjs（<a href="https://github.com/kamem/jquery.dataExtend" rel="nofollow noopener" target="_blank">jquery.dataExtend</a>）を使うとdata属性に指定するだけで効果を与えることができます。</p>
 
 <p>以前も同じようなプラグインを作ってはいたのですが、複雑になりがちだったため<br>
@@ -599,16 +593,14 @@ $(el).parallaxFit({
     start: '#main',
     end: 'lastScrollPosition',
 </pre></div></div>
-]]></content>
-        <published>2015-12-13T07:27:43.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MacからWindows10に移行したときになるべく違和感がなくなるような設定]]></title>
-        <id>db0b7970d5bde16ff6e7</id>
-        <link href="https://clover.blue/items/db0b7970d5bde16ff6e7">
-        </link>
-        <updated>2017-11-07T07:16:56.000Z</updated>
-        <content type="html"><![CDATA[<p>最近Surfaceを買いました。</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[MacからWindows10に移行したときになるべく違和感がなくなるような設定]]></title>
+            <link>https://clover.blue/items/db0b7970d5bde16ff6e7</link>
+            <guid>https://clover.blue/items/db0b7970d5bde16ff6e7</guid>
+            <pubDate>Tue, 07 Nov 2017 07:16:56 GMT</pubDate>
+            <content:encoded><![CDATA[<p>最近Surfaceを買いました。</p>
 
 <p>久し振りにWindowsを使ったという事もあって、<br>
 Macの感覚でそのまま使おうとしたら、操作にかなり違和感があってなかなか大変でした。</p>
@@ -864,16 +856,14 @@ username:x:1000:1000:"",,,:/mnt/c/Users/username/BoW:/bin/bash<br>
 <p>いろいろ設定しなおしちゃいましたが、<br>
 ようやくMacと併用して使ってもそこまで違和感なく使えるようになったと思います。<br>
 また今後変更した点などあれば追記していきたいと思います。</p>
-]]></content>
-        <published>2017-10-15T17:11:08.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[jQueryPluginを作ってnpmで公開するまでの流れと構成]]></title>
-        <id>dabc1bca30486283cc75</id>
-        <link href="https://clover.blue/items/dabc1bca30486283cc75">
-        </link>
-        <updated>2017-04-01T15:16:42.000Z</updated>
-        <content type="html"><![CDATA[<p>最近はがっつりjQueryでーって言うのも少なくなってきているかもしれないですが</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[jQueryPluginを作ってnpmで公開するまでの流れと構成]]></title>
+            <link>https://clover.blue/items/dabc1bca30486283cc75</link>
+            <guid>https://clover.blue/items/dabc1bca30486283cc75</guid>
+            <pubDate>Sat, 01 Apr 2017 15:16:42 GMT</pubDate>
+            <content:encoded><![CDATA[<p>最近はがっつりjQueryでーって言うのも少なくなってきているかもしれないですが</p>
 
 <p>細かいものを作ったときにプラグインとしてまとめておくとあとあと<br>
 自分でもnpm installして使うーってことができるので良いかなと思ってます。</p>
@@ -1078,16 +1068,14 @@ package.jsonに記述したバージョンと同じバージョンのタグを�
 <ul>
 <li>テストの実装</li>
 </ul>
-]]></content>
-        <published>2017-03-27T14:10:45.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[スムーズにスクロールするjQueryプラグイン]]></title>
-        <id>c94c4dc75516b36f3766</id>
-        <link href="https://clover.blue/items/c94c4dc75516b36f3766">
-        </link>
-        <updated>2017-03-26T06:50:03.000Z</updated>
-        <content type="html"><![CDATA[<ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[スムーズにスクロールするjQueryプラグイン]]></title>
+            <link>https://clover.blue/items/c94c4dc75516b36f3766</link>
+            <guid>https://clover.blue/items/c94c4dc75516b36f3766</guid>
+            <pubDate>Sun, 26 Mar 2017 06:50:03 GMT</pubDate>
+            <content:encoded><![CDATA[<ul>
 <li>Github: <a href="https://github.com/kamem/jquery.smoothPageScroll" class="autolink" rel="nofollow noopener" target="_blank">https://github.com/kamem/jquery.smoothPageScroll</a>
 </li>
 </ul>
@@ -1273,16 +1261,14 @@ $('a[href^="#"]').smoothPageScroll({
     isLeftScroll: true
 });
 </pre></div></div>
-]]></content>
-        <published>2016-07-31T10:34:36.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[jQuery Pluginをパラメーターの代わりにdata属性で代用できるプラグイン]]></title>
-        <id>56a9be7163cbe30ca409</id>
-        <link href="https://clover.blue/items/56a9be7163cbe30ca409">
-        </link>
-        <updated>2017-03-26T06:46:17.000Z</updated>
-        <content type="html"><![CDATA[<ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[jQuery Pluginをパラメーターの代わりにdata属性で代用できるプラグイン]]></title>
+            <link>https://clover.blue/items/56a9be7163cbe30ca409</link>
+            <guid>https://clover.blue/items/56a9be7163cbe30ca409</guid>
+            <pubDate>Sun, 26 Mar 2017 06:46:17 GMT</pubDate>
+            <content:encoded><![CDATA[<ul>
 <li>Github: <a href="https://github.com/kamem/jquery.pluginFromDataAttr" class="autolink" rel="nofollow noopener" target="_blank">https://github.com/kamem/jquery.pluginFromDataAttr</a>
 </li>
 </ul>
@@ -1351,16 +1337,14 @@ $(function(){
 </pre></div></div>
 </li>
 </ol>
-]]></content>
-        <published>2017-03-26T06:11:43.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Herokuでgulpのwebserverをそのまま使う]]></title>
-        <id>260856b65e7dadde7039</id>
-        <link href="https://clover.blue/items/260856b65e7dadde7039">
-        </link>
-        <updated>2017-01-24T02:18:04.000Z</updated>
-        <content type="html"><![CDATA[<p>自分でサクッとherokuで一旦公開したいときに<br>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Herokuでgulpのwebserverをそのまま使う]]></title>
+            <link>https://clover.blue/items/260856b65e7dadde7039</link>
+            <guid>https://clover.blue/items/260856b65e7dadde7039</guid>
+            <pubDate>Tue, 24 Jan 2017 02:18:04 GMT</pubDate>
+            <content:encoded><![CDATA[<p>自分でサクッとherokuで一旦公開したいときに<br>
 いつも迷うのでメモしておこうと思います。</p>
 
 <p>Herokuでアプリを作っている、Herokuにpcからログインできる状態を前提にしています。</p>
@@ -1445,16 +1429,14 @@ Local credentials cleared.
 <li><a href="http://qiita.com/unarist/items/500ccf266655c09fd877" id="reference-a96684e5c5c9e7b86242">Heroku上でもgulp-webserverを使う</a></li>
 <li><a href="http://qiita.com/yuku_t/items/8fd7551dc0418bf59aae" id="reference-ff1f0fa537be45e6e6f5">sprocketsではなくnodejsを使うRailsアプリをHerokuにデプロイする方法</a></li>
 </ul>
-]]></content>
-        <published>2017-01-07T08:20:31.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[タグをランダム配置＆サイズにしてなるべく重ならないように配置するjQueryプラグイン]]></title>
-        <id>3537f69f632969aef7a7</id>
-        <link href="https://clover.blue/items/3537f69f632969aef7a7">
-        </link>
-        <updated>2016-10-05T09:18:43.000Z</updated>
-        <content type="html"><![CDATA[<p>ランダム配置を作った時に上手く行くときはきれいな形になるのだけど<br>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[タグをランダム配置＆サイズにしてなるべく重ならないように配置するjQueryプラグイン]]></title>
+            <link>https://clover.blue/items/3537f69f632969aef7a7</link>
+            <guid>https://clover.blue/items/3537f69f632969aef7a7</guid>
+            <pubDate>Wed, 05 Oct 2016 09:18:43 GMT</pubDate>
+            <content:encoded><![CDATA[<p>ランダム配置を作った時に上手く行くときはきれいな形になるのだけど<br>
 失敗するとすごい重なっちゃってあんまり綺麗に見えないことがあります・・。</p>
 
 <p>なので極力重ならないようにしてくれる仕組みを作ってみました。</p>
@@ -1526,16 +1508,14 @@ adjustment: 0
 <li>tryCount {Number} 配置が重なっていた時に再度ランダムをやり直す回数</li>
 <li>adjustment {Number} 重なり具合をどのぐらい許容するか</li>
 </ul>
-]]></content>
-        <published>2014-06-07T01:35:47.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[スムーズにスクロールするjQuery プラグイン]]></title>
-        <id>c20247e8dc92bd295c14</id>
-        <link href="https://clover.blue/items/c20247e8dc92bd295c14">
-        </link>
-        <updated>2016-07-31T10:36:03.000Z</updated>
-        <content type="html"><![CDATA[<p>新しく今プラグインを作りなおしました。<br>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[スムーズにスクロールするjQuery プラグイン]]></title>
+            <link>https://clover.blue/items/c20247e8dc92bd295c14</link>
+            <guid>https://clover.blue/items/c20247e8dc92bd295c14</guid>
+            <pubDate>Sun, 31 Jul 2016 10:36:03 GMT</pubDate>
+            <content:encoded><![CDATA[<p>新しく今プラグインを作りなおしました。<br>
 <a href="http://qiita.com/kamem/items/c94c4dc75516b36f3766" class="autolink" id="reference-f54a6b027c6ff1853090">http://qiita.com/kamem/items/c94c4dc75516b36f3766</a></p>
 
 <ul>
@@ -1653,16 +1633,14 @@ $('a[href^="#"]').smoothAnchor({
 <li>isLoadedSmoothQuestionMark: ?を使っての座標指定での移動を許可するか（?100,100）</li>
 <li>isClickStop: {Boolean} スムーズスクロール時にクリックした場合に処理を停止するか</li>
 </ul>
-]]></content>
-        <published>2014-07-12T14:38:56.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[パララックス効果を再現するjQueryプラグイン「jquery.parallax」]]></title>
-        <id>25fbb1ca779da9155800</id>
-        <link href="https://clover.blue/items/25fbb1ca779da9155800">
-        </link>
-        <updated>2015-12-13T07:40:29.000Z</updated>
-        <content type="html"><![CDATA[<p><strong>新しく使いやすく作り直しました。</strong> <br>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[パララックス効果を再現するjQueryプラグイン「jquery.parallax」]]></title>
+            <link>https://clover.blue/items/25fbb1ca779da9155800</link>
+            <guid>https://clover.blue/items/25fbb1ca779da9155800</guid>
+            <pubDate>Sun, 13 Dec 2015 07:40:29 GMT</pubDate>
+            <content:encoded><![CDATA[<p><strong>新しく使いやすく作り直しました。</strong> <br>
 <a href="http://qiita.com/kamem/items/1c49f329356e80bf3ba2" id="reference-b35d05966e8e518c18e6">スクロールによってCSSを変更し、パララックス効果を実現するjQueryプラグイン</a><br>
 この記事のものとは使い方が少し異なりますが、同じ機能をもっています。</p>
 
@@ -1850,16 +1828,14 @@ $(window).parallax({
     contentStartLinePercent: 30
 });
 </pre></div></div>
-]]></content>
-        <published>2014-05-19T15:15:39.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[サイトを作り始める時の初期準備 2015]]></title>
-        <id>09968c62a5113289939f</id>
-        <link href="https://clover.blue/items/09968c62a5113289939f">
-        </link>
-        <updated>2015-10-18T14:15:10.000Z</updated>
-        <content type="html"><![CDATA[<p>サイトを作り始めると時にいつも「どうしようかなぁ・・。」と迷って<br>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[サイトを作り始める時の初期準備 2015]]></title>
+            <link>https://clover.blue/items/09968c62a5113289939f</link>
+            <guid>https://clover.blue/items/09968c62a5113289939f</guid>
+            <pubDate>Sun, 18 Oct 2015 14:15:10 GMT</pubDate>
+            <content:encoded><![CDATA[<p>サイトを作り始めると時にいつも「どうしようかなぁ・・。」と迷って<br>
 とりあえずその時の最善だと思うものを用意してやってはいたのですが、</p>
 
 <p>そろそろ「ちゃんと考えなおそう！」と思いたち<br>
@@ -2103,16 +2079,14 @@ webpackとbabelを使わない場合は拡張子を<code>js</code>にしてく�
 <p>最近ではpostcssなど流行っているので試してみようかと思ったのですが<br>
 いま現状postcssを使おうと思うとエディタ側が対応しきれていない状況なのでちょっと使いづらいかなぁと思いました。<br>
 シンプルだし早いッて噂なので試してみたいなぁとは思っているのですが今後に期待です！</p>
-]]></content>
-        <published>2015-10-12T06:29:49.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[data-ga属性をつけるとGoogle Analyticsのクリックイベントを取得してくれるJavascript]]></title>
-        <id>7e426fcb88857c12f9df</id>
-        <link href="https://clover.blue/items/7e426fcb88857c12f9df">
-        </link>
-        <updated>2015-04-28T16:06:13.000Z</updated>
-        <content type="html"><![CDATA[<p>クリックイベントをつけようと思った時に、どうやってつけようかなぁ。とかいつも迷っていたので汎用的に使えるものを作ってみました。</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[data-ga属性をつけるとGoogle Analyticsのクリックイベントを取得してくれるJavascript]]></title>
+            <link>https://clover.blue/items/7e426fcb88857c12f9df</link>
+            <guid>https://clover.blue/items/7e426fcb88857c12f9df</guid>
+            <pubDate>Tue, 28 Apr 2015 16:06:13 GMT</pubDate>
+            <content:encoded><![CDATA[<p>クリックイベントをつけようと思った時に、どうやってつけようかなぁ。とかいつも迷っていたので汎用的に使えるものを作ってみました。</p>
 
 <p>プラグイン化するほどでもないかなぁってことで、ソースのみ書いちゃってます。</p>
 
@@ -2187,16 +2161,14 @@ webpackとbabelを使わない場合は拡張子を<code>js</code>にしてく�
     );
 })();
 </pre></div></div>
-]]></content>
-        <published>2015-04-28T16:06:13.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[sassでz-indexをまとめて管理しておく＆配列順に番号をつけてくれる関数]]></title>
-        <id>323d2b35216b748e590c</id>
-        <link href="https://clover.blue/items/323d2b35216b748e590c">
-        </link>
-        <updated>2015-04-26T10:08:18.000Z</updated>
-        <content type="html"><![CDATA[<p><code>z-index</code>を使っていると、この要素ってどのぐらいの値なんだっけ・・。と迷うことがあったり<br>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[sassでz-indexをまとめて管理しておく＆配列順に番号をつけてくれる関数]]></title>
+            <link>https://clover.blue/items/323d2b35216b748e590c</link>
+            <guid>https://clover.blue/items/323d2b35216b748e590c</guid>
+            <pubDate>Sun, 26 Apr 2015 10:08:18 GMT</pubDate>
+            <content:encoded><![CDATA[<p><code>z-index</code>を使っていると、この要素ってどのぐらいの値なんだっけ・・。と迷うことがあったり<br>
 とりあえず<code>99999</code>とか大きい数字つけとくかなーみたいな考えになったりしちゃう時がありますね＾＾；</p>
 
 <p>そんなことにならないように1つのところでz-indexを管理して、見やすくなるような関数を作ってみました。</p>
@@ -2240,16 +2212,14 @@ webpackとbabelを使わない場合は拡張子を<code>js</code>にしてく�
 
 <p><code>$z-index</code>に追加したり配列の順番をかえたりすると、<br>
 配列通りに上から並んでくれるので、分かりやすいかなぁと思います。</p>
-]]></content>
-        <published>2015-04-07T02:22:38.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[テキストエディタでの便利な正規表現での置換]]></title>
-        <id>d1c2ae88568ee971686f</id>
-        <link href="https://clover.blue/items/d1c2ae88568ee971686f">
-        </link>
-        <updated>2015-03-29T06:59:49.000Z</updated>
-        <content type="html"><![CDATA[<p>何かで挟まれた値の中身だけは残して周りの記述を置換したい・・。<br>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[テキストエディタでの便利な正規表現での置換]]></title>
+            <link>https://clover.blue/items/d1c2ae88568ee971686f</link>
+            <guid>https://clover.blue/items/d1c2ae88568ee971686f</guid>
+            <pubDate>Sun, 29 Mar 2015 06:59:49 GMT</pubDate>
+            <content:encoded><![CDATA[<p>何かで挟まれた値の中身だけは残して周りの記述を置換したい・・。<br>
 だけど値が違ったりしてうまくいっぱつで置換できない・・。</p>
 
 <p>みたいな時ってありますよね。</p>
@@ -2304,16 +2274,14 @@ $1\: $2\;
 
 <p><code>(?!notStr)</code>のように<code>notStr</code>部分に除きたい文字列を書きます。<br>
 複数指定したい場合には<code>|</code>で区切ります。</p>
-]]></content>
-        <published>2015-03-19T02:14:52.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Sass、Compassのバージョンアップに伴い（sass 3.4, compass 1.0）]]></title>
-        <id>ecb07905e0b99950f19a</id>
-        <link href="https://clover.blue/items/ecb07905e0b99950f19a">
-        </link>
-        <updated>2015-03-05T06:48:04.000Z</updated>
-        <content type="html"><![CDATA[<p>Sassのmixinなど色々作っていたのですが。<br>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Sass、Compassのバージョンアップに伴い（sass 3.4, compass 1.0）]]></title>
+            <link>https://clover.blue/items/ecb07905e0b99950f19a</link>
+            <guid>https://clover.blue/items/ecb07905e0b99950f19a</guid>
+            <pubDate>Thu, 05 Mar 2015 06:48:04 GMT</pubDate>
+            <content:encoded><![CDATA[<p>Sassのmixinなど色々作っていたのですが。<br>
 しばらくバージョンアップなどしていなかったうちに<br>
 色々と仕様が変わっていたので、<br>
 自作mixinの作り直し + 仕様が変わった点などをまとめたいと思います。</p>
@@ -2500,16 +2468,14 @@ $browser-minimum-versions: ("opera": "11", "ie": "6");
 </ul>
 
 <p>また、気になった点があれば追記していきます。</p>
-]]></content>
-        <published>2014-12-17T10:55:38.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[border-imageをbefore,after擬似要素で使うとRetina対応もできて便利]]></title>
-        <id>f4da3a0910454556b347</id>
-        <link href="https://clover.blue/items/f4da3a0910454556b347">
-        </link>
-        <updated>2014-09-26T05:33:57.000Z</updated>
-        <content type="html"><![CDATA[<p>site: <a href="http://develo.org/border-image-after" class="autolink" rel="nofollow noopener" target="_blank">http://develo.org/border-image-after</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[border-imageをbefore,after擬似要素で使うとRetina対応もできて便利]]></title>
+            <link>https://clover.blue/items/f4da3a0910454556b347</link>
+            <guid>https://clover.blue/items/f4da3a0910454556b347</guid>
+            <pubDate>Fri, 26 Sep 2014 05:33:57 GMT</pubDate>
+            <content:encoded><![CDATA[<p>site: <a href="http://develo.org/border-image-after" class="autolink" rel="nofollow noopener" target="_blank">http://develo.org/border-image-after</a></p>
 
 <p>ボックスの周りに装飾として画像を置きたい場合に背景画像で対応するのもいいのですが<br>
 3つに切って・・。真ん中を繰り返しして・・。<br>
@@ -2589,16 +2555,14 @@ border-imageを使うとborder-width分コンテンツが内側によっちゃ�
 border-imageを使って作業を楽にしちゃいましょー。</p>
 
 <p>ちなみにジェネレーターは<a href="http://border-image.com/" rel="nofollow noopener" target="_blank">border-image-generator</a>を使うと簡単に設定できちゃいます。</p>
-]]></content>
-        <published>2014-09-26T04:30:26.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[領域からはみ出てる文字列をCSSだけで「・・・」にする]]></title>
-        <id>7ab3cddafbe175375b24</id>
-        <link href="https://clover.blue/items/7ab3cddafbe175375b24">
-        </link>
-        <updated>2014-09-25T09:32:07.000Z</updated>
-        <content type="html"><![CDATA[<p>site: <a href="http://develo.org/text-overflow-ellipsis" class="autolink" rel="nofollow noopener" target="_blank">http://develo.org/text-overflow-ellipsis</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[領域からはみ出てる文字列をCSSだけで「・・・」にする]]></title>
+            <link>https://clover.blue/items/7ab3cddafbe175375b24</link>
+            <guid>https://clover.blue/items/7ab3cddafbe175375b24</guid>
+            <pubDate>Thu, 25 Sep 2014 09:32:07 GMT</pubDate>
+            <content:encoded><![CDATA[<p>site: <a href="http://develo.org/text-overflow-ellipsis" class="autolink" rel="nofollow noopener" target="_blank">http://develo.org/text-overflow-ellipsis</a></p>
 
 <p>サイトを作っていると、デザイン的に一行におさめたい・・。という時があります。</p>
 
@@ -2667,16 +2631,14 @@ li:last-child {
     float: none;
     width: 5em
 }</pre></div></div>
-]]></content>
-        <published>2014-09-25T09:27:45.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[楽しくコーディング！Sass,Compassのデフォルトmixinとカスタム関数]]></title>
-        <id>07d7500a046dfc96e742</id>
-        <link href="https://clover.blue/items/07d7500a046dfc96e742">
-        </link>
-        <updated>2014-08-27T02:36:27.000Z</updated>
-        <content type="html"><![CDATA[<p>site: <a href="http://develo.org/2014/05/19/0935.html" class="autolink" rel="nofollow noopener" target="_blank">http://develo.org/2014/05/19/0935.html</a><br>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[楽しくコーディング！Sass,Compassのデフォルトmixinとカスタム関数]]></title>
+            <link>https://clover.blue/items/07d7500a046dfc96e742</link>
+            <guid>https://clover.blue/items/07d7500a046dfc96e742</guid>
+            <pubDate>Wed, 27 Aug 2014 02:36:27 GMT</pubDate>
+            <content:encoded><![CDATA[<p>site: <a href="http://develo.org/2014/05/19/0935.html" class="autolink" rel="nofollow noopener" target="_blank">http://develo.org/2014/05/19/0935.html</a><br>
 GitHub: <a href="https://github.com/kamem/compass.default" class="autolink" rel="nofollow noopener" target="_blank">https://github.com/kamem/compass.default</a></p>
 
 <h2>
@@ -3320,16 +3282,14 @@ font-size: 1.2rem;
     visibility: hidden;
 }
 </pre></div></div>
-]]></content>
-        <published>2014-05-19T03:30:05.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[指定のクラスを複数のタグに追加したり、削除したりをtoggleするjQueryプラグイン]]></title>
-        <id>93459936648329b0a8ce</id>
-        <link href="https://clover.blue/items/93459936648329b0a8ce">
-        </link>
-        <updated>2014-08-04T01:16:46.000Z</updated>
-        <content type="html"><![CDATA[<p>1回目にクリックした時は例えば「on」というクラスが付き、2回目クリックした時は「on」が削除されるような場合に使えます。</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[指定のクラスを複数のタグに追加したり、削除したりをtoggleするjQueryプラグイン]]></title>
+            <link>https://clover.blue/items/93459936648329b0a8ce</link>
+            <guid>https://clover.blue/items/93459936648329b0a8ce</guid>
+            <pubDate>Mon, 04 Aug 2014 01:16:46 GMT</pubDate>
+            <content:encoded><![CDATA[<p>1回目にクリックした時は例えば「on」というクラスが付き、2回目クリックした時は「on」が削除されるような場合に使えます。</p>
 
 <p>クリック時に複数のクラスを変えたい場合などに、jsを書き換える必要がないような仕組みにしています。</p>
 
@@ -3386,16 +3346,14 @@ isSessionStorage: false
 <li>name: {String} toggleしたいクラス名</li>
 <li>isSessionStorage: {Boolean} ストレージに保存するか</li>
 </ul>
-]]></content>
-        <published>2014-08-03T09:23:05.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[タブとかスライドショーとかのコンテンツ切り替え用jQueryプラグイン]]></title>
-        <id>bb11e8b8027b7b5c44be</id>
-        <link href="https://clover.blue/items/bb11e8b8027b7b5c44be">
-        </link>
-        <updated>2014-08-01T17:38:18.000Z</updated>
-        <content type="html"><![CDATA[<p>タブとかスライドショーを実装するのに毎回探したり、その場実装で作ったりしていました・・。</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[タブとかスライドショーとかのコンテンツ切り替え用jQueryプラグイン]]></title>
+            <link>https://clover.blue/items/bb11e8b8027b7b5c44be</link>
+            <guid>https://clover.blue/items/bb11e8b8027b7b5c44be</guid>
+            <pubDate>Fri, 01 Aug 2014 17:38:18 GMT</pubDate>
+            <content:encoded><![CDATA[<p>タブとかスライドショーを実装するのに毎回探したり、その場実装で作ったりしていました・・。</p>
 
 <p>そろそろ楽するためにも「ちゃんと作っておこう！」と思い、標準的な機能を組み込んだプラグインを作りました！</p>
 
@@ -3481,16 +3439,14 @@ isRoop: false
 イージングが必要な場合には、イージングプラグインを別途読み込んでください。</li>
 <li>isRoop: {Boolean}「next」を押して次へ進んだ時に「最後から最初」の移動を戻るのではなくループするようにするか</li>
 </ul>
-]]></content>
-        <published>2014-08-01T17:21:55.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Gruntでコピーライトつきの.minファイルを作る]]></title>
-        <id>ee18c00d7eda3dfe3509</id>
-        <link href="https://clover.blue/items/ee18c00d7eda3dfe3509">
-        </link>
-        <updated>2014-07-25T09:29:14.000Z</updated>
-        <content type="html"><![CDATA[<p>site: <a href="http://develo.org/grunt.jsmin" class="autolink" rel="nofollow noopener" target="_blank">http://develo.org/grunt.jsmin</a><br>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Gruntでコピーライトつきの.minファイルを作る]]></title>
+            <link>https://clover.blue/items/ee18c00d7eda3dfe3509</link>
+            <guid>https://clover.blue/items/ee18c00d7eda3dfe3509</guid>
+            <pubDate>Fri, 25 Jul 2014 09:29:14 GMT</pubDate>
+            <content:encoded><![CDATA[<p>site: <a href="http://develo.org/grunt.jsmin" class="autolink" rel="nofollow noopener" target="_blank">http://develo.org/grunt.jsmin</a><br>
 GitHub: <a href="https://github.com/kamem/grunt.jsmin" class="autolink" rel="nofollow noopener" target="_blank">https://github.com/kamem/grunt.jsmin</a></p>
 
 <p>javascriptのファイルを圧縮するときにコピーライトと日付とかを手動でいれたりするのめんどくさいなぁ・・。と思っていたので</p>
@@ -3513,16 +3469,14 @@ GitHub: <a href="https://github.com/kamem/grunt.jsmin" class="autolink" rel="nof
 </pre></div></div>
 
 <p>プラグインとか公開する用にいいかなぁと思います！</p>
-]]></content>
-        <published>2014-05-30T10:30:25.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[jQuery Plugin パラメーターの代わりにdata属性で代用できるプラグイン]]></title>
-        <id>94e974a0212396d97ed7</id>
-        <link href="https://clover.blue/items/94e974a0212396d97ed7">
-        </link>
-        <updated>2014-07-25T09:18:37.000Z</updated>
-        <content type="html"><![CDATA[<p>site: <a href="http://develo.org/jquery.dataExtend" class="autolink" rel="nofollow noopener" target="_blank">http://develo.org/jquery.dataExtend</a><br>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[jQuery Plugin パラメーターの代わりにdata属性で代用できるプラグイン]]></title>
+            <link>https://clover.blue/items/94e974a0212396d97ed7</link>
+            <guid>https://clover.blue/items/94e974a0212396d97ed7</guid>
+            <pubDate>Fri, 25 Jul 2014 09:18:37 GMT</pubDate>
+            <content:encoded><![CDATA[<p>site: <a href="http://develo.org/jquery.dataExtend" class="autolink" rel="nofollow noopener" target="_blank">http://develo.org/jquery.dataExtend</a><br>
 GitHub: <a href="https://github.com/kamem/jquery.dataExtend" class="autolink" rel="nofollow noopener" target="_blank">https://github.com/kamem/jquery.dataExtend</a></p>
 
 <p>プラグインを複数のページなどで違う動作をしたい場合に<br>
@@ -3582,16 +3536,14 @@ $(function(){
 </pre></div></div>
 </li>
 </ol>
-]]></content>
-        <published>2014-06-21T04:58:02.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[紙吹雪を降らせるjQueryプラグイン]]></title>
-        <id>181949dee3aa7a714b9d</id>
-        <link href="https://clover.blue/items/181949dee3aa7a714b9d">
-        </link>
-        <updated>2014-06-28T07:35:37.000Z</updated>
-        <content type="html"><![CDATA[<p>生徒の作品に使えそうかなぁと思ったのと、<br>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[紙吹雪を降らせるjQueryプラグイン]]></title>
+            <link>https://clover.blue/items/181949dee3aa7a714b9d</link>
+            <guid>https://clover.blue/items/181949dee3aa7a714b9d</guid>
+            <pubDate>Sat, 28 Jun 2014 07:35:37 GMT</pubDate>
+            <content:encoded><![CDATA[<p>生徒の作品に使えそうかなぁと思ったのと、<br>
 紙吹雪ってキャンバス意外で綺麗に見えてるのがあまりなかったので作ってみました！</p>
 
 <p>ただやっぱりcanvasじゃないので、たくさんのタグを生成すると重くなっちゃいますね。</p>
@@ -3672,16 +3624,14 @@ complate: false
     });
 });
 </pre></div></div>
-]]></content>
-        <published>2014-06-28T06:19:56.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[pushStateとAjaxの組み合わせpjax]]></title>
-        <id>b0c8f69044556865027f</id>
-        <link href="https://clover.blue/items/b0c8f69044556865027f">
-        </link>
-        <updated>2014-05-23T01:59:29.000Z</updated>
-        <content type="html"><![CDATA[<p>site: <a href="http://develo.org/2014/04/29/1614.html" class="autolink" rel="nofollow noopener" target="_blank">http://develo.org/2014/04/29/1614.html</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[pushStateとAjaxの組み合わせpjax]]></title>
+            <link>https://clover.blue/items/b0c8f69044556865027f</link>
+            <guid>https://clover.blue/items/b0c8f69044556865027f</guid>
+            <pubDate>Fri, 23 May 2014 01:59:29 GMT</pubDate>
+            <content:encoded><![CDATA[<p>site: <a href="http://develo.org/2014/04/29/1614.html" class="autolink" rel="nofollow noopener" target="_blank">http://develo.org/2014/04/29/1614.html</a></p>
 
 <p>サイトをpjaxを使って実装して思ったのですが、ページ移動がものすごくはやくて快適！今後サイト新しく作るときはpushStateとAjaxの組み合わせ検討してみてもよいかなぁって思いました！</p>
 
@@ -3820,16 +3770,14 @@ pjax(options)
 <p>こんな感じでキャッシュがある場合はキャッシュを使って変更している部分を毎回読み込むように変更しちゃいます！</p>
 
 <p>これでひと通りCSSシグネチャを使った場合でもpjaxプラグインで実装することができました！</p>
-]]></content>
-        <published>2014-05-23T01:59:29.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[テキストを1文字づつアニメーションで表示させるjQueryプラグイン]]></title>
-        <id>8cfae412a6161ae23e77</id>
-        <link href="https://clover.blue/items/8cfae412a6161ae23e77">
-        </link>
-        <updated>2014-05-21T15:57:05.000Z</updated>
-        <content type="html"><![CDATA[<p>site: <a href="http://develo.org/2014/05/07/0900.html" class="autolink" rel="nofollow noopener" target="_blank">http://develo.org/2014/05/07/0900.html</a><br>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[テキストを1文字づつアニメーションで表示させるjQueryプラグイン]]></title>
+            <link>https://clover.blue/items/8cfae412a6161ae23e77</link>
+            <guid>https://clover.blue/items/8cfae412a6161ae23e77</guid>
+            <pubDate>Wed, 21 May 2014 15:57:05 GMT</pubDate>
+            <content:encoded><![CDATA[<p>site: <a href="http://develo.org/2014/05/07/0900.html" class="autolink" rel="nofollow noopener" target="_blank">http://develo.org/2014/05/07/0900.html</a><br>
 GitHub: <a href="https://github.com/kamem/jquery.textAnimation" class="autolink" rel="nofollow noopener" target="_blank">https://github.com/kamem/jquery.textAnimation</a></p>
 
 <p>テキストに1文字づつCSSでアニメーションをつけたら面白い動きになるんじゃないかなぁと思って作ってみました！値を設定できるようにしてみたら自分で予想してないような面白い動きも作れて楽しめました。<br>
@@ -3902,16 +3850,14 @@ isRandomDelay: false
 <li>isRandomSpeed: speedをランダムの値にするか。（speedで指定した値までのランダム）</li>
 <li>isRandomDelay: delayをランダムの値にするか。</li>
 </ul>
-]]></content>
-        <published>2014-05-21T15:57:05.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[dlを使ったtableのdtとddの高さを揃えるjQuery プラグイン]]></title>
-        <id>fc97e9c3ee2f62f29bfa</id>
-        <link href="https://clover.blue/items/fc97e9c3ee2f62f29bfa">
-        </link>
-        <updated>2014-05-19T15:07:55.000Z</updated>
-        <content type="html"><![CDATA[<p>site: <a href="http://develo.org/2014/04/29/2219.html" class="autolink" rel="nofollow noopener" target="_blank">http://develo.org/2014/04/29/2219.html</a><br>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[dlを使ったtableのdtとddの高さを揃えるjQuery プラグイン]]></title>
+            <link>https://clover.blue/items/fc97e9c3ee2f62f29bfa</link>
+            <guid>https://clover.blue/items/fc97e9c3ee2f62f29bfa</guid>
+            <pubDate>Mon, 19 May 2014 15:07:55 GMT</pubDate>
+            <content:encoded><![CDATA[<p>site: <a href="http://develo.org/2014/04/29/2219.html" class="autolink" rel="nofollow noopener" target="_blank">http://develo.org/2014/04/29/2219.html</a><br>
 GitHub: <a href="https://github.com/kamem/jquery.dlTableSet" class="autolink" rel="nofollow noopener" target="_blank">https://github.com/kamem/jquery.dlTableSet</a></p>
 
 <p>dlを使ってdt ddを横並びにしてテーブルを再現するときに、dtの高さがddよりも高い場合にレイアウトが崩れてしまいます。それを解消するためのjQueryプラグインです！単純に読み込ませてタグを指定するだけなのでお手軽です。</p>
@@ -3937,16 +3883,14 @@ $(function(){
 });
 &lt;/script&gt;
 </pre></div></div>
-]]></content>
-        <published>2014-05-18T01:26:43.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Macでの画像圧縮と設定]]></title>
-        <id>1b15e1671478ec2d6402</id>
-        <link href="https://clover.blue/items/1b15e1671478ec2d6402">
-        </link>
-        <updated>2014-05-18T12:24:54.000Z</updated>
-        <content type="html"><![CDATA[<p>site: <a href="http://develo.org/2014/05/16/0237.html" class="autolink" rel="nofollow noopener" target="_blank">http://develo.org/2014/05/16/0237.html</a><br>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Macでの画像圧縮と設定]]></title>
+            <link>https://clover.blue/items/1b15e1671478ec2d6402</link>
+            <guid>https://clover.blue/items/1b15e1671478ec2d6402</guid>
+            <pubDate>Sun, 18 May 2014 12:24:54 GMT</pubDate>
+            <content:encoded><![CDATA[<p>site: <a href="http://develo.org/2014/05/16/0237.html" class="autolink" rel="nofollow noopener" target="_blank">http://develo.org/2014/05/16/0237.html</a><br>
 GitHub: <a href="https://github.com/kamem/workflow.png-jpeg-mini" class="autolink" rel="nofollow noopener" target="_blank">https://github.com/kamem/workflow.png-jpeg-mini</a></p>
 
 <h2>
@@ -3993,16 +3937,14 @@ GitHub: <a href="https://github.com/kamem/workflow.png-jpeg-mini" class="autolin
 メニュータイトル：png-jpeg-mini<br>
 キーボードショーットカット：（任意）</li>
 </ol>
-]]></content>
-        <published>2014-05-18T12:19:40.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[1つの画像で4つの角を再現するCSS]]></title>
-        <id>f4eb3c3508053db8e8b5</id>
-        <link href="https://clover.blue/items/f4eb3c3508053db8e8b5">
-        </link>
-        <updated>2014-05-18T06:37:12.000Z</updated>
-        <content type="html"><![CDATA[<p>site: <a href="http://develo.org/2014/05/11/2100.html" class="autolink" rel="nofollow noopener" target="_blank">http://develo.org/2014/05/11/2100.html</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[1つの画像で4つの角を再現するCSS]]></title>
+            <link>https://clover.blue/items/f4eb3c3508053db8e8b5</link>
+            <guid>https://clover.blue/items/f4eb3c3508053db8e8b5</guid>
+            <pubDate>Sun, 18 May 2014 06:37:12 GMT</pubDate>
+            <content:encoded><![CDATA[<p>site: <a href="http://develo.org/2014/05/11/2100.html" class="autolink" rel="nofollow noopener" target="_blank">http://develo.org/2014/05/11/2100.html</a></p>
 
 <p>4つの角を1つの画像を反転して置きたいときにいつも 「どうやったらできるんだろ・・。」と悩んでました。</p>
 
@@ -4051,16 +3993,14 @@ section:after {
 <span id="demojsdoit" class="fragment"></span><a href="#demojsdoit"><i class="fa fa-link"></i></a>DEMO（jsdo.it）</h2>
 
 <p><a href="http://jsdo.it/kamem/faGs" rel="nofollow noopener" target="_blank">1つの画像で4つの角を再現するCSS - jsdo.it</a></p>
-]]></content>
-        <published>2014-05-18T05:53:33.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Sass,Compassでフォルダ内のファイルリストを取得するカスタム関数]]></title>
-        <id>53769ca56ce037b43579</id>
-        <link href="https://clover.blue/items/53769ca56ce037b43579">
-        </link>
-        <updated>2014-05-17T17:55:06.000Z</updated>
-        <content type="html"><![CDATA[<ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Sass,Compassでフォルダ内のファイルリストを取得するカスタム関数]]></title>
+            <link>https://clover.blue/items/53769ca56ce037b43579</link>
+            <guid>https://clover.blue/items/53769ca56ce037b43579</guid>
+            <pubDate>Sat, 17 May 2014 17:55:06 GMT</pubDate>
+            <content:encoded><![CDATA[<ul>
 <li>site: <a href="http://develo.org/2014/05/08/1000.html" class="autolink" rel="nofollow noopener" target="_blank">http://develo.org/2014/05/08/1000.html</a>
 </li>
 <li>GitHub: <a href="https://github.com/kamem/compass.develo" class="autolink" rel="nofollow noopener" target="_blank">https://github.com/kamem/compass.develo</a>
@@ -4126,16 +4066,14 @@ $imgs: fileList($images_dir + "*.gif",false,'.gif');
   background: url('/html/img/img5.gif?1394796721');
 }
 </pre></div></div>
-]]></content>
-        <published>2014-05-17T17:36:46.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Sass,Compassファイルの有無を返してくれるカスタム関数]]></title>
-        <id>90d2b5e60423f3188307</id>
-        <link href="https://clover.blue/items/90d2b5e60423f3188307">
-        </link>
-        <updated>2014-05-17T17:52:55.000Z</updated>
-        <content type="html"><![CDATA[<ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Sass,Compassファイルの有無を返してくれるカスタム関数]]></title>
+            <link>https://clover.blue/items/90d2b5e60423f3188307</link>
+            <guid>https://clover.blue/items/90d2b5e60423f3188307</guid>
+            <pubDate>Sat, 17 May 2014 17:52:55 GMT</pubDate>
+            <content:encoded><![CDATA[<ul>
 <li>site: <a href="http://develo.org/2014/05/08/1000.html" class="autolink" rel="nofollow noopener" target="_blank">http://develo.org/2014/05/08/1000.html</a>
 </li>
 <li>GitHub: <a href="https://github.com/kamem/compass.develo" class="autolink" rel="nofollow noopener" target="_blank">https://github.com/kamem/compass.develo</a>
@@ -4215,16 +4153,14 @@ ol li:nth-child(5) {
     background: url('/html/img/img5.gif?1394796721');
 }
 </pre></div></div>
-]]></content>
-        <published>2014-05-17T17:32:22.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[HTML講座] ID・クラスの指定]]></title>
-        <id>9WDB0txcfl2q72GhoeOtX</id>
-        <link href="https://clover.blue/doc/9WDB0txcfl2q72GhoeOtX">
-        </link>
-        <updated>2019-08-28T01:47:50.000Z</updated>
-        <content type="html"><![CDATA[<p>クラス名には様々な付け方があります。</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[HTML講座] ID・クラスの指定]]></title>
+            <link>https://clover.blue/doc/9WDB0txcfl2q72GhoeOtX</link>
+            <guid>https://clover.blue/doc/9WDB0txcfl2q72GhoeOtX</guid>
+            <pubDate>Wed, 28 Aug 2019 01:47:50 GMT</pubDate>
+            <content:encoded><![CDATA[<p>クラス名には様々な付け方があります。</p>
 <p><a href="https://qiita.com/J_Sugar__/items/9adee163028c9910fbc6">SMACSS+BEMによるテーマ設計（for Drupal8）</a></p>
 <p>何が正解というものはないですが、抑えておきたい考え方があります。</p>
 <p>それはスタイルを当てるときのことを考えて、「コンポーネント単位」でクラスをつけることです。</p>
@@ -4302,16 +4238,14 @@ ol li:nth-child(5) {
 </ul>
 <p>スタイルはコンポーネント単位で考え、
 その外側に影響しないように考えて組んでいきましょう。</p>
-]]></content>
-        <published>2019-06-25T09:38:03.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[JS講座] 8. 連想配列（Object）]]></title>
-        <id>emdgxYfxmTWOGK2YC3Bxu</id>
-        <link href="https://clover.blue/doc/emdgxYfxmTWOGK2YC3Bxu">
-        </link>
-        <updated>2019-07-28T16:51:33.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="連想配列の宣言">連想配列の宣言</h2>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[JS講座] 8. 連想配列（Object）]]></title>
+            <link>https://clover.blue/doc/emdgxYfxmTWOGK2YC3Bxu</link>
+            <guid>https://clover.blue/doc/emdgxYfxmTWOGK2YC3Bxu</guid>
+            <pubDate>Sun, 28 Jul 2019 16:51:33 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 id="連想配列の宣言">連想配列の宣言</h2>
 <pre><code>const empty= {};
 const fruits = {
   red: &#39;りんご&#39;,
@@ -4340,16 +4274,14 @@ console.log(fruits\[&#39;orange&#39;\][1]); // みかん
 
 const color = &#39;yellow&#39;
 console.log(fruits\[color\][0]); // バナナ</code></pre><p><a href="https://codepen.io/kame/pen/VoPwVE">[デモ]連想配列（Object）</a></p>
-]]></content>
-        <published>2018-08-22T10:33:13.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[JS講座] 7. 配列（Array）]]></title>
-        <id>3U8F9TS6WdMfpy4rCXf7g</id>
-        <link href="https://clover.blue/doc/3U8F9TS6WdMfpy4rCXf7g">
-        </link>
-        <updated>2019-07-28T16:28:12.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="配列の宣言">配列の宣言</h2>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[JS講座] 7. 配列（Array）]]></title>
+            <link>https://clover.blue/doc/3U8F9TS6WdMfpy4rCXf7g</link>
+            <guid>https://clover.blue/doc/3U8F9TS6WdMfpy4rCXf7g</guid>
+            <pubDate>Sun, 28 Jul 2019 16:28:12 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 id="配列の宣言">配列の宣言</h2>
 <pre><code>const empty = [] //配列を空で定義
 const fruits = [&#39;りんご&#39;, &#39;バナナ&#39;, &#39;パイナップル&#39;, &#39;ぶどう&#39;, &#39;すいか&#39;, &#39;めろん&#39;];</code></pre><h2 id="多次元配列">多次元配列</h2>
 <pre><code>const fruits = [
@@ -4371,16 +4303,14 @@ console.log(fruits[5]); // めろん</code></pre><h3 id="多次元配列の取�
 <p>console.log(fruits[1][1]); // みかん</p>
 <p>console.log(fruits[2][0]); // バナナ</p>
 <p><a href="https://codepen.io/kame/pen/KOaKpP">[デモ]配列（Array）</a></p>
-]]></content>
-        <published>2018-08-22T10:10:18.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[JS講座] 6. 文字列（String）の操作]]></title>
-        <id>hH5crayIvw3jxLHziXc94</id>
-        <link href="https://clover.blue/doc/hH5crayIvw3jxLHziXc94">
-        </link>
-        <updated>2019-07-28T15:57:34.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="文字列の長さ">文字列の長さ</h2>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[JS講座] 6. 文字列（String）の操作]]></title>
+            <link>https://clover.blue/doc/hH5crayIvw3jxLHziXc94</link>
+            <guid>https://clover.blue/doc/hH5crayIvw3jxLHziXc94</guid>
+            <pubDate>Sun, 28 Jul 2019 15:57:34 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 id="文字列の長さ">文字列の長さ</h2>
 <pre><code>&#39;文字列&#39;.length</code></pre><h3 id="例">例</h3>
 <pre><code>const name = &#39;kame&#39;;
 console.log(&#39;あなたの名前は&#39; + name.length + &#39;文字です。&#39;);
@@ -4406,16 +4336,14 @@ console.log(date.split(&#39;/&#39;));
 <pre><code>&#39;文字列&#39;.replace(key,newString)</code></pre><p>文字列内の key をnewStringに置換する。</p>
 <h4 id="例-3">例</h4>
 <pre><code>&#39;文字列&#39;.replace(&#39;文字&#39;, &#39;A&#39;) // A列</code></pre><p><a href="https://codepen.io/kame/pen/ZgLzNY">[デモ]文字列（String）の操作</a></p>
-]]></content>
-        <published>2018-08-22T09:23:41.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[JS講座] 5. 何がtrue? false?]]></title>
-        <id>yNvDC1HEDcnbDj0MpvDea</id>
-        <link href="https://clover.blue/doc/yNvDC1HEDcnbDj0MpvDea">
-        </link>
-        <updated>2019-07-28T15:42:17.000Z</updated>
-        <content type="html"><![CDATA[<p>基本的な考え方として、存在するものが<code>true</code>、存在しないものが <code>false</code></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[JS講座] 5. 何がtrue? false?]]></title>
+            <link>https://clover.blue/doc/yNvDC1HEDcnbDj0MpvDea</link>
+            <guid>https://clover.blue/doc/yNvDC1HEDcnbDj0MpvDea</guid>
+            <pubDate>Sun, 28 Jul 2019 15:42:17 GMT</pubDate>
+            <content:encoded><![CDATA[<p>基本的な考え方として、存在するものが<code>true</code>、存在しないものが <code>false</code></p>
 <h2 id="trueになる">trueになる</h2>
 <ul>
 <li>true</li>
@@ -4433,16 +4361,14 @@ console.log(date.split(&#39;/&#39;));
 <li>undefined</li>
 </ul>
 <p><a href="https://codepen.io/kame/pen/mNRbaX">[デモ]何がtrue? false?</a></p>
-]]></content>
-        <published>2018-08-22T10:03:31.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[JS講座] 4. 条件分岐・繰り返し（if文, for文）]]></title>
-        <id>u9rlNkmIhzl9MPKjUmO4R</id>
-        <link href="https://clover.blue/doc/u9rlNkmIhzl9MPKjUmO4R">
-        </link>
-        <updated>2019-07-28T15:36:07.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="条件分岐">条件分岐</h2>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[JS講座] 4. 条件分岐・繰り返し（if文, for文）]]></title>
+            <link>https://clover.blue/doc/u9rlNkmIhzl9MPKjUmO4R</link>
+            <guid>https://clover.blue/doc/u9rlNkmIhzl9MPKjUmO4R</guid>
+            <pubDate>Sun, 28 Jul 2019 15:36:07 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 id="条件分岐">条件分岐</h2>
 <h3 id="if文">if文</h3>
 <pre><code>if(条件) {
   console.log(処理...)
@@ -4489,16 +4415,14 @@ for(let i = 0, j = 10; i &lt; 10, j &gt; 0; i++,j--) {
 }
 
 //出力結果 : 0 1 2 3 4 5 6 7 8 9</code></pre><p><a href="https://codepen.io/kame/pen/vogBze">[デモ]for文</a></p>
-]]></content>
-        <published>2018-08-22T07:02:06.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[JS講座] 3. 型]]></title>
-        <id>fvY0kqV9cEQqbCirAwhEw</id>
-        <link href="https://clover.blue/doc/fvY0kqV9cEQqbCirAwhEw">
-        </link>
-        <updated>2019-07-28T05:13:40.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="型の種類">型の種類</h2>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[JS講座] 3. 型]]></title>
+            <link>https://clover.blue/doc/fvY0kqV9cEQqbCirAwhEw</link>
+            <guid>https://clover.blue/doc/fvY0kqV9cEQqbCirAwhEw</guid>
+            <pubDate>Sun, 28 Jul 2019 05:13:40 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 id="型の種類">型の種類</h2>
 <h3 id="文字列（string）">文字列（String）</h3>
 <pre><code>const str = &#39;こんばんは&#39;;
 const str2 = &quot;test&quot;;
@@ -4537,16 +4461,14 @@ const bool2 = false;</code></pre><h3 id="配列（array）">配列（Array）</h
 <h4 id="例">例</h4>
 <pre><code>(10).toString() + 10; //1010
 parseInt(&#39;10&#39;) + 10; //20</code></pre><p><a href="https://codepen.io/kame/pen/xvRmje">[デモ]型の変換</a></p>
-]]></content>
-        <published>2018-08-22T05:12:19.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[JS講座] 1. 変数・計算]]></title>
-        <id>tzU6vsD7S2Dg21owgsnv7</id>
-        <link href="https://clover.blue/doc/tzU6vsD7S2Dg21owgsnv7">
-        </link>
-        <updated>2019-07-28T04:35:55.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="変数の定義">変数の定義</h2>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[JS講座] 1. 変数・計算]]></title>
+            <link>https://clover.blue/doc/tzU6vsD7S2Dg21owgsnv7</link>
+            <guid>https://clover.blue/doc/tzU6vsD7S2Dg21owgsnv7</guid>
+            <pubDate>Sun, 28 Jul 2019 04:35:55 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 id="変数の定義">変数の定義</h2>
 <pre><code>var 変数名 = 初期値;
 const 変数名 = 初期値; // 再代入できない
 let 変数名 = 初期値; // 再代入可能</code></pre><p>基本的にはconstを使いましょう。
@@ -4639,32 +4561,28 @@ let 変数名 = 初期値; // 再代入可能</code></pre><p>基本的にはcons
 <li><code>+ -</code></li>
 </ol>
 <p><a href="https://codepen.io/kame/pen/aeBPpR">[デモ]演算子</a></p>
-]]></content>
-        <published>2018-08-22T02:46:33.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[JS講座] 0. 出力・コメント]]></title>
-        <id>k8k1STBpbnDvA38NynAG8</id>
-        <link href="https://clover.blue/doc/k8k1STBpbnDvA38NynAG8">
-        </link>
-        <updated>2019-07-28T03:24:00.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="値の出力">値の出力</h2>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[JS講座] 0. 出力・コメント]]></title>
+            <link>https://clover.blue/doc/k8k1STBpbnDvA38NynAG8</link>
+            <guid>https://clover.blue/doc/k8k1STBpbnDvA38NynAG8</guid>
+            <pubDate>Sun, 28 Jul 2019 03:24:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 id="値の出力">値の出力</h2>
 <pre><code>console.log(10);</code></pre><h2 id="jsのコメントの書き方">jsのコメントの書き方</h2>
 <pre><code>// 一行コメント
 /*
 複数行コメント
 複数行コメント
 */</code></pre><p><a href="https://codepen.io/kame/pen/bXBQOd">[デモ]出力・コメント</a></p>
-]]></content>
-        <published>2018-08-22T06:20:39.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[JS講座] 13. タグの取得とイベントハンドラ]]></title>
-        <id>YXRgUhh5ZI3E0YG6wlnzP</id>
-        <link href="https://clover.blue/doc/YXRgUhh5ZI3E0YG6wlnzP">
-        </link>
-        <updated>2019-07-28T03:11:23.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="タグの取得">タグの取得</h2>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[JS講座] 13. タグの取得とイベントハンドラ]]></title>
+            <link>https://clover.blue/doc/YXRgUhh5ZI3E0YG6wlnzP</link>
+            <guid>https://clover.blue/doc/YXRgUhh5ZI3E0YG6wlnzP</guid>
+            <pubDate>Sun, 28 Jul 2019 03:11:23 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 id="タグの取得">タグの取得</h2>
 <pre><code>document.querySelectorAll(&#39;p&#39;)</code></pre><p>例 CSSのような指定でタグを取得することができます</p>
 <pre><code>const header = document.querySelectorAll(&#39;#header&#39;)
 const item = document.querySelectorAll(&#39;section.item&#39;)</code></pre><p>ページに存在するそのタグが全て入った配列として返ってきます。</p>
@@ -4766,16 +4684,14 @@ function clickEvent() {
 <td>ウィンドウをリサイズしたとき</td>
 </tr>
 </tbody></table>
-]]></content>
-        <published>2018-09-10T08:45:23.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[JS講座] 12. 数学関数（Math）で演算]]></title>
-        <id>GK6BWu10h3E3mT75KOJp5</id>
-        <link href="https://clover.blue/doc/GK6BWu10h3E3mT75KOJp5">
-        </link>
-        <updated>2019-07-28T03:11:13.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="0以上1未満の乱数を返す">0以上1未満の乱数を返す</h2>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[JS講座] 12. 数学関数（Math）で演算]]></title>
+            <link>https://clover.blue/doc/GK6BWu10h3E3mT75KOJp5</link>
+            <guid>https://clover.blue/doc/GK6BWu10h3E3mT75KOJp5</guid>
+            <pubDate>Sun, 28 Jul 2019 03:11:13 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 id="0以上1未満の乱数を返す">0以上1未満の乱数を返す</h2>
 <pre><code>Math.random();</code></pre><h3 id="例">例</h3>
 <pre><code>console.log(Math.random());
 
@@ -4817,16 +4733,14 @@ function clickEvent() {
 /*
 表示結果
 整数 0 〜 3
-*/</code></pre>]]></content>
-        <published>2018-08-23T03:08:06.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[JS講座] 11. 関数（function）について]]></title>
-        <id>eYAaw8GvNx1Gcwp5xjyYh</id>
-        <link href="https://clover.blue/doc/eYAaw8GvNx1Gcwp5xjyYh">
-        </link>
-        <updated>2019-07-28T03:10:15.000Z</updated>
-        <content type="html"><![CDATA[<p>関数とは、プログラムを別な場所からいつでも呼び出して利用できるように、処理をひとまとめにしたものです。</p>
+*/</code></pre>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[JS講座] 11. 関数（function）について]]></title>
+            <link>https://clover.blue/doc/eYAaw8GvNx1Gcwp5xjyYh</link>
+            <guid>https://clover.blue/doc/eYAaw8GvNx1Gcwp5xjyYh</guid>
+            <pubDate>Sun, 28 Jul 2019 03:10:15 GMT</pubDate>
+            <content:encoded><![CDATA[<p>関数とは、プログラムを別な場所からいつでも呼び出して利用できるように、処理をひとまとめにしたものです。</p>
 <pre><code>function test(引数1,引数2, ...){
   console.log(&#39;処理&#39;);
 }</code></pre><h2 id="引数">引数</h2>
@@ -4881,16 +4795,14 @@ console.log(array);
 /*
 表示結果
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...]
-*/</code></pre>]]></content>
-        <published>2018-08-23T03:06:10.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[JS講座] 10. 連想配列の繰り返し（for..in文）]]></title>
-        <id>kkJU3gO9jd4soJPX6Mura</id>
-        <link href="https://clover.blue/doc/kkJU3gO9jd4soJPX6Mura">
-        </link>
-        <updated>2019-07-28T03:09:40.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="forin文">for..in文</h2>
+*/</code></pre>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[JS講座] 10. 連想配列の繰り返し（for..in文）]]></title>
+            <link>https://clover.blue/doc/kkJU3gO9jd4soJPX6Mura</link>
+            <guid>https://clover.blue/doc/kkJU3gO9jd4soJPX6Mura</guid>
+            <pubDate>Sun, 28 Jul 2019 03:09:40 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 id="forin文">for..in文</h2>
 <pre><code>for(const color in {red: &#39;赤&#39;, blue: &#39;青&#39; }) {
   console.log(color);
 };</code></pre><h3 id="例">例</h3>
@@ -4914,16 +4826,14 @@ orange
 [&quot;かき&quot;, &quot;みかん&quot;, &quot;びわ&quot;]
 yellow
 [&quot;バナナ&quot;, &quot;パイナップル&quot;, &quot;レモン&quot;]
-*/</code></pre>]]></content>
-        <published>2018-08-23T02:05:41.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[JS講座] 9. 配列（Array）の操作]]></title>
-        <id>OK1ZSXJe56UlNPHoXLj9M</id>
-        <link href="https://clover.blue/doc/OK1ZSXJe56UlNPHoXLj9M">
-        </link>
-        <updated>2019-07-28T03:07:48.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="配列の長さ">配列の長さ</h2>
+*/</code></pre>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[JS講座] 9. 配列（Array）の操作]]></title>
+            <link>https://clover.blue/doc/OK1ZSXJe56UlNPHoXLj9M</link>
+            <guid>https://clover.blue/doc/OK1ZSXJe56UlNPHoXLj9M</guid>
+            <pubDate>Sun, 28 Jul 2019 03:07:48 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 id="配列の長さ">配列の長さ</h2>
 <pre><code>([1, 2, 3]).length // 3</code></pre><h3 id="例">例</h3>
 <pre><code>const fruits  = [&#39;りんご&#39;,&#39;バナナ&#39;,&#39;パイナップル&#39;,&#39;ぶどう&#39;,&#39;すいか&#39;,&#39;めろん&#39;];
 console.log(&#39;果物が&#39; + fruits.length + &#39;個&#39;);
@@ -4993,16 +4903,14 @@ fruits.reverse();
 
 console.log(fruits);
 
-// 出力結果 : [&quot;めろん&quot;, &quot;すいか&quot;, &quot;ぶどう&quot;, &quot;パイナップル&quot;, &quot;バナナ&quot;, &quot;りんご&quot;]</code></pre>]]></content>
-        <published>2018-08-22T10:45:03.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[JS講座] 2. 演算子]]></title>
-        <id>zbV7a9fK3CHLW3lZrhons</id>
-        <link href="https://clover.blue/doc/zbV7a9fK3CHLW3lZrhons">
-        </link>
-        <updated>2019-07-28T02:43:48.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="論理演算子">論理演算子</h2>
+// 出力結果 : [&quot;めろん&quot;, &quot;すいか&quot;, &quot;ぶどう&quot;, &quot;パイナップル&quot;, &quot;バナナ&quot;, &quot;りんご&quot;]</code></pre>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[JS講座] 2. 演算子]]></title>
+            <link>https://clover.blue/doc/zbV7a9fK3CHLW3lZrhons</link>
+            <guid>https://clover.blue/doc/zbV7a9fK3CHLW3lZrhons</guid>
+            <pubDate>Sun, 28 Jul 2019 02:43:48 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 id="論理演算子">論理演算子</h2>
 <table>
 <thead>
 <tr>
@@ -5074,26 +4982,22 @@ console.log(num &gt; 3 &amp;&amp; num &lt; 20)
 // numが10もしくは20の場合trueなのでこの場合10 === 10がのためtrue
 console.log(num === 10 || num === 20)
 // numと10は等しく、それを反転しているためfalse
-console.log(!(num === 10)) //false</code></pre>]]></content>
-        <published>2018-08-22T05:42:37.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[CSS講座] 三角形の作り方]]></title>
-        <id>b6LsIjObgAN0QI1CrInnL</id>
-        <link href="https://clover.blue/doc/b6LsIjObgAN0QI1CrInnL">
-        </link>
-        <updated>2019-07-16T04:27:51.000Z</updated>
-        <content type="html"><![CDATA[<p><a href="https://codepen.io/kame/pen/MMxMPx">https://codepen.io/kame/pen/MMxMPx</a></p>
-]]></content>
-        <published>2019-07-16T04:22:10.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[HTML講座] よくあるHTML構造]]></title>
-        <id>Id7aunyBwrfDuNYEAut9b</id>
-        <link href="https://clover.blue/doc/Id7aunyBwrfDuNYEAut9b">
-        </link>
-        <updated>2019-06-25T14:23:23.000Z</updated>
-        <content type="html"><![CDATA[<ol>
+console.log(!(num === 10)) //false</code></pre>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[CSS講座] 三角形の作り方]]></title>
+            <link>https://clover.blue/doc/b6LsIjObgAN0QI1CrInnL</link>
+            <guid>https://clover.blue/doc/b6LsIjObgAN0QI1CrInnL</guid>
+            <pubDate>Tue, 16 Jul 2019 04:27:51 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://codepen.io/kame/pen/MMxMPx">https://codepen.io/kame/pen/MMxMPx</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[HTML講座] よくあるHTML構造]]></title>
+            <link>https://clover.blue/doc/Id7aunyBwrfDuNYEAut9b</link>
+            <guid>https://clover.blue/doc/Id7aunyBwrfDuNYEAut9b</guid>
+            <pubDate>Tue, 25 Jun 2019 14:23:23 GMT</pubDate>
+            <content:encoded><![CDATA[<ol>
 <li>header, main, footerに分けて考える</li>
 <li>アウトラインを考えて見出し、section or articleを決めていく</li>
 </ol>
@@ -5145,16 +5049,14 @@ console.log(!(num === 10)) //false</code></pre>]]></content>
 
 &lt;footer&gt;
     &lt;p&gt;&lt;small&gt;&amp;copy; copyright kamem&lt;/small&gt;&lt;/p&gt;
-&lt;/footer&gt;</code></pre>]]></content>
-        <published>2019-06-17T13:05:17.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[CSS講座] 横並びの方法]]></title>
-        <id>XgnZIcXha3lrBdcbpMTGu</id>
-        <link href="https://clover.blue/doc/XgnZIcXha3lrBdcbpMTGu">
-        </link>
-        <updated>2019-06-20T02:41:03.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="flexboxを使う">flexboxを使う</h2>
+&lt;/footer&gt;</code></pre>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[CSS講座] 横並びの方法]]></title>
+            <link>https://clover.blue/doc/XgnZIcXha3lrBdcbpMTGu</link>
+            <guid>https://clover.blue/doc/XgnZIcXha3lrBdcbpMTGu</guid>
+            <pubDate>Thu, 20 Jun 2019 02:41:03 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 id="flexboxを使う">flexboxを使う</h2>
 <h3 id="html">HTML</h3>
 <pre><code>&lt;ul class=&quot;nav&quot;&gt;
     &lt;li class=&quot;nav_item&quot;&gt;Menu1&lt;/li&gt;
@@ -5180,16 +5082,14 @@ console.log(!(num === 10)) //false</code></pre>]]></content>
     color: #fff;
     width: 100px;
 }</code></pre><p><a href="https://codepen.io/kame/pen/jjbrMV">https://codepen.io/kame/pen/jjbrMV</a></p>
-]]></content>
-        <published>2019-06-13T16:25:23.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[HTML講座] HTMLについて]]></title>
-        <id>lXvYL28hc8CBwvZiBpuEF</id>
-        <link href="https://clover.blue/doc/lXvYL28hc8CBwvZiBpuEF">
-        </link>
-        <updated>2019-06-17T13:24:26.000Z</updated>
-        <content type="html"><![CDATA[<p>HTMLはhyper text markup language（ハイパーテキストマークアップランゲージ）の略です。</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[HTML講座] HTMLについて]]></title>
+            <link>https://clover.blue/doc/lXvYL28hc8CBwvZiBpuEF</link>
+            <guid>https://clover.blue/doc/lXvYL28hc8CBwvZiBpuEF</guid>
+            <pubDate>Mon, 17 Jun 2019 13:24:26 GMT</pubDate>
+            <content:encoded><![CDATA[<p>HTMLはhyper text markup language（ハイパーテキストマークアップランゲージ）の略です。</p>
 <p>HTMLで大事なのはその言葉が表しているものを意味付けすることが大事です。
 見た目を調整するのはCSSに任せましょう。</p>
 <ul>
@@ -5299,16 +5199,14 @@ em、strongなどとは違い特に意味がないがデザイン的に囲う必
       &lt;/section&gt;
     &lt;/section&gt;
   &lt;/article&gt;
-&lt;/main&gt;</code></pre>]]></content>
-        <published>2019-06-13T02:02:25.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[CSS講座] positionについて]]></title>
-        <id>KaNjEMQYVsO7NfZYWcN1j</id>
-        <link href="https://clover.blue/doc/KaNjEMQYVsO7NfZYWcN1j">
-        </link>
-        <updated>2019-06-14T13:20:02.000Z</updated>
-        <content type="html"><![CDATA[<p>ボックスの配置の仕方の指定</p>
+&lt;/main&gt;</code></pre>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[CSS講座] positionについて]]></title>
+            <link>https://clover.blue/doc/KaNjEMQYVsO7NfZYWcN1j</link>
+            <guid>https://clover.blue/doc/KaNjEMQYVsO7NfZYWcN1j</guid>
+            <pubDate>Fri, 14 Jun 2019 13:20:02 GMT</pubDate>
+            <content:encoded><![CDATA[<p>ボックスの配置の仕方の指定</p>
 <h2 id="static">static</h2>
 <p>何も指定されていない状態</p>
 <pre><code>position: static;</code></pre><h2 id="relative">relative</h2>
@@ -5322,16 +5220,14 @@ em、strongなどとは違い特に意味がないがデザイン的に囲う必
 <pre><code>position: absolute;</code></pre><h2 id="fixed">fixed</h2>
 <p>固定</p>
 <pre><code>position: fixed;</code></pre><p><a href="https://codepen.io/kame/pen/ewpjoK">https://codepen.io/kame/pen/ewpjoK</a></p>
-]]></content>
-        <published>2019-06-14T06:44:28.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[JS問題] 関数を作る問題]]></title>
-        <id>I6Px9EHfvkC3FKmuZZgh6</id>
-        <link href="https://clover.blue/doc/I6Px9EHfvkC3FKmuZZgh6">
-        </link>
-        <updated>2018-10-05T07:00:38.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="q1-引数に数字を入れ実行すると、0から引数で渡した数字までの「奇数・偶数で分けた連想配列」を戻り値（return）で返す関数を作る">Q1. 引数に数字を入れ実行すると、0から引数で渡した数字までの「奇数・偶数で分けた連想配列」を戻り値（return）で返す関数を作る</h2>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[JS問題] 関数を作る問題]]></title>
+            <link>https://clover.blue/doc/I6Px9EHfvkC3FKmuZZgh6</link>
+            <guid>https://clover.blue/doc/I6Px9EHfvkC3FKmuZZgh6</guid>
+            <pubDate>Fri, 05 Oct 2018 07:00:38 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 id="q1-引数に数字を入れ実行すると、0から引数で渡した数字までの「奇数・偶数で分けた連想配列」を戻り値（return）で返す関数を作る">Q1. 引数に数字を入れ実行すると、0から引数で渡した数字までの「奇数・偶数で分けた連想配列」を戻り値（return）で返す関数を作る</h2>
 <pre><code>console.log(numObj(100));
 
 /*
@@ -5374,28 +5270,24 @@ console.log(addFruit(fruits, &#39;すいか&#39;));
 <pre><code>console.log(getMoneyFormat(1000000))
 
 // [結果] 1,000,000</code></pre><p>上記が成り立つようなgetMoneyFormat関数を作りましょう。</p>
-]]></content>
-        <published>2018-08-23T06:05:42.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[アブブLineスタンプ作り中]]></title>
-        <id>VAUy7XolOf8Jqgl19HpMj</id>
-        <link href="https://clover.blue/doc/VAUy7XolOf8Jqgl19HpMj">
-        </link>
-        <updated>2018-09-23T10:40:12.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://d2mxuefqeaa7sj.cloudfront.net/s_8472BF34D6851EDAF2E828E8F30827AD707C1AD9598B33A3EFB84321E39DDF8C_1537117446870_abubu.gif" alt=""></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[アブブLineスタンプ作り中]]></title>
+            <link>https://clover.blue/doc/VAUy7XolOf8Jqgl19HpMj</link>
+            <guid>https://clover.blue/doc/VAUy7XolOf8Jqgl19HpMj</guid>
+            <pubDate>Sun, 23 Sep 2018 10:40:12 GMT</pubDate>
+            <content:encoded><![CDATA[<p><img src="https://d2mxuefqeaa7sj.cloudfront.net/s_8472BF34D6851EDAF2E828E8F30827AD707C1AD9598B33A3EFB84321E39DDF8C_1537117446870_abubu.gif" alt=""></p>
 <p>昔身内の間で小学校の時に流行っていたキャラクターのスタンプを作りました！</p>
 <p>[アブブ - LINE スタンプ | LINE STORE](<a href="https://store.line.me/stickershop/product/4738031">https://store.line.me/stickershop/product/4738031</a>)</p>
-]]></content>
-        <published>2018-09-16T17:02:57.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[JS講座] 基礎を覚えたそのあとの話]]></title>
-        <id>IDWlqBOJ1PRYWKA3ybVCc</id>
-        <link href="https://clover.blue/doc/IDWlqBOJ1PRYWKA3ybVCc">
-        </link>
-        <updated>2018-09-12T07:54:40.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="基礎を理解したあとに勉強したいこと">基礎を理解したあとに勉強したいこと</h2>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[JS講座] 基礎を覚えたそのあとの話]]></title>
+            <link>https://clover.blue/doc/IDWlqBOJ1PRYWKA3ybVCc</link>
+            <guid>https://clover.blue/doc/IDWlqBOJ1PRYWKA3ybVCc</guid>
+            <pubDate>Wed, 12 Sep 2018 07:54:40 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 id="基礎を理解したあとに勉強したいこと">基礎を理解したあとに勉強したいこと</h2>
 <h3 id="ecmascript6を学ぶ">ECMAScript6を学ぶ</h3>
 <ul>
 <li>[ES6(ES2015)チートシート](<a href="https://qiita.com/morrr/items/883cb902ccda37e840bc">https://qiita.com/morrr/items/883cb902ccda37e840bc</a>)</li>
@@ -5425,16 +5317,14 @@ console.log(addFruit(fruits, &#39;すいか&#39;));
 <ul>
 <li>[【JavaScript】即時関数, 無名関数, クロージャについて](<a href="https://qiita.com/To_BB/items/bf4d6384f7dce47bb216">https://qiita.com/To_BB/items/bf4d6384f7dce47bb216</a>)</li>
 </ul>
-]]></content>
-        <published>2018-08-23T10:27:53.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[JS問題] 配列、連想配列を使った問題]]></title>
-        <id>t6CJar2C8SOKx6yDWXpkL</id>
-        <link href="https://clover.blue/doc/t6CJar2C8SOKx6yDWXpkL">
-        </link>
-        <updated>2018-09-07T02:03:30.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="q1-配列に0〜50、50〜0の配列を入れてそれぞれ表示。">Q1. 配列に0〜50、50〜0の配列を入れてそれぞれ表示。</h2>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[JS問題] 配列、連想配列を使った問題]]></title>
+            <link>https://clover.blue/doc/t6CJar2C8SOKx6yDWXpkL</link>
+            <guid>https://clover.blue/doc/t6CJar2C8SOKx6yDWXpkL</guid>
+            <pubDate>Fri, 07 Sep 2018 02:03:30 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 id="q1-配列に0〜50、50〜0の配列を入れてそれぞれ表示。">Q1. 配列に0〜50、50〜0の配列を入れてそれぞれ表示。</h2>
 <p>for文を使ってください</p>
 <pre><code>// \[結果\] [1, 2, 3, ...]
 // \[結果\] [50, 49, 48, ...]</code></pre><h2 id="q2-下記の果物が入った配列を、一つづつ表示。">Q2. 下記の果物が入った配列を、一つづつ表示。</h2>
@@ -5473,16 +5363,14 @@ yellow(バナナ・パイナップル・レモン)
   odd: [1, 3, 5, 7, ...],
   even: [0, 2, 6, 8, ...]
 }
-*/</code></pre>]]></content>
-        <published>2018-08-23T05:51:25.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[JS問題] 文字列を使った問題]]></title>
-        <id>H1lBoBxdjJW7uhAagLGer</id>
-        <link href="https://clover.blue/doc/H1lBoBxdjJW7uhAagLGer">
-        </link>
-        <updated>2018-08-23T06:23:18.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="q1-自分の名前の文字数を下記のような形式で表示">Q1. 自分の名前の文字数を下記のような形式で表示</h2>
+*/</code></pre>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[JS問題] 文字列を使った問題]]></title>
+            <link>https://clover.blue/doc/H1lBoBxdjJW7uhAagLGer</link>
+            <guid>https://clover.blue/doc/H1lBoBxdjJW7uhAagLGer</guid>
+            <pubDate>Thu, 23 Aug 2018 06:23:18 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 id="q1-自分の名前の文字数を下記のような形式で表示">Q1. 自分の名前の文字数を下記のような形式で表示</h2>
 <pre><code>var name = &#39;自分の名前&#39;;
 
 // [結果] 自分の名前はx文字です。</code></pre><h2 id="q2-自分の名前の1文字ごとに全角スペースをあけた文字を表示">Q2. 自分の名前の1文字ごとに全角スペースをあけた文字を表示</h2>
@@ -5501,16 +5389,14 @@ var num2 = &#39;50px&#39;;
 
 // 後ろから3桁区切りにしてください
 
-// [結果] 1,000,000</code></pre>]]></content>
-        <published>2018-08-23T05:36:53.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[JS問題] if文とfor文を使った問題]]></title>
-        <id>WouTPbeF8wtazDx0WYq30</id>
-        <link href="https://clover.blue/doc/WouTPbeF8wtazDx0WYq30">
-        </link>
-        <updated>2018-08-23T05:35:40.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="q1-1から100までの偶数だけ表示する">Q1. 1から100までの偶数だけ表示する</h2>
+// [結果] 1,000,000</code></pre>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[JS問題] if文とfor文を使った問題]]></title>
+            <link>https://clover.blue/doc/WouTPbeF8wtazDx0WYq30</link>
+            <guid>https://clover.blue/doc/WouTPbeF8wtazDx0WYq30</guid>
+            <pubDate>Thu, 23 Aug 2018 05:35:40 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 id="q1-1から100までの偶数だけ表示する">Q1. 1から100までの偶数だけ表示する</h2>
 <p>for文を使ってください</p>
 <h2 id="q2-100までの数字のうち、10〜30-70〜90の場合のみ表示する">Q2. 100までの数字のうち、10〜30, 70〜90の場合のみ表示する</h2>
 <p>for文とif文を使ってください</p>
@@ -5520,16 +5406,14 @@ var num2 = &#39;50px&#39;;
 <p>for文を使ってください </p>
 <h3 id="閏年とは">閏年とは</h3>
 <p>4で割れる100で割れない。または、400で割れる</p>
-]]></content>
-        <published>2018-08-23T04:47:26.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ブログを書くこと]]></title>
-        <id>RC6rl0B9DTYGH0whg7TCZ</id>
-        <link href="https://clover.blue/doc/RC6rl0B9DTYGH0whg7TCZ">
-        </link>
-        <updated>2018-08-07T02:34:25.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://scontent-nrt1-1.cdninstagram.com/vp/5aeb3f7c1cc57dc309e29e3dbbb8bff6/5C1341BC/t51.2885-15/e15/37642934_266269404156929_5551537201956782080_n.jpg" alt=""></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ブログを書くこと]]></title>
+            <link>https://clover.blue/doc/RC6rl0B9DTYGH0whg7TCZ</link>
+            <guid>https://clover.blue/doc/RC6rl0B9DTYGH0whg7TCZ</guid>
+            <pubDate>Tue, 07 Aug 2018 02:34:25 GMT</pubDate>
+            <content:encoded><![CDATA[<p><img src="https://scontent-nrt1-1.cdninstagram.com/vp/5aeb3f7c1cc57dc309e29e3dbbb8bff6/5C1341BC/t51.2885-15/e15/37642934_266269404156929_5551537201956782080_n.jpg" alt=""></p>
 <p>最近ブログを書いていなかったのでここからまた色々とはじめたいなと思います。
 ブログも作り直したので心機一転です。</p>
 <h2 id="ブログのこだわりポイント">ブログのこだわりポイント</h2>
@@ -5569,7 +5453,7 @@ QiitaとDropbox PaperのApiを使って記事を取得する。</p>
 AWSとかGCSとかも考えたのですが。お金の面とかも考えて。</p>
 <p>技術的なことは別の記事でしっかり書きたいと思います。</p>
 <p>これからなるべく、技術的な話とか、日常的な話とか書いていこうと思います。</p>
-]]></content>
-        <published>2018-07-31T00:31:08.000Z</published>
-    </entry>
-</feed>
+]]></content:encoded>
+        </item>
+    </channel>
+</rss>
