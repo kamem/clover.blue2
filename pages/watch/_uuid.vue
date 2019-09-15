@@ -24,7 +24,7 @@ export default {
   fetch,
   head() {
     return {
-      title: this.ITEM.body,
+      title: this.ITEM.title,
       meta: [
         { hid: 'og:title', property: 'og:title', content: this.TITLE },
         { hid: 'og:type', property: 'og:type', content: 'article' },
