@@ -4,7 +4,8 @@ const HOST = process.env.HOST
 export const state = () => ({
   qiitaItems: [],
   dropboxItems: [],
-  instagramItems: []
+  instagramItems: [],
+  youtubeItems: []
 })
 
 export const getters = {
@@ -20,6 +21,9 @@ export const mutations = {
   },
   INSTAGRAM_ITEMS(state, data) {
     state.instagramItems = data.items
+  },
+  YOUTUBE_ITEMS(state, data) {
+    state.youtubeItems = data.items
   }
 }
 
@@ -35,5 +39,9 @@ export const actions = {
   async getInstagram({ commit }) {
     const { data } = await axios.get(`${HOST}/api/instagram/items`)
     commit('INSTAGRAM_ITEMS', data)
+  },
+  async getYoutube({ commit }) {
+    const { data } = await axios.get(`${HOST}/api/youtube/items`)
+    commit('YOUTUBE_ITEMS', data)
   }
 }

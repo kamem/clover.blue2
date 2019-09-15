@@ -97,7 +97,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/jsonld'],
+  plugins: ['~/plugins/jsonld', '~/plugins/youtube'],
   /*
    ** Nuxt.js dev-modules
    */

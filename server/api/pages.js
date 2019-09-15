@@ -3,9 +3,11 @@ import { getItems } from './api/Firestere'
 import Qiita from './api/Qiita'
 import DropboxApi from './api/Dropbox'
 import InstagramApi from './api/Instagram'
+import YoutubeApi from './api/Youtube'
 const qiita = new Qiita()
 const dropbox = new DropboxApi()
 const instagram = new InstagramApi()
+const youtube = new YoutubeApi()
 
 const qiitaRouter = (req, res) => {
   if (!req.query.api_key || !req.query.user_name) {
@@ -59,6 +61,22 @@ const instagramRouter = (req, res) => {
       return res.status(500).send('Something broke!')
     })
 }
+const youtubeRouter = (req, res) => {
+  if (!req.query.api_key || !req.query.channel_id) {
+    return res.status(500).send('パラメーターが間違ってるよ')
+  }
+  youtube.API_KEY = req.query.api_key
+  youtube.CHANNEL_ID = req.query.channel_id
+  youtube.saveEntries()
+  .then(values => {
+    console.log('complated!!')
+    res.json(values)
+  })
+  .catch(err => {
+    console.log(err)
+    return res.status(500).send('Something broke!')
+  })
+}
 
 const pages = [
   {
@@ -75,6 +93,11 @@ const pages = [
     method: 'get',
     url: '/update/instagram',
     complete: instagramRouter
+  },
+  {
+    method: 'get',
+    url: '/update/youtube',
+    complete: youtubeRouter
   },
   {
     method: 'get',
@@ -100,6 +123,15 @@ const pages = [
     complete: async (req, res) => {
       res.json({
         items: await getItems('instagram', 'created')
+      })
+    }
+  },
+  {
+    method: 'get',
+    url: '/youtube/items',
+    complete: async (req, res) => {
+      res.json({
+        items: await getItems('youtube', 'created')
       })
     }
   }

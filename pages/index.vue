@@ -80,13 +80,23 @@ export default {
           path: 'p',
           component: Photos,
           num: 6
+        },
+        {
+          title: 'Youtube',
+          items: _.map(this.youtubeItems, (data) => Object.assign({}, data, {
+            thumbnail: data.thumbnails.standard.url
+          })),
+          path: 'watch',
+          component: Photos,
+          num: 5
         }
       ]
     },
     ...mapState({
       qiitaItems: state => state.api.qiitaItems,
       dropboxItems: state => state.api.dropboxItems,
-      instagramItems: state => state.api.instagramItems
+      instagramItems: state => state.api.instagramItems,
+      youtubeItems: state => state.api.youtubeItems
     })
   },
   methods: {
