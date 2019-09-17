@@ -11,6 +11,7 @@
       <dd><Tags :tags="item.tags" class="none" /></dd>
     </dl>
     <div ref="content-body" class="content-body">
+      <TableOfContents v-if="tableOfContents" :tableOfContents="tableOfContents" />
       <slot name="body" />
       <div v-if="item && !$slots.body" v-html="item.body" />
     </div>
@@ -18,12 +19,21 @@
 </template>
 
 <script>
+import _ from 'lodash'
 import moment from 'moment'
 import Tags from '~/components/Tags.vue'
+import TableOfContents from '~/components/TableOfContents/TableOfContents.vue'
+import { createTableOfContents } from '~/utils/createTableOfContents'
 
 export default {
   components: {
-    Tags
+    Tags,
+    TableOfContents
+  },
+  data() {
+    return {
+      tableOfContents: undefined
+    }
   },
   props: {
     item: {
@@ -45,6 +55,9 @@ export default {
   },
   mounted() {
     this.prettyPrint()
+    const body = this.$refs['content-body']
+    const h = body.querySelectorAll('h2,h3,h4,h5,h6')
+    this.tableOfContents = _.size(h) && createTableOfContents(h)
   },
   methods: {
     prettyPrint() {
