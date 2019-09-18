@@ -63,7 +63,7 @@ export default {
         '@type': 'ProfilePage',
         '@id': `https://${process.env.TITLE}/about/`
       },
-      image: `https://${process.env.TITLE}/icons/144.png`
+      image: `https://${process.env.TITLE}/abubu.png`
     }
   }
 }
