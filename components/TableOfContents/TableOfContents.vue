@@ -5,7 +5,7 @@
       :key="content.id"
       class="table-of-content"
     >
-      <a :href="`#${content.id}`">{{ content.title }}</a>
+      <nuxt-link v-scroll-to="`#${content.id}`" to>{{ content.title }}</nuxt-link>
       <TableOfContents v-if="content.items" :tableOfContents="content.items" :lebel="lebel + 1" />
     </li>
   </ul>

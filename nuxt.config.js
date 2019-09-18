@@ -97,7 +97,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: (['~/plugins/jsonld', '~/plugins/youtube']).concat(process.env.MOCK ? '~/plugins/mock' : []),
+  plugins: (['~/plugins/jsonld', '~/plugins/youtube', '~/plugins/scrollto']).concat(process.env.MOCK ? '~/plugins/mock' : []),
   /*
    ** Nuxt.js dev-modules
    */
