@@ -97,7 +97,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/jsonld', '~/plugins/youtube'],
+  plugins: (['~/plugins/jsonld', '~/plugins/youtube']).concat(process.env.MOCK ? '~/plugins/mock' : []),
   /*
    ** Nuxt.js dev-modules
    */
@@ -123,7 +123,9 @@ module.exports = {
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
+  axios: {
+    browserBaseURL: baseURL,
+  },
   /*
    ** Build configuration
    */
