@@ -4,6 +4,9 @@
       >{{ TITLE }}について</template
     >
     <template slot="body">
+      <figure class="normal abubu">
+        <img src="/abubu.png">
+      </figure>
       <p>
         HTML, CSS, Javascript,
         デザインの記事や日記を書いたり。写真や作品を載せています。
@@ -65,3 +68,13 @@ export default {
   }
 }
 </script>
+
+<style>
+.abubu {
+  text-align: center;
+  margin-bottom: 40px;
+  & img {
+    border-radius: 50%;
+  }
+}
+</style>

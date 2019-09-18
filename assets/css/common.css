@@ -43,7 +43,7 @@ html {
     }
   }
 
-  & img {
+  & :not(.normal) img {
     width: 100%;
   }
 
