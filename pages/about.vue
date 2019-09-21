@@ -47,6 +47,11 @@ export default {
   head() {
     return { title: `${this.TITLE}について` }
   },
+  scrollToTop: false,
+  transition: {
+    name: 'page',
+    mode: ''
+  },
   components: {
     Content
   },

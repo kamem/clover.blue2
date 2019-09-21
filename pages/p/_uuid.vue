@@ -22,6 +22,11 @@ export default {
   components: {
     Content
   },
+  scrollToTop: false,
+  transition: {
+    name: 'page',
+    mode: ''
+  },
   fetch,
   head() {
     return {

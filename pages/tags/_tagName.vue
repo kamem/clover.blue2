@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container tag-name-page">
     <Tags :tags="TAGS" :active-id="$route.params.tagName" />
     <Entries
       v-for="entry in ENTRIES"
@@ -31,6 +31,10 @@ export default {
     List,
     Entries,
     Photos
+  },
+  transition: {
+    name: 'page',
+    mode: ''
   },
   fetch,
   head() {
@@ -103,8 +107,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.container {
-}
-</style>

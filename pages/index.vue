@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container index">
     <Tags :tags="TAGS" />
     <Entries
       v-for="entry in ENTRIES"
@@ -32,6 +32,10 @@ export default {
     List,
     Entries,
     Photos
+  },
+  transition: {
+    name: 'page',
+    mode: ''
   },
   fetch,
   head: {
@@ -109,8 +113,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.container {
-}
-</style>

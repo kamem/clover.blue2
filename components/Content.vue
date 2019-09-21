@@ -74,6 +74,13 @@ export default {
 <style scoped>
 .content {
   padding-bottom: 1px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  background-color: #f5f5f5;
 }
 
 .content-title {

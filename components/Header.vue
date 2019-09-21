@@ -32,8 +32,12 @@ export default {
 </script>
 
 <style scoped>
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
 .title {
-  position: relative;
   z-index: 11;
   & a {
     display: block;
@@ -55,7 +59,7 @@ export default {
   top: 10px;
   right: 0;
   display: flex;
-  z-index: 10;
+  z-index: 1000;
 }
 
 .nav-item {
