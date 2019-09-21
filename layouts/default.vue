@@ -7,8 +7,6 @@
   </div>
 </template>
 <script>
-import Promise from 'bluebird'
-import { mapActions } from 'vuex'
 import Header from '../components/Header'
 
 export default {
@@ -65,11 +63,23 @@ export default {
 }
 
 @keyframes bounce-in {
- 0% { transform: translateY(80px); opacity: 0; }
- 100% { transform: translateY(0); opacity: 1; }
+  0% {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 @keyframes bounce-out {
- 0% { transform: translateY(0); opacity: 1; }
- 100% { transform: translateY(80px); opacity: 0; }
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(80px);
+    opacity: 0;
+  }
 }
 </style>

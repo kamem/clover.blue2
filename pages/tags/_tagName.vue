@@ -36,7 +36,6 @@ export default {
     name: 'page',
     mode: ''
   },
-  fetch,
   head() {
     return { title: this.$route.params.tagName }
   },
@@ -100,6 +99,7 @@ export default {
       instagramItems: state => state.api.instagramItems
     })
   },
+  fetch,
   methods: {
     getListComponent(entry) {
       return entry.component || List

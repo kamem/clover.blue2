@@ -6,7 +6,11 @@
       class="table-of-content"
     >
       <a :href="`#${content.id}`">{{ content.title }}</a>
-      <TableOfContents v-if="content.items" :tableOfContents="content.items" :lebel="lebel + 1" />
+      <TableOfContents
+        v-if="content.items"
+        :table-of-contents="content.items"
+        :lebel="lebel + 1"
+      />
     </li>
   </ul>
 </template>
@@ -34,7 +38,7 @@ export default {
 
 <style scoped>
 .lebel0 {
-  margin: 0 0 8px 0!important;
+  margin: 0 0 8px 0 !important;
   margin-bottom: 24px;
   color: #666;
   box-sizing: border-box;

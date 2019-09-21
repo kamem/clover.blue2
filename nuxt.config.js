@@ -97,21 +97,16 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ([
+  plugins: [
     '~/plugins/jsonld',
-    { src: "~/plugins/youtube", ssr: false },
-    { src: "~/plugins/touch-events", ssr: false }
-  ]).concat(process.env.MOCK ? '~/plugins/mock' : []),
+    { src: '~/plugins/youtube', ssr: false },
+    { src: '~/plugins/touch-events', ssr: false }
+  ].concat(process.env.MOCK ? '~/plugins/mock' : []),
   /*
    ** Nuxt.js dev-modules
    */
   buildModules:
-    process.env.NODE_ENV !== 'development'
-      ? [
-        // Doc: https://github.com/nuxt-community/eslint-module
-        '@nuxtjs/eslint-module'
-        ]
-      : [],
+    process.env.NODE_ENV !== 'development' ? ['@nuxtjs/eslint-module'] : [],
   /*
    ** Nuxt.js modules
    */
@@ -122,17 +117,20 @@ module.exports = {
     '@nuxtjs/feed',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
-    ['@nuxtjs/google-tag-manager', {
-      id: 'GTM-M3V4J4L',
-      pageTracking: true,
-    }]
+    [
+      '@nuxtjs/google-tag-manager',
+      {
+        id: 'GTM-M3V4J4L',
+        pageTracking: true
+      }
+    ]
   ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
   axios: {
-    browserBaseURL: baseURL,
+    browserBaseURL: baseURL
   },
   /*
    ** Build configuration

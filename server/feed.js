@@ -18,7 +18,9 @@ const createFeedObject = (item, link) => {
 }
 
 export default async feed => {
-  feed.options = Object.assign({}, options, { link: `${domain}feed/weblog.xml` })
+  feed.options = Object.assign({}, options, {
+    link: `${domain}feed/weblog.xml`
+  })
   const qiitaItems = await getItems('qiita')
   qiitaItems.forEach(item => {
     feed.addItem(createFeedObject(item, `${domain}items/${item.uuid}`))
@@ -36,7 +38,9 @@ export default async feed => {
 }
 
 export const instagram = async feed => {
-  feed.options = Object.assign({}, options, { link: `${domain}feed/photos.xml` })
+  feed.options = Object.assign({}, options, {
+    link: `${domain}feed/photos.xml`
+  })
   const instagramItems = await getItems('instagram', 'created')
 
   instagramItems.forEach(item => {

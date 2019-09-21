@@ -1,6 +1,6 @@
 <template>
   <ul class="list">
-    <li v-for="{ title, uuid, tags } in items" :key="uuid" class="list-item">
+    <li v-for="{ title, uuid } in items" :key="uuid" class="list-item">
       <nuxt-link :to="`/${path}/${uuid}`">
         {{ title }}
       </nuxt-link>

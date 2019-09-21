@@ -17,9 +17,8 @@ export default {
   scrollToTop: false,
   transition: {
     name: 'page',
-    mode: '',
+    mode: ''
   },
-  fetch,
   head() {
     return {
       title: this.ITEM.title,
@@ -53,6 +52,7 @@ export default {
       qiitaItems: state => state.api.qiitaItems
     })
   },
+  fetch,
   jsonld() {
     return Object.assign({}, jsonld, {
       '@type': 'NewsArticle',

@@ -67,15 +67,16 @@ const youtubeRouter = (req, res) => {
   }
   youtube.API_KEY = req.query.api_key
   youtube.CHANNEL_ID = req.query.channel_id
-  youtube.saveEntries()
-  .then(values => {
-    console.log('complated!!')
-    res.json(values)
-  })
-  .catch(err => {
-    console.log(err)
-    return res.status(500).send('Something broke!')
-  })
+  youtube
+    .saveEntries()
+    .then(values => {
+      console.log('complated!!')
+      res.json(values)
+    })
+    .catch(err => {
+      console.log(err)
+      return res.status(500).send('Something broke!')
+    })
 }
 
 const pages = [

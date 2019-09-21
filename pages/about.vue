@@ -5,7 +5,7 @@
     >
     <template slot="body">
       <figure class="normal abubu">
-        <img src="/abubu.png">
+        <img src="/abubu.png" />
       </figure>
       <p>
         HTML, CSS, Javascript,

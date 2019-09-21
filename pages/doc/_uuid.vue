@@ -19,7 +19,6 @@ export default {
     name: 'page',
     mode: ''
   },
-  fetch,
   head() {
     return {
       title: this.ITEM.title,
@@ -53,6 +52,7 @@ export default {
       dropboxItems: state => state.api.dropboxItems
     })
   },
+  fetch,
   jsonld() {
     return Object.assign({}, jsonld, {
       '@type': 'NewsArticle',

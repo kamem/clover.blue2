@@ -37,7 +37,6 @@ export default {
     name: 'page',
     mode: ''
   },
-  fetch,
   head: {
     title: process.env.TITLE,
     titleTemplate: '',
@@ -87,9 +86,11 @@ export default {
         },
         {
           title: 'Youtube',
-          items: _.map(this.youtubeItems, (data) => Object.assign({}, data, {
-            thumbnail: data.thumbnails.standard.url
-          })),
+          items: _.map(this.youtubeItems, data =>
+            Object.assign({}, data, {
+              thumbnail: data.thumbnails.standard.url
+            })
+          ),
           path: 'watch',
           component: Photos,
           num: 5
@@ -103,6 +104,7 @@ export default {
       youtubeItems: state => state.api.youtubeItems
     })
   },
+  fetch,
   methods: {
     getListComponent(entry) {
       return entry.component || List

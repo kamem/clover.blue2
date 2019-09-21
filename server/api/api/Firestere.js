@@ -75,11 +75,12 @@ export const setItem = (item, itemsName) =>
     .then((res = {}) => {
       const isCreated = !_.size(res)
       const contentName = `${item.uuid} ${item.title}`
+      const updatedDate = `【${moment
+        .unix(res.updated)
+        .format(format)} > ${moment.unix(item.updated).format(format)}】`
       const message = isCreated
         ? `created item! ${contentName}`
-        : `updated item! ${contentName}【${moment
-          .unix(res.updated)
-          .format(format)} > ${moment.unix(item.updated).format(format)}】`
+        : `updated item! ${contentName}${updatedDate}`
 
       if (!_.isEqual(res, item)) {
         return saveEntry(item, itemsName, message).then(data =>

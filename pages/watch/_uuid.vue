@@ -1,11 +1,7 @@
 <template>
   <Content v-if="ITEM" :item="ITEM">
     <template slot="body">
-      <youtube
-        class="video"
-        ref="youtube"
-        :video-id="ITEM.videoId"
-      />
+      <youtube ref="youtube" class="video" :video-id="ITEM.videoId" />
     </template>
   </Content>
 </template>
@@ -26,7 +22,6 @@ export default {
     name: 'page',
     mode: ''
   },
-  fetch,
   head() {
     return {
       title: this.ITEM.title,
@@ -38,7 +33,11 @@ export default {
           property: 'og:url',
           content: `${process.env.HOST}/watch/${this.$route.params.uuid}`
         },
-        { hid: 'og:image', property: 'og:image', content: this.ITEM.thumbnails.standard.url },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.ITEM.thumbnails.standard.url
+        },
         {
           hid: 'og:description',
           property: 'og:description',
@@ -60,6 +59,7 @@ export default {
       youtubeItems: state => state.api.youtubeItems
     })
   },
+  fetch,
   jsonld() {
     return Object.assign({}, jsonld, {
       '@type': 'ImageObject',

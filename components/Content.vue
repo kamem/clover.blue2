@@ -11,7 +11,10 @@
       <dd><Tags :tags="item.tags" class="none" /></dd>
     </dl>
     <div ref="content-body" class="content-body">
-      <TableOfContents v-if="tableOfContents" :tableOfContents="tableOfContents" />
+      <TableOfContents
+        v-if="tableOfContents"
+        :table-of-contents="tableOfContents"
+      />
       <slot name="body" />
       <div v-if="item && !$slots.body" v-html="item.body" />
     </div>
@@ -30,15 +33,15 @@ export default {
     Tags,
     TableOfContents
   },
-  data() {
-    return {
-      tableOfContents: undefined
-    }
-  },
   props: {
     item: {
       type: Object,
       default: () => {}
+    }
+  },
+  data() {
+    return {
+      tableOfContents: undefined
     }
   },
   computed: {

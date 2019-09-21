@@ -27,7 +27,6 @@ export default {
     name: 'page',
     mode: ''
   },
-  fetch,
   head() {
     return {
       title: this.ITEM.body,
@@ -61,6 +60,7 @@ export default {
       instagramItems: state => state.api.instagramItems
     })
   },
+  fetch,
   jsonld() {
     return Object.assign({}, jsonld, {
       '@type': 'ImageObject',

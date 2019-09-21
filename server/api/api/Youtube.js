@@ -76,9 +76,7 @@ export default class YoutubeApi {
               publishedAt: created,
               title,
               thumbnails,
-              resourceId: {
-                videoId
-              }
+              resourceId: { videoId }
             }
           }) => ({
             uuid,
@@ -88,7 +86,7 @@ export default class YoutubeApi {
             created: moment(created).unix(),
             title,
             videoId,
-            thumbnails,
+            thumbnails
           })
         )
 
