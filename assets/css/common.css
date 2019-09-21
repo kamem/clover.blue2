@@ -8,6 +8,10 @@ html {
   background-color: #f5f5f5;
 }
 
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .content-body {
   margin: 0 auto;
   max-width: calc(var(--content--max-width) + 7.5%);

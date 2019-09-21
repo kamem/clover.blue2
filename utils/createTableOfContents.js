@@ -16,6 +16,7 @@ export const createTableOfContents = (h) => {
       h2LebelLatest.items = h2LebelLatest.items || []
       h2LebelLatest.items.push({el})
     } else if(lebel === 4) {
+      h2LebelLatest.items = h2LebelLatest.items || []
       h3LebelLatest = h2LebelLatest.items[h2LebelLatest.items.length - 1] || {}
       h3LebelLatest.items = h3LebelLatest.items || []
       h3LebelLatest.items.push({el})

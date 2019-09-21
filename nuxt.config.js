@@ -97,7 +97,11 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: (['~/plugins/jsonld', '~/plugins/youtube', '~/plugins/scrollto']).concat(process.env.MOCK ? '~/plugins/mock' : []),
+  plugins: ([
+    '~/plugins/jsonld',
+    { src: "~/plugins/youtube", ssr: false },
+    { src: "~/plugins/touch-events", ssr: false }
+  ]).concat(process.env.MOCK ? '~/plugins/mock' : []),
   /*
    ** Nuxt.js dev-modules
    */
@@ -117,7 +121,11 @@ module.exports = {
     '@nuxtjs/pwa',
     '@nuxtjs/feed',
     '@nuxtjs/sitemap',
-    '@nuxtjs/robots'
+    '@nuxtjs/robots',
+    ['@nuxtjs/google-tag-manager', {
+      id: 'GTM-M3V4J4L',
+      pageTracking: true,
+    }]
   ],
   /*
    ** Axios module configuration
@@ -171,7 +179,6 @@ module.exports = {
     path: '/sitemap.xml',
     hostname: baseURL,
     cacheTime: feedCacheTime,
-    gzip: true,
     generate: false,
     exclude: [],
     routes
