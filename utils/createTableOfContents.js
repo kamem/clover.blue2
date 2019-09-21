@@ -16,15 +16,15 @@ export const createTableOfContents = (h) => {
       h2LebelLatest.items = h2LebelLatest.items || []
       h2LebelLatest.items.push({el})
     } else if(lebel === 4) {
-      h3LebelLatest = h3LebelLatest.items[h3LebelLatest.items.length - 1] || {}
+      h3LebelLatest = h2LebelLatest.items[h2LebelLatest.items.length - 1] || {}
       h3LebelLatest.items = h3LebelLatest.items || []
       h3LebelLatest.items.push({el})
     } else if(lebel === 5) {
-      h4LebelLatest = h4LebelLatest.items[h4LebelLatest.items.length - 1] || {}
+      h4LebelLatest = h3LebelLatest.items[h3LebelLatest.items.length - 1] || {}
       h4LebelLatest.items = h4LebelLatest.items || []
       h4LebelLatest.items.push({el})
     } else if(lebel === 6) {
-      h5LebelLatest = h5LebelLatest.items[h5LebelLatest.items.length - 1] || {}
+      h5LebelLatest = h4LebelLatest.items[h4LebelLatest.items.length - 1] || {}
       h5LebelLatest.items = h5LebelLatest.items || []
       h5LebelLatest.items.push({el})
     }
