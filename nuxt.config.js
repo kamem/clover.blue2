@@ -130,6 +130,7 @@ module.exports = {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {
+    baseURL,
     browserBaseURL: baseURL
   },
   /*
@@ -220,6 +221,7 @@ module.exports = {
   },
   robots: {
     UserAgent: '*',
+    Disallow: '/api/',
     Sitemap: `${baseURL}/sitemap.xml`
   }
 }
