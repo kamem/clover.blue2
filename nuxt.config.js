@@ -2,6 +2,7 @@ const server = process.env.NODE_ENV === 'development' ? 'server' : 'server_dist'
 const create = require(`./${server}/feed`).default
 const instagram = require(`./${server}/feed`).instagram
 const routes = require(`./${server}/sitemap`).default
+const pkg = require('./package.json')
 
 const feedCacheTime = 1000 * 60 * 15
 
@@ -9,7 +10,7 @@ const PORT = process.env.PORT || 1341
 
 const HOST = {
   development: `http://localhost:${PORT}`,
-  production: process.env.npm_package_host
+  production: pkg.host
 }
 
 const baseURL = HOST[process.env.NODE_ENV]
@@ -22,9 +23,9 @@ module.exports = {
   serverMiddleware: [{ path: '/api', handler: `~/${server}/api/` }],
   env: {
     APP_ENV: process.env.NODE_ENV,
-    TITLE: process.env.npm_package_name,
-    DESCRIPTION: process.env.npm_package_description,
-    AUTHOR_NAME: process.env.npm_package_author_name,
+    TITLE: pkg.name,
+    DESCRIPTION: pkg.description,
+    AUTHOR_NAME: pkg.author,
     HOST: baseURL
   },
   router: {
@@ -34,7 +35,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    titleTemplate: `%s - ${process.env.npm_package_name}`,
+    titleTemplate: `%s - ${pkg.name}`,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -42,7 +43,7 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: pkg.description || ''
       },
       { property: 'og:image', content: `${baseURL}/icons/512.png` }
     ],
@@ -183,8 +184,8 @@ module.exports = {
     routes
   },
   manifest: {
-    name: process.env.npm_package_name,
-    short_name: process.env.npm_package_name,
+    name: pkg.name,
+    short_name: pkg.name,
     version: 1,
     icons: [
       {

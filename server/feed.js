@@ -1,9 +1,10 @@
+import pkg from '../package.json'
 import { getItems } from './api/api/Firestere'
 
-const domain = `https://${process.env.npm_package_name}/`
+const domain = pkg.host
 const options = {
-  title: process.env.npm_package_name,
-  description: process.env.npm_package_description
+  title: pkg.name,
+  description: pkg.description
 }
 
 const createFeedObject = (item, link) => {
@@ -19,32 +20,32 @@ const createFeedObject = (item, link) => {
 
 export default async feed => {
   feed.options = Object.assign({}, options, {
-    link: `${domain}feed/weblog.xml`
+    link: `${domain}/feed/weblog.xml`
   })
   const qiitaItems = await getItems('qiita')
   qiitaItems.forEach(item => {
-    feed.addItem(createFeedObject(item, `${domain}items/${item.uuid}`))
+    feed.addItem(createFeedObject(item, `${domain}/items/${item.uuid}`))
   })
   const dropboxItems = await getItems('dropbox_paper')
   dropboxItems.forEach(item => {
-    feed.addItem(createFeedObject(item, `${domain}doc/${item.uuid}`))
+    feed.addItem(createFeedObject(item, `${domain}/doc/${item.uuid}`))
   })
 
   feed.addCategory('blog')
   feed.addContributor({
-    name: process.env.npm_package_author,
+    name: pkg.author,
     link: domain
   })
 }
 
 export const instagram = async feed => {
   feed.options = Object.assign({}, options, {
-    link: `${domain}feed/photos.xml`
+    link: `${domain}/feed/photos.xml`
   })
   const instagramItems = await getItems('instagram', 'created')
 
   instagramItems.forEach(item => {
-    const link = `${domain}p/${item.uuid}`
+    const link = `${domain}/p/${item.uuid}`
     feed.addItem({
       title: item.body,
       id: item.uuid,
@@ -57,7 +58,7 @@ export const instagram = async feed => {
 
   feed.addCategory('blog')
   feed.addContributor({
-    name: process.env.npm_package_author,
+    name: pkg.author,
     link: domain
   })
 }
