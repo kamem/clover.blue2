@@ -8506,10 +8506,10 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-nuxt-jsonld@^1.4.2:
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/nuxt-jsonld/-/nuxt-jsonld-1.4.2.tgz#8c87f3862a3b054bfb4b241448e432335c2a82ee"
-  integrity sha512-XwejZIF5IRBW2g6lOj3CxH+wyQIRk8rLlfHPY42Av0cyqc09gLL9phAsP7tGk1P/7XKohdNSzbM7l5Pa0TwuBg==
+nuxt-jsonld@^1.4.4:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/nuxt-jsonld/-/nuxt-jsonld-1.4.4.tgz#660fd8c5bf61a22a10408e72ed078670b1c70077"
+  integrity sha512-dpWKXv/deEMOXj7uxycUKbwULMVQRuje55QkVIsSxPFZVuNKX/EODpaavUSM9PzoYHbBGQ1Hfy8bRj/B9eaJ5Q==
   dependencies:
     xxhashjs "^0.2.2"
 
