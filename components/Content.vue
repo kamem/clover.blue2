@@ -83,7 +83,7 @@ export default {
   right: 0;
   bottom: 0;
   overflow: auto;
-  background-color: #f5f5f5;
+  background-color: var(--main-bg-color);
 }
 
 .content-title {

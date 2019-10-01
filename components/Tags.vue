@@ -42,7 +42,7 @@ export default {
     margin-right: 8px;
     display: inline-block;
     padding: 4px 10px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--paper-background-color);
     text-decoration: none;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
     border-radius: 4px;

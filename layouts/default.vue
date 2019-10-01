@@ -23,7 +23,7 @@ export default {
   position: relative;
   z-index: 0;
   padding-bottom: 56px;
-  background-color: #f5f5f5;
+  background-color: var(--main-bg-color);
 }
 
 .page-leave-active,

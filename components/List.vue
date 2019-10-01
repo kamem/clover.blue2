@@ -81,7 +81,7 @@ export default {
     font-size: 15px;
     letter-spacing: 0.05em;
     text-decoration: none;
-    color: #555;
+    color: var(--text-color);
     &:hover {
       opacity: 0.6;
       .tags {

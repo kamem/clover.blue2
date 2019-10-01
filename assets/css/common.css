@@ -5,7 +5,11 @@
 }
 
 html {
-  background-color: #f5f5f5;
+  background-color: var(--main-bg-color);
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #222;
+  }
 }
 
 a {
@@ -31,7 +35,7 @@ a {
     border-bottom: 1px solid rgba(0,0,0,0.05);
     letter-spacing: 0.13em;
     text-decoration: none;
-    color: #555;
+    color: var(--text-color);
 
     & h2,
     & h3,
@@ -57,11 +61,27 @@ a {
     box-sizing: border-box;
     padding: 8px !important;
     border: 1px solid #ddd !important;
-    background-color: #fff;
+    background-color: var(--code-bg-color);
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
     overflow: auto;
     font-size: 14px;
     letter-spacing: 0;
+    position: relative;
+    @media (prefers-color-scheme: dark) {
+      border: 1px solid #000 !important;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #eee;
+        mix-blend-mode: difference;
+        border: 1px solid #ddd !important;
+      }
+    }
   }
 
   & h2 {
@@ -141,7 +161,7 @@ a {
     text-decoration: underline;
     font-size: 15px;
     letter-spacing: 0.13em;
-    color: #666;
+    color: var(--link-color);
     word-break: break-all;
     &:hover {
       opacity: 0.6;
@@ -176,6 +196,19 @@ a {
     @media screen and (max-width: 40.625rem) {
       table-layout: fixed;
     }
+    @media (prefers-color-scheme: dark) {
+      & th,
+      & td {
+        border: 1px solid #000;
+        background-color: #111;
+      }
+      & th {
+        background-color: #000;
+      }
+      & tr:nth-child(odd) td {
+        background-color: #1a1a1a;
+      }
+    }
   }
 
   & blockquote {
@@ -187,6 +220,10 @@ a {
     overflow: auto;
     & > * {
       color: #777;
+    }
+    @media (prefers-color-scheme: dark) {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-left: 4px solid #111;
     }
   }
 

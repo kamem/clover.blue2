@@ -21,7 +21,7 @@ export default {
   max-width: calc(var(--content--max-width) + 7.5%);
   margin: 0 auto 24px;
   padding: 32px 0 40px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: var(--paper-background-color);
   position: relative;
   overflow: hidden;
   border-radius: 4px;
@@ -35,7 +35,7 @@ export default {
   display: block;
   font-size: 120px;
   font-weight: bold;
-  color: #f5f5f5;
+  color: var(--entry-title-color);
   position: absolute;
   bottom: -30px;
   line-height: 1;
