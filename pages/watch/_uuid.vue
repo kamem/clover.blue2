@@ -2,6 +2,13 @@
   <Content v-if="ITEM" :item="ITEM">
     <template slot="body">
       <youtube ref="youtube" class="video" :video-id="ITEM.videoId" />
+      <noscript>
+        <figure>
+          <a :href="`https://youtube.com/watch?v=${ITEM.videoId}`" target="youtube" class="imgLink">
+            <img :src="ITEM.thumbnails.high.url" />
+          </a>
+        </figure>
+      </noscript>
     </template>
   </Content>
 </template>
