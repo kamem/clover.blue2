@@ -55,6 +55,17 @@ a {
     width: 100%;
   }
 
+  & .code-lang {
+    margin: 0 5%;
+    padding: 2px 8px;
+    border-bottom: none;
+    background-color: var(--paper-background-color);
+    color: var(--text-color);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    font-size: 12px;
+  }
+
   & pre {
     margin-bottom: 24px;
     color: #666;
