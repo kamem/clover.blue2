@@ -15,6 +15,8 @@ const HOST = {
 
 const baseURL = HOST[process.env.NODE_ENV]
 
+const dataAdClient = 'ca-pub-9059007378327558'
+
 module.exports = {
   mode: 'universal',
   server: {
@@ -118,6 +120,12 @@ module.exports = {
     '@nuxtjs/feed',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
+    [
+      '@nuxtjs/google-adsense',
+      {
+        id: dataAdClient
+      }
+    ],
     [
       '@nuxtjs/google-tag-manager',
       {
