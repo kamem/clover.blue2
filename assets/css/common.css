@@ -20,6 +20,20 @@ a {
 .content-body {
   margin: 0 auto;
   max-width: calc(var(--content--max-width) + 7.5%);
+
+  & i {
+    font-style: none;
+  }
+
+  & h2,
+  & h3,
+  & h4,
+  & h5 {
+    & i {
+      display: none;
+    }
+  }
+
   & li,
   & h2,
   & h3,
@@ -45,10 +59,6 @@ a {
     & p,
     & table {
       margin: 0;
-    }
-
-    & i {
-      display: none;
     }
   }
 

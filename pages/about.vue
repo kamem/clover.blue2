@@ -35,6 +35,17 @@
         </p>
 
         <p>スポーツはテニス、野球が好きです。</p>
+
+        <section>
+          <h2>SNS</h2>
+
+          <ul>
+            <li><i class="fab fa-github"></i> <a href="https://github.com/kamem">Github</a></li>
+            <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/kamem/">Instagram</a></li>
+            <li><i class="fab fa-twitter"></i> <a href="https://twitter.com/kamem">Twitter</a></li>
+            <li><i class="fas fa-search"></i> <a href="https://qiita.com/kamem">Qiita</a></li>
+          </ul>
+        </section>
       </section>
     </template>
   </Content>
