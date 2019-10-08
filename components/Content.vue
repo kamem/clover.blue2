@@ -89,6 +89,7 @@ export default {
   bottom: 0;
   overflow: auto;
   background-color: var(--main-bg-color);
+  scroll-behavior: smooth;
 }
 
 .content-title {
