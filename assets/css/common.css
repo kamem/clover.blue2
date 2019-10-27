@@ -6,11 +6,9 @@
 
 html {
   background-color: var(--main-bg-color);
-
-  @media (prefers-color-scheme: dark) {
-    background-color: #222;
-  }
+  transition: all 0.5s;
 }
+
 
 a {
   -webkit-tap-highlight-color: transparent;
@@ -88,21 +86,6 @@ a {
     font-size: 14px;
     letter-spacing: 0;
     position: relative;
-    @media (prefers-color-scheme: dark) {
-      border: 1px solid #000 !important;
-      &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #eee;
-        mix-blend-mode: difference;
-        border: 1px solid #ddd !important;
-      }
-    }
   }
 
   & h2 {
@@ -221,19 +204,6 @@ a {
     @media screen and (max-width: 40.625rem) {
       table-layout: fixed;
     }
-    @media (prefers-color-scheme: dark) {
-      & th,
-      & td {
-        border: 1px solid #000;
-        background-color: #111;
-      }
-      & th {
-        background-color: #000;
-      }
-      & tr:nth-child(odd) td {
-        background-color: #1a1a1a;
-      }
-    }
   }
 
   & blockquote {
@@ -246,15 +216,49 @@ a {
     & > * {
       color: #777;
     }
-    @media (prefers-color-scheme: dark) {
-      background-color: rgba(255, 255, 255, 0.05);
-      border-left: 4px solid #111;
-    }
   }
 
   & hr {
     border: none;
     border-bottom: 5px solid rgba(0,0,0,0.05);
     margin-bottom: 40px;
+  }
+}
+
+.dark {
+  & .content-body {
+    & pre {
+      border: 1px solid #000 !important;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #eee;
+        mix-blend-mode: difference;
+        border: 1px solid #ddd !important;
+      }
+    }
+    & table {
+      & th,
+      & td {
+        border: 1px solid #000;
+        background-color: #111;
+      }
+      & th {
+        background-color: #000;
+      }
+      & tr:nth-child(odd) td {
+        background-color: #1a1a1a;
+      }
+    }
+
+    & blockquote {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-left: 4px solid #111;
+    }
   }
 }

@@ -37,7 +37,13 @@ export default {
 </script>
 
 <style scoped>
+.dark {
+  & .lebel0 {
+    --table-of-content-color: rgba(0, 0, 0, 0.1);
+  }
+}
 .lebel0 {
+  --table-of-content-color: rgba(240, 240, 240, 0.3);
   margin: 0 0 8px 0 !important;
   margin-bottom: 24px;
   color: #666;
@@ -51,7 +57,7 @@ export default {
   bottom: 0;
   overflow: auto;
   z-index: 1;
-  background-color: rgba(240, 240, 240, 0.3);
+  background-color: var(--table-of-content-color);
   @media all and (max-width: 1020px) {
     display: none;
   }

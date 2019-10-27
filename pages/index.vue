@@ -25,13 +25,22 @@ import Entries from '~/components/Entries.vue'
 import Photos from '~/components/Photos.vue'
 import { jsonld } from '~/utils/const'
 import { fetch } from '~/utils/ssrFetch'
+import Field from '~/components/Form/Field.vue'
+import SwitchButton from '~/components/Form/SwitchButton.vue'
 
 export default {
   components: {
     Tags,
     List,
     Entries,
-    Photos
+    Photos,
+    SwitchButton,
+    Field
+  },
+  data() {
+    return {
+      selected: true
+    }
   },
   transition: {
     name: 'page',
@@ -108,6 +117,9 @@ export default {
   methods: {
     getListComponent(entry) {
       return entry.component || List
+    },
+    changeDarkMode() {
+      this.selected = !this.selected
     }
   },
   jsonld() {

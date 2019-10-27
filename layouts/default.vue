@@ -7,11 +7,26 @@
   </div>
 </template>
 <script>
+import { mapActions, mapState } from 'vuex'
+
 import Header from '../components/Header'
 
 export default {
   components: {
     Header
+  },
+  computed: {
+    ...mapState({
+      mode: state => state.common.mode
+    })
+  },
+  mounted() {
+    this.changeMode(localStorage.mode)
+  },
+  methods: {
+    ...mapActions({
+      changeMode: 'common/changeMode'
+    })
   }
 }
 </script>

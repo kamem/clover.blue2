@@ -7,6 +7,18 @@
       <figure class="normal abubu">
         <img src="/abubu.png" />
       </figure>
+      <Field>
+        <template slot="label"
+          >ダークモード</template
+        >
+        <template slot="content">
+          <SwitchButton
+            name="mode"
+            :selected="mode === 'dark'"
+            @click="val => changeMode(val ? 'dark' : 'light')"
+          />
+        </template>
+      </Field>
       <p>
         HTML, CSS, Javascript,
         デザインの記事や日記を書いたり。写真や作品を載せています。
@@ -64,9 +76,22 @@
 </template>
 
 <script>
+import { mapActions, mapState } from 'vuex'
 import Content from '~/components/Content.vue'
+import Field from '~/components/Form/Field.vue'
+import SwitchButton from '~/components/Form/SwitchButton.vue'
 
 export default {
+  components: {
+    Content,
+    SwitchButton,
+    Field
+  },
+  data() {
+    return {
+      selected: true
+    }
+  },
   head() {
     return { title: `${this.TITLE}について` }
   },
@@ -75,11 +100,16 @@ export default {
     name: 'page',
     mode: ''
   },
-  components: {
-    Content
-  },
   computed: {
-    TITLE: () => process.env.TITLE
+    TITLE: () => process.env.TITLE,
+    ...mapState({
+      mode: state => state.common.mode
+    })
+  },
+  methods: {
+    ...mapActions({
+      changeMode: 'common/changeMode'
+    })
   },
   jsonld() {
     return {
