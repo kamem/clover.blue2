@@ -248,6 +248,12 @@ a {
       & .atv {
         color: #da4a53;
       }
+      & .atv {
+        color: #da4a53;
+      }
+      & .atn {
+        color: #fff;
+      }
     }
     & table {
       & th,
