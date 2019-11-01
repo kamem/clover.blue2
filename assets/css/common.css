@@ -229,17 +229,24 @@ a {
   & .content-body {
     & pre {
       border: 1px solid #000 !important;
-      &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #eee;
-        mix-blend-mode: difference;
-        border: 1px solid #ddd !important;
+      background: #000;
+      & .pun {
+        color: #fff;
+      }
+      & .pln {
+        color: #fff;
+      }
+      & .kwd {
+        color: var(--main-color);
+      }
+      & .str {
+        color: #da4a53;
+      }
+      & .tag {
+        color: var(--main-color);
+      }
+      & .atv {
+        color: #da4a53;
       }
     }
     & table {
