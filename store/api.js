@@ -1,3 +1,5 @@
+import { generateAddIsNewToMap } from '../utils/generateAddIsNewToMap'
+
 export const state = () => ({
   qiitaItems: [],
   dropboxItems: [],
@@ -6,7 +8,10 @@ export const state = () => ({
 })
 
 export const getters = {
-  qiitaItems: state => state.qiitaItems
+  qiitaItems: (state, getters, { common }) =>
+    generateAddIsNewToMap(state.qiitaItems, parseInt(common.visitedDate)),
+  dropboxItems: (state, getters, { common }) =>
+    generateAddIsNewToMap(state.dropboxItems, parseInt(common.visitedDate))
 }
 
 export const mutations = {

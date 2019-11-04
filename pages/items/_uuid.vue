@@ -4,7 +4,7 @@
 
 <script>
 import _ from 'lodash'
-import { mapState } from 'vuex'
+import { mapGetters } from 'vuex'
 import Content from '~/components/Content.vue'
 import { generateDescription } from '~/utils/format.js'
 import { jsonld } from '~/utils/const'
@@ -48,8 +48,8 @@ export default {
     DESCRIPTION() {
       return generateDescription(this.ITEM.body || '')
     },
-    ...mapState({
-      qiitaItems: state => state.api.qiitaItems
+    ...mapGetters({
+      qiitaItems: 'api/qiitaItems'
     })
   },
   fetch,

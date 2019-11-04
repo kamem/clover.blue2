@@ -21,10 +21,12 @@ export default {
     })
   },
   mounted() {
+    this.changeVisitedDate(Math.floor(new Date().getTime() / 1000))
     this.changeMode(localStorage.mode)
   },
   methods: {
     ...mapActions({
+      changeVisitedDate: 'common/changeVisitedDate',
       changeMode: 'common/changeMode'
     })
   }

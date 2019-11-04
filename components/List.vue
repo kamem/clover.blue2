@@ -1,6 +1,11 @@
 <template>
   <ul class="list">
-    <li v-for="{ title, uuid } in items" :key="uuid" class="list-item">
+    <li
+      v-for="{ title, uuid, isNew } in items"
+      :key="uuid"
+      class="list-item"
+      :class="{ new: isNew }"
+    >
       <nuxt-link :to="`/${path}/${uuid}`">
         {{ title }}
       </nuxt-link>
@@ -88,6 +93,16 @@ export default {
         opacity: 1;
       }
     }
+  }
+
+  &.new a:before {
+    content: 'NEW';
+    display: inline-block;
+    background-color: #ff5277;
+    padding: 0 4px;
+    color: #fff;
+    font-size: 10px;
+    border-radius: 1px;
   }
 }
 </style>

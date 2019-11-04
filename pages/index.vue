@@ -18,7 +18,7 @@
 
 <script>
 import _ from 'lodash'
-import { mapState } from 'vuex'
+import { mapState, mapGetters } from 'vuex'
 import Tags from '~/components/Tags.vue'
 import List from '~/components/List.vue'
 import Entries from '~/components/Entries.vue'
@@ -107,10 +107,12 @@ export default {
       ]
     },
     ...mapState({
-      qiitaItems: state => state.api.qiitaItems,
-      dropboxItems: state => state.api.dropboxItems,
       instagramItems: state => state.api.instagramItems,
       youtubeItems: state => state.api.youtubeItems
+    }),
+    ...mapGetters({
+      qiitaItems: 'api/qiitaItems',
+      dropboxItems: 'api/dropboxItems'
     })
   },
   fetch,
