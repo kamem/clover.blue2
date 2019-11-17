@@ -7,7 +7,7 @@
       <figure class="normal abubu">
         <img src="/abubu.png" />
       </figure>
-      <Field>
+      <Field theme="right">
         <template slot="label"
           >ダークモード</template
         >
