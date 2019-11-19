@@ -48,6 +48,7 @@ export default {
   height: var(--switch-size);
   border-radius: var(--switch-size-half);
   transition: all 0.5s;
+  border: none;
   & > * {
     cursor: pointer;
   }

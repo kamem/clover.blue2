@@ -17,12 +17,14 @@
       />
       <slot name="body" />
       <div v-if="item && !$slots.body" v-html="item.body" />
+    </div>
+    <aside>
       <adsbygoogle
         ad-slot="9719828766"
         ad-format="auto"
         full-width-responsive="true"
       />
-    </div>
+    </aside>
   </article>
 </template>
 
@@ -133,8 +135,9 @@ export default {
 }
 
 .adsbygoogle {
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
   width: 100%;
+  max-width: calc(var(--content--max-width) + 7.5%);
   overflow: auto;
 }
 </style>
