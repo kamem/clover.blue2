@@ -7,18 +7,18 @@
       <figure class="normal abubu">
         <img src="/abubu.png" />
       </figure>
-      <Field theme="right">
-        <template slot="label"
-          >ダークモード</template
-        >
-        <template slot="content">
-          <SwitchButton
-            name="mode"
-            :selected="mode === 'dark'"
-            @click="val => changeMode(val ? 'dark' : 'light')"
-          />
-        </template>
-      </Field>
+      <no-ssr>
+        <Field theme="right">
+          <template slot="label">ダークモード</template>
+          <template slot="content">
+            <SwitchButton
+              name="mode"
+              :selected="mode === 'dark'"
+              @click="val => changeMode(val ? 'dark' : 'light')"
+            />
+          </template>
+        </Field>
+      </no-ssr>
       <p>
         HTML, CSS, Javascript,
         デザインの記事や日記を書いたり。写真や作品を載せています。
