@@ -20,13 +20,12 @@ export default {
 .field {
   margin: 0 5%;
   display: flex;
-  margin-bottom: 32px;
   border-bottom: var(--border-bottom);
   &:first-of-type {
     border-top: var(--border-bottom);
   }
-  & + .field {
-    margin-bottom: 0;
+  &:last-of-type {
+    margin-bottom: 32px;
   }
 }
 
