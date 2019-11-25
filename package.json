@@ -58,6 +58,7 @@
     "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-plugin-prettier": "^3.0.1",
     "express": "^4.16.4",
+    "firebase": "^7.4.0",
     "firebase-admin": "^8.4.0",
     "husky": "^2.6.0",
     "jest": "^24.1.0",

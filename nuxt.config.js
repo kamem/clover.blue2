@@ -102,6 +102,7 @@ module.exports = {
    */
   plugins: [
     '~/plugins/jsonld',
+    { src: '~/plugins/firebase', ssr: false },
     { src: '~/plugins/youtube', ssr: false },
     { src: '~/plugins/touch-events', ssr: false }
   ].concat(process.env.MOCK ? '~/plugins/mock' : []),
@@ -226,7 +227,8 @@ module.exports = {
     dir: 'ltr',
     lang: 'ja-jp',
     related_applications: [],
-    prefer_related_applications: false
+    prefer_related_applications: false,
+    gcm_sender_id: '103953800507'
   },
   robots: {
     UserAgent: '*',

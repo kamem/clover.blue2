@@ -18,6 +18,16 @@
             />
           </template>
         </Field>
+        <Field theme="right">
+          <template slot="label">Push通知</template>
+          <template slot="content">
+            <SwitchButton
+              name="push"
+              :selected="isPush"
+              @click="val => {isPush = val; push(val)}"
+            />
+          </template>
+        </Field>
       </no-ssr>
       <p>
         HTML, CSS, Javascript,
@@ -89,7 +99,7 @@ export default {
   },
   data() {
     return {
-      selected: true
+      isPush: false
     }
   },
   head() {
@@ -107,6 +117,27 @@ export default {
     })
   },
   methods: {
+    getToken() {
+      return this.$messaging.getToken().then((currentToken) => {
+        console.log(currentToken)
+        if(currentToken) this.isPush = true
+      })
+      .catch((err) => {
+        this.isPush = false
+        console.error(err)
+      })
+    },
+    push(val) {
+      if(!val) return
+      this.$messaging.requestPermission().then((permission) => {
+        console.log(permission)
+        return this.getToken()
+      })
+      .catch((err) => {
+        this.isPush = false
+        console.error(err)
+      })
+    },
     ...mapActions({
       changeMode: 'common/changeMode'
     })
@@ -123,6 +154,9 @@ export default {
       },
       image: `https://${process.env.TITLE}/abubu.png`
     }
+  },
+  created() {
+    if(this.$messaging) this.getToken()
   }
 }
 </script>
