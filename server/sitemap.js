@@ -23,10 +23,6 @@ export default async () => {
       url: `/doc/${item.uuid}`,
       lastmod: new Date(item.updated * 1000)
     })),
-    instagramItems.map(item => ({
-      url: `/p/${item.uuid}`,
-      lastmod: new Date(item.created * 1000)
-    })),
     tags.map(name => `tags/${name}`)
   )
 }
