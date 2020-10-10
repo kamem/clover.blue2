@@ -5,7 +5,6 @@ export const fetch = async ({ store }) => {
   await Promise.all([
     store.dispatch('api/getQiita'),
     store.dispatch('api/getDropbox'),
-    store.dispatch('api/getInstagram'),
     store.dispatch('api/getYoutube')
   ])
 }

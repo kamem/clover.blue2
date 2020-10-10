@@ -62,11 +62,7 @@ export default {
   },
   computed: {
     TAGS() {
-      return _.chain([
-        ...this.qiitaItems,
-        ...this.dropboxItems,
-        ...this.instagramItems
-      ])
+      return _.chain([...this.qiitaItems, ...this.dropboxItems])
         .map('tags')
         .flatten()
         .uniq()
@@ -85,13 +81,6 @@ export default {
           items: this.dropboxItems,
           path: 'doc',
           num: 5
-        },
-        {
-          title: 'Instagram',
-          items: this.instagramItems,
-          path: 'p',
-          component: Photos,
-          num: 6
         },
         {
           title: 'Youtube',
