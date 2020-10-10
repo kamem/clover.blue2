@@ -9,9 +9,9 @@
       </figure>
       <no-ssr>
         <Field theme="right">
-          <template slot="label"
-            >ダークモード</template
-          >
+          <template slot="label">
+            ダークモード
+          </template>
           <template slot="content">
             <SwitchButton
               name="mode"
