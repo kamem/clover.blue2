@@ -22,7 +22,6 @@ import _ from 'lodash'
 import { mapState } from 'vuex'
 import Content from '~/components/Content.vue'
 import { jsonld } from '~/utils/const'
-import { fetch } from '~/utils/ssrFetch'
 
 export default {
   components: {
@@ -70,7 +69,6 @@ export default {
       youtubeItems: state => state.api.youtubeItems
     })
   },
-  fetch,
   jsonld() {
     return Object.assign({}, jsonld, {
       '@type': 'ImageObject',

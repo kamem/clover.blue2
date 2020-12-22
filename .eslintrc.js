@@ -28,6 +28,7 @@ module.exports = {
     'vue/no-use-v-if-with-v-for': 'off',
     'vue/no-v-html': 'off',
     'vue/no-unused-components': 'off',
+    'nuxt/no-env-in-hooks': 'off',
     'indent': [2, 2, {'SwitchCase': 1}],
   }
 }

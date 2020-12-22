@@ -15,17 +15,34 @@ export default {
   components: {
     Header
   },
+  data: () => ({
+    loading: false
+  }),
   computed: {
     ...mapState({
       mode: state => state.common.mode
     })
   },
+  start() {
+    this.loading = true
+  },
   mounted() {
+    if (process.client) {
+      Promise.all([this.getQiita(), this.getDropbox(), this.getYoutube()]).then(
+        () => {
+          this.loading = false
+        }
+      )
+    }
+
     this.changeVisitedDate(Math.floor(new Date().getTime() / 1000))
     this.changeMode(localStorage.mode)
   },
   methods: {
     ...mapActions({
+      getQiita: 'api/getQiita',
+      getDropbox: 'api/getDropbox',
+      getYoutube: 'api/getYoutube',
       changeVisitedDate: 'common/changeVisitedDate',
       changeMode: 'common/changeMode'
     })

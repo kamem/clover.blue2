@@ -8,7 +8,6 @@ import { mapGetters } from 'vuex'
 import Content from '~/components/Content.vue'
 import { generateDescription } from '~/utils/format.js'
 import { jsonld } from '~/utils/const'
-import { fetch } from '~/utils/ssrFetch'
 
 export default {
   components: {
@@ -52,7 +51,6 @@ export default {
       qiitaItems: 'api/qiitaItems'
     })
   },
-  fetch,
   jsonld() {
     return Object.assign({}, jsonld, {
       '@type': 'NewsArticle',

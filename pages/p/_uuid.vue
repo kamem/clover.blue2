@@ -16,7 +16,6 @@ import _ from 'lodash'
 import { mapState } from 'vuex'
 import Content from '~/components/Content.vue'
 import { jsonld } from '~/utils/const'
-import { fetch } from '~/utils/ssrFetch'
 
 export default {
   components: {
@@ -60,7 +59,6 @@ export default {
       instagramItems: state => state.api.instagramItems
     })
   },
-  fetch,
   jsonld() {
     return Object.assign({}, jsonld, {
       '@type': 'ImageObject',

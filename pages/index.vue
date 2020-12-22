@@ -24,7 +24,6 @@ import List from '~/components/List.vue'
 import Entries from '~/components/Entries.vue'
 import Photos from '~/components/Photos.vue'
 import { jsonld } from '~/utils/const'
-import { fetch } from '~/utils/ssrFetch'
 import Field from '~/components/Form/Field.vue'
 import SwitchButton from '~/components/Form/SwitchButton.vue'
 
@@ -104,7 +103,6 @@ export default {
       dropboxItems: 'api/dropboxItems'
     })
   },
-  fetch,
   methods: {
     getListComponent(entry) {
       return entry.component || List

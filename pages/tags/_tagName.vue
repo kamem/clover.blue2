@@ -23,7 +23,6 @@ import Tags from '~/components/Tags.vue'
 import List from '~/components/List.vue'
 import Entries from '~/components/Entries.vue'
 import Photos from '~/components/Photos.vue'
-import { fetch } from '~/utils/ssrFetch'
 
 export default {
   components: {
@@ -101,7 +100,6 @@ export default {
       dropboxItems: 'api/dropboxItems'
     })
   },
-  fetch,
   methods: {
     getListComponent(entry) {
       return entry.component || List
