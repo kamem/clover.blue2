@@ -4,7 +4,7 @@
 
 <script>
 import _ from 'lodash'
-import { mapGetters } from 'vuex'
+import { mapGetters, mapState } from 'vuex'
 import Content from '~/components/Content.vue'
 import { generateDescription } from '~/utils/format.js'
 import { jsonld } from '~/utils/const'
@@ -39,7 +39,11 @@ export default {
   },
   computed: {
     ITEM() {
-      return _.find(this.dropboxItems, { uuid: this.$route.params.uuid }) || {}
+      return (
+        this.dropboxItem ||
+        _.find(this.dropboxItems, { uuid: this.$route.params.uuid }) ||
+        {}
+      )
     },
     TITLE() {
       return `${this.ITEM.title} - ${process.env.TITLE}`
@@ -47,9 +51,15 @@ export default {
     DESCRIPTION() {
       return generateDescription(this.ITEM.body || '')
     },
+    ...mapState({
+      dropboxItem: state => state.api.dropboxItem
+    }),
     ...mapGetters({
       dropboxItems: 'api/dropboxItems'
     })
+  },
+  async fetch({ store, route }) {
+    await store.dispatch('api/getDropboxItem', route.params.uuid)
   },
   jsonld() {
     return Object.assign({}, jsonld, {

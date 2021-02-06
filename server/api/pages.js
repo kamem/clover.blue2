@@ -1,4 +1,4 @@
-import { getItems } from './api/Firestere'
+import { getItem, getItems } from './api/Firestere'
 
 import Qiita from './api/Qiita'
 import DropboxApi from './api/Dropbox'
@@ -133,6 +133,24 @@ const pages = [
     complete: async (req, res) => {
       res.json({
         items: await getItems('youtube', 'created')
+      })
+    }
+  },
+  {
+    method: 'get',
+    url: '/qiita/item',
+    complete: async (req, res) => {
+      res.json({
+        item: await getItem(req.query.id, 'qiita')
+      })
+    }
+  },
+  {
+    method: 'get',
+    url: '/dropbox/item',
+    complete: async (req, res) => {
+      res.json({
+        item: await getItem(req.query.id, 'dropbox_paper')
       })
     }
   }
