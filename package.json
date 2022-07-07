@@ -63,7 +63,7 @@
     "jest": "^24.1.0",
     "lint-staged": "^8.2.1",
     "marked": "^0.7.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "nodemon": "^1.18.9",
     "nuxt": "^2.0.0",
     "nuxt-jsonld": "^1.4.4",
